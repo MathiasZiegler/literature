@@ -10,7 +10,7 @@ Comment to figures  of commit  7cc622f
 
 All scans done with Nam-import rate of 1e-05 mmol/ls and 100 (?) U  NMNAT and NamPRT all other enzymes 10 U model commit ....
 
-NADconsumptionscan.eps :
+[Influence of amount of NAD-consuming enzymes](NADconsumptionscan.eps) :
 
 NAD-concentration and consumption with and without NNMT with different concentration of NAD-consuming enzymes that are not inhibited by Nam (NC)
 
