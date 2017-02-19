@@ -6,11 +6,11 @@
 - [x]  Adjusted scaling such that fluxes are in the range of fluxes measured in innitial experiments
 - [x]  Adjusted NAD-import rates based on literature for E. coli, cell lines and human vitamine uptake suggestions, NAD-import rates calculated based on the  latter are too low do only allow very low growth rates.
 
-Comment to figures  of commit  7cc622f
+##Comment to figures  of commit  7cc622f
 
 All scans done with Nam-import rate of 1e-05 mmol/ls and 100 (?) U  NMNAT and NamPRT all other enzymes 10 U model commit ....
 
-[Influence of amount of NAD-consuming enzymes](NADconsumptionscan.pdf) :
+###Influence of amount of NAD-consuming enzymes[NADconsumptionscan.pdf](NADconsumptionscan.pdf) :
 
 NAD-concentration and consumption with and without NNMT with different concentration of NAD-consuming enzymes that are not inhibited by Nam (NC)
 
@@ -24,7 +24,7 @@ Result interpretation:
 
 - NAD-concentration and -consumption is basically constant at different cell devision rates
 
-NAMPRT_kmscan.eps :
+###Influence of NNMT[NamPRTNNMT.pdf](NamPRTNNMT.pdf):
 
 scans done with 50 U NC
 
@@ -32,7 +32,7 @@ scans done with 50 U NC
 
 - without NNMT there is a trade of between NAD-concentration and -consumption rates and both ate dependent on cell devision rates
 
-NAMPRT_kmscan.eps :
+###Influence of km NamPRT[NAMPRT_kmscan.pdf](NAMPRT_kmscan.pdf):
 
 - without NNMT NAD-consumption rates and -concentrations do only change very little upon change of Km of NAMPRT --> there is no advantage due to missing competition
 
