@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+%\usepackage{colors}
+
+%\usepackage{lmodern}
+%\usepackage{avant}
+%\usepackage{helvet}%\usepackage{mathpazo}%\usepackage{times}
+
+\usepackage{color} % Farben
+\usepackage{microtype} % spezielle PDF-mikro-typographische Optimierungen
+\usepackage{lmodern}
+\usepackage{graphicx} % Bilder
+\usepackage{multimedia}
+\usepackage{texshade}
+
+\begin{document}
+\begin{texshade}{Syn_alignment.txt}
+\feature{top}{5}{41..52}{fill:$\downarrow$}{Insert 1}
+\feature{bottom}{5}{42..53}{---}{Disordered loop region}
+\feature{top}{5}{235..236}{fill:$\downarrow$}{Insert 2}
+\feature{top}{5}{452..454}{fill:$\downarrow$}{Insert 3}
+\frameblock{1}{38..70}{Red[1pt]}
+\showruler{bottom}{5}
+\rulersteps{1}
+\namerulerpos{247}{P-site[Red]}
+\namerulerpos{18}{PPi[Red]}
+\namerulerpos{40}{PRPP[Red]}
+\namerulerpos{193}{SB[Red]}
+\namerulerpos{219}{NMN[Red]}
+\namerulerpos{279}{SB[Red]}
+\namerulerpos{311}{NMN[Red]}
+\namerulerpos{312}{SB[Red]}
+\namerulerpos{313}{Mg[Red]}
+\namerulerpos{353}{PPi[Red]}
+\namerulerpos{354}{PPi[Red]}
+\namerulerpos{355}{oxh[Red]}
+\namerulerpos{356}{PPi[Red]}
+\namerulerpos{383}{oxh[Red]}
+\namerulerpos{384}{oxh[Red]}
+\namerulerpos{385}{oxh[Red]}
+\namerulerpos{392}{PRPP[Red]}
+\namerulerpos{400}{BeF[Red]}
+\namerulerpos{415}{BeF[Red]}
+\namerulerpos{423}{PPi[Red]}
+\nameseq{1}{S. purpuratus (3)}
+\nameseq{2}{Synechocystis (3)}
+\nameseq{3}{B. taurus (6) }
+\nameseq{4}{D. rerio (6)}
+\nameseq{5}{H. sapiens (6)}
+\nameseq{6}{M. Musculus (6)}
+\nameseq{7}{P. bivittatus (6)}
+\nameseq{8}{R. norvegicus (6)}
+\nameseq{8}{A. queenslandica (6)}
+\nameseq{8}{W. bancrofti (6)}
+\nameseq{9}{N. vectensis (7)}
+\nameseq{10}{B. floridae (7)}
+%\hidenumbering
+\hideconsensus
+\end{texshade}
+
+N. vectensis, W. bancrofti and A. queenslandica do not belong to the
+Deuterostomia
+
+\bigskip
+
+P-site: Phosphorylation site\\
+PPi: site participating in PPi-binding\\
+SB: unspecified substrate binding site/part of binding pocket\\
+BeF: binding site for BeF$_3$\\
+Mg: Mg-binding site\\
+NMN: NMN-binding site\\
+PRPP: PRPP binding site\\
+oxh: oxyanion hole
+
+\end{document}

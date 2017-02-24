@@ -1,0 +1,167 @@
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    MAEPTDSCFSNILMLTDSYKVTHHRQYPDGTTLVSSYFESRG--------
+Pro_Synechocystis_spPCC6803                           MN-------TNLILDVDSYKVSHWLQYPPDTTAMYSYVESRG--------
+Euk_Met_Deu_Bos_taurus_346421394                      MNAAAE-AEFNILLATDSYKVTHYKQYPPNTSKVYSYFECREKKTENSKI
+Euk_Met_Deu_Danio_rerio_292612345                     MEKHREAADFNILLATDSYKVTHYKQYPPNTSKVYSYFECREKKTDSTKP
+Euk_Met_Deu_Homo_sapiens_1172027                      MNPAAE-AEFNILLATDSYKVTHYKQYPPNTSKVYSYFECREKKTENSKL
+Euk_Met_Deu_Mus_musculus                              MNAAAE-AEFNILLATDSYKVTHYKQYPPNTSKVYSYFECREKKTENSKV
+Euk_Met_Deu_Python_bivittatus_602669525               --------------------VTHYKQYPPNTSKVYSYFECREKKTENSKL
+Euk_Met_Deu_Rattus_norvegicus_29293813                MNAAAE-AEFNILLATDSYKVTHYKQYPPNTSKVYSYFECREKKTENSKV
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  ME-------NNLLLTVDSYKVTHYCQYPPGTSKVYSYFECRG--------
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    MES-----VENVLYVADSYKVTHHNQYPEGTTHVYSYFESRG--------
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     MAACL-E-FENILLVTDSYKVSHHRQYPDGTSTVFSYFESRG--------
+Euk_Met_Deu_Branchiostoma_floridae_260814147          MATCGGPCMDNVLLITDSYKVTHHMQYPPETTTIFSYFESRG--------
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        MAAVP-VCMDNALLLTDSYKVTHYRQYPPGTTTVYSYFECRG--------
+                                                                            *:*  ***  *: : **.*.*         
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    --GKFPEVVFFGLQYILKRWLCGPVITAEKIAEAKELYKLHFG-QDHFNE
+Pro_Synechocystis_spPCC6803                           --GRYPVTVFFGLQYILKRYLTQ-SIEPWMVEEANRLLTAHG---LPFNY
+Euk_Met_Deu_Bos_taurus_346421394                      RKVKYEETVFYGLQYILHKYLKGKVVTKEKIQEAKEVYREHFQ-DDVFNE
+Euk_Met_Deu_Danio_rerio_292612345                     RKVKYDKTVFYGLQYILHKYLKGQVITPEKIQEAKEVYREHFQ-DDVFNE
+Euk_Met_Deu_Homo_sapiens_1172027                      RKVKYEETVFYGLQYILNKYLKGKVVTKEKIQEAKDVYKEHFQ-DDVFNE
+Euk_Met_Deu_Mus_musculus                              RKVKYEETVFYGLQYILNKYLKGKVVTKEKIQEAKEVYREHFQ-DDVFNE
+Euk_Met_Deu_Python_bivittatus_602669525               RKVKYEETVFYGLQYILNKYLQGKVVTKEKIQVAKEVYKEHFQ-DDVFNE
+Euk_Met_Deu_Rattus_norvegicus_29293813                RKVKYEETVFYGLQYILNKYLKGKVVTKEKIQEAKEVYREHFQ-DDVFNE
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  --GVFPETVFFGLQYILKKYLVGKVVTEEKIQEAKEVYDGHLG-SGLFNE
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    --GKFSEVCFFGLQYIIKRWLVGPVVTKEMIEQAKQFYKSHFGGLDIFNE
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     --GKFPEVCFFGLQYIIKKWLLGKVVTEEKIQEAKSLYKLHFG-SEIFNE
+Euk_Met_Deu_Branchiostoma_floridae_260814147          --GKFKETVFFGLQYLIKRWLVGQVVTREKIAEAKDIYKKHFG-QDVFNE
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        --GKFPEIVFFGLQYVIKKWLIGQVVTKEKIEEAKEFYKLHFGQDNLFHE
+                                                            :    *:****:::::*    :    :  *: .   *      *: 
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    AGWTHILEKHGGYLPMKIKAVPEGSVIPYKNVLFTVENTDPQVPWITNWF
+Pro_Synechocystis_spPCC6803                           GGWRYIAEDLQGRLPVRIKAVPEGSVIPVHNVLMTVESTDPKVFWLVSWL
+Euk_Met_Deu_Bos_taurus_346421394                      KGWNYILEKYDGHLPIEVKAVPEGSVIPRGNVLFTVENTDPECYWLTNWV
+Euk_Met_Deu_Danio_rerio_292612345                     KGWNYILEKYNGHLPIEIKAVPEGSVIPRGNVLFTVENTDPECYWLTNWV
+Euk_Met_Deu_Homo_sapiens_1172027                      KGWNYILEKYDGHLPIEIKAVPEGFVIPRGNVLFTVENTDPECYWLTNWI
+Euk_Met_Deu_Mus_musculus                              RGWNYILEKYDGHLPIEVKAVPEGSVIPRGNVLFTVENTDPECYWLTNWI
+Euk_Met_Deu_Python_bivittatus_602669525               TGWNYILEKYDGHLPIEIKAVPEGFVIPRGNVLFTVENTDPNCYWLTNWI
+Euk_Met_Deu_Rattus_norvegicus_29293813                RGWNYILEKYDGHLPIEVKAVPEGSVIPRGNVLFTVENTDPECYWLTNWI
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  EGWRYILAQHNGHLPLKIKAVPEGMIVPVKNVLFTVENTDPKCFWLTNFI
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    EGWNHIAEVHKGHLPLKIKAVPEGTVVPVKNVLFTVENTDPHVPWLTNWF
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     EGWRYILEEYDGHLPIRIRAIPEGTVVPVKNVLFTVQNTDSKCFWLTNWV
+Euk_Met_Deu_Branchiostoma_floridae_260814147          EGWNYIVEHHGGKLPLLIKAVPEGTVVPVKNVLFTVENTDPKCFWLTNWF
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        EGWNYILKEHGGRIPIIIRAVPEGTLVPVKNVLFSVENTDPKVPWITNWF
+                                                         ** :*     * :*: ::*:*** ::*  ***::*:.**..  *:..:.
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    ETLMVQVWYPMTVATNSRVQKVLIAKYLSETADNLTG-LPFKLHDFGFRG
+Pro_Synechocystis_spPCC6803                           ETLLMRVWYPITVATQSWHLKQRIYQSLCRTADDPDGEINFKLHDFGARG
+Euk_Met_Deu_Bos_taurus_346421394                      ETILVQSWYPITVATNSREQKKILAKYLLETSGNLDG-LEYKLHDFGYRG
+Euk_Met_Deu_Danio_rerio_292612345                     ETCLVQIWYPITVATNSREQKKILAKYLMETSGSLEG-LEYKLHDFGYRG
+Euk_Met_Deu_Homo_sapiens_1172027                      ETILVQSWYPITVATNSREQKKILAKYLLETSGNLDG-LEYKLHDFGYRG
+Euk_Met_Deu_Mus_musculus                              ETILVQSWYPITVATNSREQKKILAKYLLETSGNLDG-LEYKLHDFGYRG
+Euk_Met_Deu_Python_bivittatus_602669525               ETILVQSWYPITVATNSREQKKILAKYLLETSGSLEG-LEYKLHDFGYRG
+Euk_Met_Deu_Rattus_norvegicus_29293813                ETILVQSWYPITVATNSREQKKILAKYLLETSGNLDG-LEYKLHDFGYRG
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  ETLMVQAWYPITVCTSSRAQKELIAKYLNETSDSMEG-LPFKLHDFGFRG
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    ETLLVQVWYPMTVCTNSRAQKLIIAHYLHETADSLDG-IHFKLHDFGYRG
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     ETVLVQCWYPTTVATTSRAQKQIIAQYLSETADSLEG-LPFKLHDFGFRG
+Euk_Met_Deu_Branchiostoma_floridae_260814147          ETLLVQVWYPMTVATNSREQKKIIASFLHETADNMDG-LPFKLHDFGFRG
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        ETVLVEVWYPLTVATNSRAQKEIIARYLSETAENLDG-LPFKLHDFGFRG
+                                                        ** ::. *** **.* *   *  :   * .*: .  * : :****** **
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    VSSVETAGIGAAAHLVNFQGTDTIAGIVMAKKYYSCK--MAGFSIPAAEH
+Pro_Synechocystis_spPCC6803                           VSSGESSGIGGLAHLVNFQGSDTVKALVYGQQYYNCP--MAAYSIPAAEH
+Euk_Met_Deu_Bos_taurus_346421394                      VSSQETAGIGASAHLVNFKGTDTVAGIALIKKYYGTKDPVPGYSVPAAEH
+Euk_Met_Deu_Danio_rerio_292612345                     VSSQETAGIGASAHLVNFKGTDTVAGIGVIKKYYGTKDPVPGFSVPAAEH
+Euk_Met_Deu_Homo_sapiens_1172027                      VSSQETAGIGASAHLVNFKGTDTVAGLALIKKYYGTKDPVPGYSVPAAEH
+Euk_Met_Deu_Mus_musculus                              VSSQETAGIGASAHLVNFKGTDTVAGIALIKKYYGTKDPVPGYSVPAAEH
+Euk_Met_Deu_Python_bivittatus_602669525               VSSQETAGIGASAHLVNFKGTDTVAGIALIKKYYGTKDPVSGYSVPAAEH
+Euk_Met_Deu_Rattus_norvegicus_29293813                VSSQETAGIGASAHLVNFKGTDTVAGIALIKKYYGTKDPVPGYSVPAAEH
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  STSVESAGIGGAAHLVNFSGTDTVAALSFAKKYYNCK--VAGFSIPAAEH
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    ASSVESASIGGAAHLVNFYGTDTIAGLQLCKKYYGAE--MAGFSIPAAEH
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     STSVESASIGGAAHLVNFCGTDTIAGIVMARNYYGCE--MGGFSVPAAEH
+Euk_Met_Deu_Branchiostoma_floridae_260814147          VSAVEAAAIGGAAHLVNFMGTDTIASLVMARKYYGAD--MAGFSIPAAEH
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        ASSVESASIGGASHLVNFMGTDTLAGIVCARKYYGCE--MAGFSIPAAEH
+                                                         :: *::.**. :***** *:**: .:   ::**.    : .:*:*****
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    STITTWGKHGEREAFKNMLDQFP--TGLVAVVSDSFDIYNACEKVWGEEL
+Pro_Synechocystis_spPCC6803                           STITAWGREGEVLAYENMLTQFAKPGSVLAVVSDSYDLWNAIDHLWGDHL
+Euk_Met_Deu_Bos_taurus_346421394                      STITAWGKDHEKDAFEHIVTQFS--SVPVSVVSDSYDIYNACEKTWGEDL
+Euk_Met_Deu_Danio_rerio_292612345                     STITAWGKDHEKDAFEHIIKQFP--SVPVSIVSDSYDIYNACEKIWGEDL
+Euk_Met_Deu_Homo_sapiens_1172027                      STITAWGKDHEKDAFEHIVTQFS--SVPVSVVSDSYDIYNACEKIWGEDL
+Euk_Met_Deu_Mus_musculus                              STITAWGKDHEKDAFEHIVTQFS--SVPVSVVSDSYDIYNACEKIWGEDL
+Euk_Met_Deu_Python_bivittatus_602669525               STITAWGKDHEKDAFKHIVTHFS--SVPVSVVSDSYDIYNACEKIWGEDL
+Euk_Met_Deu_Rattus_norvegicus_29293813                STITAWGKDHEKDAFEHIVTQFS--SVPVSVVSDSYDIYNACEKIWGEDL
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  STITSWTKEGEVDAFRNMLTQFP--NGLMACVSDSYNIWDACEKLWGEKL
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    STITTWKKSGESAAYLNMLEQFP--DGSVSVVSDSYDVFHAVSNIWGDEL
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     STITTWGKDGEVDAFRNMLLKFP--TGIMACVSDSYDIWNACTNIWGQQL
+Euk_Met_Deu_Branchiostoma_floridae_260814147          STITAWGKNGELEAFKNMLSRFP--KGLVACVSDSYDIWNACENLWGKEL
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        STITSWGKKGEVNAFRNMLQQFP--TGLVAVVSDSYDIWNACQNVWGKEL
+                                                        ****:* :  *  *: ::: :*.     :: ****::::.*  : **..*
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    REQVIQRGESGSILVIRPDSGEPSEVVMKVLTILSKVFGCSKNSKGYKML
+Pro_Synechocystis_spPCC6803                           RAQVLD--S-GATVVIRPDSGDPVAIVAQTLERLEACFGSTLNSKGFRVL
+Euk_Met_Deu_Bos_taurus_346421394                      RHLIVSRST-EAPLIIRPDSGNPLDTVLKVLDILGKKFPVTENSKGYKLL
+Euk_Met_Deu_Danio_rerio_292612345                     RSLIEMRSA-DAPLVVRPDSGNPLDTVLKVLEILGKKFPPEENSKGYKVL
+Euk_Met_Deu_Homo_sapiens_1172027                      RHLIVSRST-QAPLIIRPDSGNPLDTVLKVLEILGKKFPVTENSKGYKLL
+Euk_Met_Deu_Mus_musculus                              RHLIVSRST-EAPLIIRPDSGNPLDTVLKVLDILGKKFPVTENSKGYKLL
+Euk_Met_Deu_Python_bivittatus_602669525               RHLIESRSA-EAPLIIRPDSGNPLDTVLKVLEILGKKFPIAENAKGYKVL
+Euk_Met_Deu_Rattus_norvegicus_29293813                RHLIVSRST-EAPLIIRPDSGNPLDTVLKVLDILGKKFPVSENSKGYKLL
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  KDLVEERGERGGTLVVRPDSGDPPTVVVKVLEILGSKFGTITNKKGYKLL
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    RQYVVDRAN-RGCVVIRPDSGDPSQVV--VLNLLAEKFPVVTNSKGYRLL
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     KELVVSREGK-GTLVVRPDSGDPPKVVVKVLNLLGKAFGTVKNSKGFHLL
+Euk_Met_Deu_Branchiostoma_floridae_260814147          KNMIVKRGESNSTLVVRPDSGEPADVVVKVLTILGKAFGTQKNSKGYKVL
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        KDLVIKRGKGGNTLVIRPDSGDPPEVVIKVLTILGKAFGSTKNSKGYSML
+                                                        :  :         :::*****:*   *  .*  *   *    * **: :*
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    PPYLRVIQGDGVNYDVIEQILSRMKKLEWSADNLTFGSGGSLLQKHNRDT
+Pro_Synechocystis_spPCC6803                           N-AVRVIQGDGVDEESISAILEKTESLGFSTTNLAFGMGGALLQKVNRDT
+Euk_Met_Deu_Bos_taurus_346421394                      PPYLRVIQGDGVDINTLQEIVEGMKQKKWSIENVSFGSGGALLQKLTRDL
+Euk_Met_Deu_Danio_rerio_292612345                     PPYIRVIQGDGVDINTLQEIVEGMKEHRWSIENIAFGSGGALLQKLTRDL
+Euk_Met_Deu_Homo_sapiens_1172027                      PPYLRVIQGDGVDINTLQEIVEGMKQKMWSIENIAFGSGGGLLQKLTRDL
+Euk_Met_Deu_Mus_musculus                              PPYLRVIQGDGVDINTLQEIVEGMKQKKWSIENVSFGSGGALLQKLTRDL
+Euk_Met_Deu_Python_bivittatus_602669525               PPYLRIIQGDGVDINTLQEIVEGMKQQKWSIENIAFGSGGALLQKLTRDL
+Euk_Met_Deu_Rattus_norvegicus_29293813                PPYLRVIQGDGVDINTLQEIVEGMKQKKWSIENVSFGSGGALLQKLTRDL
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  PPYLRVIQGDGISYESLTKILEALKDNKWSSDNLVFGSGGALLQKVHRDT
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    PSYLRVMQGDGICYESIGKILDAVTRNKWSADNIVFGTGGALLQKLDRDT
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     PPYIRIIQGDGISYETLGTILENMKRNKWSADNIAFGSGGALLQKMDRDT
+Euk_Met_Deu_Branchiostoma_floridae_260814147          PPYLRIIQGDGISYETLTGILERMKKLEWSADNIAFGSGGALLQKLNRDT
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        PSYLRVIQGDGISYETLGSILERMKKAKWSADNIAFGSGGALLQRLDRDT
+                                                           :*::****:  : :  *:.      :*  *: ** **.***:  ** 
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    QKCAYKCSYCVVDGESRNVFKQPSTDLGKKSKKGQLSLQE-VDGKIVTIE
+Pro_Synechocystis_spPCC6803                           QKFAMKCSEVTVEDKAIPVYKDPVTDPGKTSKKGRLSLVKTDSG-YGTVP
+Euk_Met_Deu_Bos_taurus_346421394                      LNCSFKCSYVVTNGLGINVFKDPVADPNKRSKKGRLSLHRTPAGNFVTLE
+Euk_Met_Deu_Danio_rerio_292612345                     LNCSFKCSYVVTNGLGVNVFKDPVADPNKRSKKGRLSLHRTPSGDFVTLE
+Euk_Met_Deu_Homo_sapiens_1172027                      LNCSFKCSYVVTNGLGINVFKDPVADPNKRSKKGRLSLHRTPAGNFVTLE
+Euk_Met_Deu_Mus_musculus                              LNCSFKCSYVVTNGLGVNVFKDPVADPNKRSKKGRLSLHRTPAGNFVTLE
+Euk_Met_Deu_Python_bivittatus_602669525               LNCSFKCSYVVTNGLGVNVFKDPVADPNKRSKKGRLSLHRTPNGDFVTLE
+Euk_Met_Deu_Rattus_norvegicus_29293813                LNCSFKCSYVVTNGLGVNVFKDPVADPNKRSKKGRLSLHRTPAGTFVTLE
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  QKCAFKCSYAVVNDKGVNVYKTPITDPGKKSKKGLMTLEI-EDGQYVTKQ
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    QKCAFKCSHVVINGESRDVWKSPTTDAGKQSKQGRLTLERTEDGSLVTIE
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     QKFAYKCSYAVVNGKGVNVFKQPITDLGKKSKKGLLSLELDDQGNYCTVQ
+Euk_Met_Deu_Branchiostoma_floridae_260814147          QKCAFKCSFAVVNGEGVDVFKQPITDPGKKSKKGRLTLEL-QNGKYVTVQ
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        QKCAFKCSYAIINDKEVNVFKQPVTDLGKKSKKGKLALEY-EDGKFTTVQ
+                                                         : : ***    :.    *:* * :* .* **:* ::*     *   *  
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    EGKGDPN---KNLLELVYENGQLLKDQTLDEIRQRAEIDLVKQG------
+Pro_Synechocystis_spPCC6803                           -------TSSEDLLQVVYENGHLLQDQCLDAIRQRAWPLI-R--------
+Euk_Met_Deu_Bos_taurus_346421394                      EGKGDLEEYGHDLLHTVFKNGKVTKSYSFDEVRKNAQLNI-E--------
+Euk_Met_Deu_Danio_rerio_292612345                     EGKGDLEEYGEDLLHTVFRNGKIVKTYTFDEVRDNAKLKESE--------
+Euk_Met_Deu_Homo_sapiens_1172027                      EGKGDLEEYGQDLLHTVFKNGKVTKSYSFDEIRKNAQLNI-E--------
+Euk_Met_Deu_Mus_musculus                              EGKGDLEEYGHDLLHTVFKNGKVTKSYSFDEVRKNAQLNI-E--------
+Euk_Met_Deu_Python_bivittatus_602669525               EGKGDLEEYGQDLLHTVFKNGVVTKTYSFDEIRENAKLKTSE--------
+Euk_Met_Deu_Rattus_norvegicus_29293813                EGKGDLEEYGHDLLHTVFKNGKVTKSYSFDEVRKNAQLNM-E--------
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  EGTGSPE---RDLLVPVFENGVLLKDYSFDEIRKLAEIELL---------
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    KGQGDVS---KDVLVTVFENGRLLVDYSLEEIRDRAELDIVKEHKRKVVN
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     EGKGDPD---KDLLVTVFENGKLMKEYTFDEVRKTAEIPIVRQ-------
+Euk_Met_Deu_Branchiostoma_floridae_260814147          EGQGDPE---KDLLIPVFKDGQLLKDYSWEEVRGRAEIPLVLEQK-----
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        EGKGDPK---KDLLTTVFKNGKLVKEYTFAEIRERAEIPLLK--------
+                                                                  .::*  *:.:* :        :*  *              
+
+Euk_Met_Deu_Strongylocentrotus_purpuratus_72006087    ----------------SKNRTK
+Pro_Synechocystis_spPCC6803                           ----------------VNVPAS
+Euk_Met_Deu_Bos_taurus_346421394                      ----------------LEAAPH
+Euk_Met_Deu_Danio_rerio_292612345                     ----------------VQDLLL
+Euk_Met_Deu_Homo_sapiens_1172027                      ----------------LEAAHH
+Euk_Met_Deu_Mus_musculus                              ----------------QDVAPH
+Euk_Met_Deu_Python_bivittatus_602669525               ----------------FSMASH
+Euk_Met_Deu_Rattus_norvegicus_29293813                ----------------QDVAPH
+Euk_Met_Prorifera_Amphimedon_queenslandica_340372997  --------------------KS
+Euk_Met_Protostomia_Wuchereria_bancrofti_402594636    TEAAVRTINGGSWVSANDNFGS
+Euk_Met_Cnideria_Nematostella_vectensis_156356487     ------------------KASH
+Euk_Met_Deu_Branchiostoma_floridae_260814147          ---------------KKKNATK
+Euk_Met_Deu_Saccoglossus_kowalevskii_291243437        ----------------KSNNDK
+                                                                              
+
+
+
