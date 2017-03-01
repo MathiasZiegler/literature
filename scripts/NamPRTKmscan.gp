@@ -30,7 +30,7 @@ set xyplan 0
 
 set size 0.3,0.3
 set origin 0.0,0.65
-set zlabel 'NAD-consumption flux (nM/s)' rotate by 90
+set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set title "NamPRT only" font 'Arial,8'
 set label 'A' font 'Arial,9' at screen 0.0, screen 0.9
 
@@ -52,7 +52,7 @@ splot 'NamPRT_Km_0.txt' using 4:($6*3600):($7*1000)  with pm3d;
 set title "NamPRT + NNMT"
 set size 0.3,0.3
 set origin 0, 0.35
-set zlabel 'NAD-consumption flux (nM/s)' rotate by 90
+set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set label 'C' font 'Arial,9' at screen 0.0, screen 0.6
 
 
@@ -82,7 +82,7 @@ unset ylabel
 set xlabel 'K_M NamPRT (mM)' 
 set size 0.3,0.3
 set origin 0.0, 0.0
-set ylabel 'NAD-consumption flux (nM/s)' 
+set ylabel 'NAD-consumption flux ({/Symbol m}M/s)' 
 set label  'E' font 'Arial,9' at screen 0.0, screen 0.3
 set yrange [0:0.25]
 
