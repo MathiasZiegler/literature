@@ -30,7 +30,7 @@ scans done with 50 U NC
 
 - NAD-consumption and concentration are more or less independent of cell devision rate with NNMT 
 
-- without NNMT there is a trade of between NAD-concentration and -consumption rates and both ate dependent on cell devision rates
+- without NNMT there is a trade of between NAD-concentration and -consumption rates and both are dependent on cell devision rates
 
 ###Influence of km NamPRT: [NAMPRT_kmscan.pdf](NAMPRT_kmscan.pdf)
 
@@ -42,4 +42,18 @@ scans done with 50 U NC
 
 -> for species that have high devision rate like bacteria the gain is very low and the initial disadvantage is high for both NAD-consumption and NAD-concentration, with low devision rate there is little or no disadvantage in terms of NAD-consumption and little for NAD-concentration this situations is even more extreme with increasing activity of NAD-consuming enzymes that are not inhibited by Nam, additional gain, independence of cell devision rates (of e.g. different tissues or at different developmental stages)
 
-NAMPT_NADA.eps :
+###NAMPT_NADA.eps : [NAMPT_NADA.pdf](NAMPT_NADA.pdf)
+
+- NamPRT+NNMT is advantages for NAD-consumption at low cell devision rates
+- with NADA and without NNMT higher NAD-concentrations
+- at high cell devision rates  NADA without NNMT enables higher NAD-consumption fluxes -- bacteria
+
+###NamptNNMTkm.eps : [NAMPT_NADANamptNNMTkm.pdf](NamptNNMTkm.pdf)
+
+- affinity combination NamPRT NNMT is close to optimal, little advantage for further adjustment both with respect to NAD-consumption and NAD-concentration
+
+###NADconsumpiton: [NADconsumptionscan_wdiff.pdf](NADconsumptionscan_wdiff.pdf)
+
+- different amounts of NAD consuming enzymes that are not inhibited by Nam (NC) have been used in the simulations
+- at low cell devision rates low activity/amount of NC has the highest advantage of NNMT expression
+- at high cell devision rates cells with high expression of NC have a higher advantage for NAD-consumption
