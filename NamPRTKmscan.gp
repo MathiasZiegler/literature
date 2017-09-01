@@ -1,5 +1,5 @@
 set terminal postscript eps color enhanced 'Arial' 6
-set output 'Poster_3Dgraphs.eps'
+set output 'NamPRTKmscan.eps'
 set key left
 set multiplot
 
@@ -22,11 +22,10 @@ set key font "Arial, 6"
 set pm3d
 unset key
 unset clabel
-set yrange[0.000001*3600:0.0001*3600]
 set logscale xy
 set xyplan 0
 
-
+set yrange[0.01:1]
 
 set size 0.3,0.3
 set origin 0.0,0.65
@@ -34,7 +33,7 @@ set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set title "NamPRT only" font 'Arial,8'
 set label 'A' font 'Arial,9' at screen 0.0, screen 0.9
 
-splot 'NamPRT_Km_0.txt' using 4:($6*3600):($8*1000)  with pm3d;
+splot 'NamPRTkmscan_0.txt' using 4:($6*3600):($8*1000)  with pm3d;
 
 
 
@@ -44,7 +43,7 @@ set title "NamPRT only" font 'Arial,8'
 
 set label 'B' font 'Arial,9' at screen 0.3, screen 0.9
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
-splot 'NamPRT_Km_0.txt' using 4:($6*3600):($7*1000)  with pm3d;
+splot 'NamPRTkmscan_0.txt' using 4:($6*3600):($7*1000)  with pm3d;
 
 
 
@@ -56,48 +55,49 @@ set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set label 'C' font 'Arial,9' at screen 0.0, screen 0.6
 
 
-set label "*" at 0.000003,0.01,0.15 tc rgb "black" font ",20" front
-splot 'NamPRT_Km_10.txt' using 4:($6*3600):($8*1000)  with pm3d;
+set label "*" at 0.000003,0.1,0.72 tc rgb "black" font ",20" front
+splot 'NamPRTkmscan_10.txt' using 4:($6*3600):($8*1000)  with pm3d;
 unset label
 
 set size 0.3,0.3
-
+set label "*" at 0.000003,0.1,3.5 tc rgb "black" font ",20" front
 set origin 0.3, 0.35
 set label 'D' font 'Arial,9' at screen 0.3, screen 0.6
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
-
+set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set title "NamPRT + NNMT"
 
-splot 'NamPRT_Km_10.txt' using 4:($6*3600):($7*1000)  with pm3d;
+splot 'NamPRTkmscan_10.txt' using 4:($6*3600):($7*1000)  with pm3d;
 
 unset label
 
 unset pm3d
 unset title
+set key
 unset logscale y
+set yrange [-0.01:1.2]
 
-unset ylabel
+set xrange [0.01:1]
 
-
-set xlabel 'K_M NamPRT (mM)' 
+set xlabel 'cell devision rate per h' 
 set size 0.3,0.3
 set origin 0.0, 0.0
 set ylabel 'NAD-consumption flux ({/Symbol m}M/s)' 
 set label  'E' font 'Arial,9' at screen 0.0, screen 0.3
-set yrange [0:0.25]
+set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
+set title 'Nam import 0.5{/Symbol m}M/s'
 
-set key left 
-
-plot  'NamPRT_Km_0_0.0001.txt' using 4:($8*1000) title 'NamPRT only at high CDR' w lines lt rgb "#00AA00" lw 3,  'NamPRT_Km_0_1e-05.txt' using 4:($8*1000) title 'NamPRT only at low CDR' w lines lt rgb "#00AA00" lw 3 dt 3, 'NamPRT_Km_10_0.0001.txt' using 4:($8*1000) title 'NamPRT + NNMT at high CDR' w lines  lt  rgb "#3333FF" lw 3, 'NamPRT_Km_10_1e-05.txt' using 4:($8*1000) title 'NamPRT + NNMT at low CDR' w lines  lt  rgb "#3333FF" lw 3 dt 3;
+plot 'NampRTNNMT_celldev_0_100.txt' using ($6*3600):($8*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'NampRTNNMT_celldev_10_100.txt' using ($6*3600):($8*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3, 'NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($8*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2, 'NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($8*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2;
 
 
+set title 'Nam import 0.5{/Symbol m}M/s'
+set yrange [0:130]
 
 set label  'F' font 'Arial,9' at screen 0.3, screen 0.3
 set size 0.3,0.3
 set origin 0.3, 0.0
-set yrange [0:25]
+
 set ylabel 'Concentration of free NAD  in {/Symbol m}M'
 
-plot  'NamPRT_Km_0_0.0001.txt' using 4:($7*1000) title 'NamPRT only at high CDR' w lines lt rgb "#00AA00" lw 3, 'NamPRT_Km_10_0.0001.txt' using 4:($7*1000) title 'NamPRT + NNMT at high CDR' w lines  lt  rgb "#3333FF" lw 3;
-
+plot 'NampRTNNMT_celldev_0_100.txt' using ($6*3600):($7*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'NampRTNNMT_celldev_10_100.txt' using ($6*3600):($7*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3, 'NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($7*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2, 'NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($7*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2;
 

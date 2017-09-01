@@ -1,5 +1,5 @@
 set terminal postscript eps color enhanced 'Arial' 10
-set output 'NamptNNMTkm_woANC.eps'
+set output 'NamptNNMTkm.eps'
 set multiplot
 set format x "%g"
 set format y "%g"
@@ -25,20 +25,20 @@ set grid x, y, z
 set size 0.5,0.5
 set origin 0.0,0.5
 
-set label "*" at 0.000003,0.3,0.15 tc rgb "white" font ",20" front
+set label "*" at 0.000003,0.4,0.72 tc rgb "white" font ",20" front
 set title "NAD consumption ({/Symbol m}M/s)"
 set label 'A' font 'Arial, 16' at screen 0.0, screen 0.9
 
-splot 'NamPRTNNMT_Km_woANC.txt' using 4:5:($8*1000)  with pm3d;
+splot 'kmscanNNMTNamPRT.txt' using 4:5:($8*1000)  with pm3d;
 
 unset label
 
-set label "*" at 0.000003,0.4,8.4 tc rgb "white" font ",20" front
+set label "*" at 0.000003,0.4,3.5 tc rgb "white" font ",20" front
 
 set size 0.5,0.5
 set origin 0.5,0.5
 set label 'B' font 'Arial,16' at screen 0.5, screen 0.9
 set title "NAD concentration ({/Symbol m}M)"
 
-splot 'NamPRTNNMT_Km_woANC.txt' using 4:5:($7*1000)  with pm3d
+splot 'kmscanNNMTNamPRT.txt' using 4:5:($7*1000)  with pm3d
 
