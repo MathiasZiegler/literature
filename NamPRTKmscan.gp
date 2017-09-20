@@ -4,7 +4,7 @@ set key left
 set multiplot
 
 set grid x,y,z
-set xtics offset 0,-1 
+#set xtics offset 0,-1 
 set format x "%g"
 set format y "%g"
 set ytics  offset 0,-1 
