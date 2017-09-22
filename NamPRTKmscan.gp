@@ -87,7 +87,7 @@ set label  'E' font 'Arial,9' at screen 0.0, screen 0.3
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
 set title 'Nam import 0.5{/Symbol m}M/s'
 
-plot 'NampRTNNMT_celldev_0_100.txt' using ($6*3600):($8*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'NampRTNNMT_celldev_10_100.txt' using ($6*3600):($8*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3, 'NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($8*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2, 'NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($8*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2;
+plot 'NampRTNNMT_celldev_0_100.txt' using ($6*3600):($8*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'NampRTNNMT_celldev_10_100.txt' using ($6*3600):($8*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3, 'NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($8*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2, 'NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($8*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2;
 
 
 set title 'Nam import 0.5{/Symbol m}M/s'
@@ -99,5 +99,5 @@ set origin 0.3, 0.0
 
 set ylabel 'Concentration of free NAD  in {/Symbol m}M'
 
-plot 'NampRTNNMT_celldev_0_100.txt' using ($6*3600):($7*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'NampRTNNMT_celldev_10_100.txt' using ($6*3600):($7*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3, 'NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($7*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2, 'NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($7*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2;
+plot 'NampRTNNMT_celldev_0_100.txt' using ($6*3600):($7*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'NampRTNNMT_celldev_10_100.txt' using ($6*3600):($7*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3,'NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($7*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2, 'NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($7*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2;
 

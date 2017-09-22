@@ -40,12 +40,12 @@ splot 'NADA_10_10_0-NADA_10_0_0.txt' using ($6*3600):($9*1000):($7*1000)  with p
 set size 0.5,0.5
 set origin 0, 0
 set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
-set zrange [-0.01:0.08]
+set zrange [-0.2:0.8]
 set title 'Difference NamPRT with vs. without NNMT'
 
 set label 'C' font 'Arial, 9' at screen 0.0, screen 0.55
 
-splot 'NADA_0_10_10-NADA_0_0_10.txt' using ($6*3600):($9*1000):($8*1000)  with pm3d;
+splot 'NADA_0_10_100-NADA_0_0_100.txt' using ($6*3600):($9*1000):($8*1000)  with pm3d;
 
 
 
@@ -54,7 +54,7 @@ splot 'NADA_0_10_10-NADA_0_0_10.txt' using ($6*3600):($9*1000):($8*1000)  with p
 
 
 
-set zrange [-8:0]
+set zrange [-80:0]
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
 set size 0.5,0.5
 set origin 0.5, 0
@@ -62,4 +62,4 @@ set label 'D' font 'Arial,9' at screen 0.5, screen 0.55
 
 set title 'Difference NamPRT with vs. without NNMT'
 
-splot 'NADA_0_10_10-NADA_0_0_10.txt' using ($6*3600):($9*1000):($7*1000)  with pm3d;
+splot 'NADA_0_10_100-NADA_0_0_100.txt' using ($6*3600):($9*1000):($7*1000)  with pm3d;
