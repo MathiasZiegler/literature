@@ -57,3 +57,7 @@ scans done with 50 U NC
 - different amounts of NAD consuming enzymes that are not inhibited by Nam (NC) have been used in the simulations
 - at low cell devision rates low activity/amount of NC has the highest advantage of NNMT expression
 - at high cell devision rates cells with high expression of NC have a higher advantage for NAD-consumption
+
+###NAMPT_NADA_exp.pdf: [NAMPT_NADA_expr.pdf](NAMPT_NADA_expr.pdf)
+
+Simulations with 1U NADA or 100U NamPRT to acheive similar NAD-concentrations
