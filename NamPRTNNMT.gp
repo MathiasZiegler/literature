@@ -1,8 +1,8 @@
 set terminal postscript eps color enhanced 'Arial' 12
-set output 'NamPRTNNMT.eps'
+set output 'FigureS2.eps'
 set multiplot
 
-set xlabel 'cell devision rate per hour'
+set xlabel 'cell division rate per hour'
 
 set log x
 #set format x "%g"

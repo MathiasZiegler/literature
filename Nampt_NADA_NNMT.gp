@@ -3,11 +3,11 @@
 
 
 set terminal postscript eps color enhanced 'Arial' 6
-set output 'NAMPT_NADA_3D_NNMT.eps'
+set output 'Figure4.eps'
 set multiplot
 unset key
 set grid x,y,z
-set xlabel offset 0,-1 'cell devision per hour ' rotate parallel
+set xlabel offset 0,-1 'cell division per hour ' rotate parallel
 set xyplan 0
 set log x
 set log y
