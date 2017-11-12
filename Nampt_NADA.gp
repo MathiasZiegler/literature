@@ -42,7 +42,7 @@ set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set label 'C' font 'Arial, 9' at screen 0.0, screen 0.55
 set title 'NAD consumption flux with NNMT'
 
-splot 'NADA_10_10_0-NADA_0_10_10.txt' using ($6*3600):($9*1000):($8*1000)  with pm3d;
+splot 'simulations/NADA_10_10_0-NADA_0_10_10.txt' using ($6*3600):($9*1000):($8*1000)  with pm3d;
 
 
 
@@ -53,4 +53,4 @@ set origin 0.5, 0
 set label 'D' font 'Arial,9' at screen 0.5, screen 0.55
 set title 'NAD concentration with NNMT'
 
-splot 'NADA_10_10_0-NADA_0_10_10.txt' using ($6*3600):($9*1000):($7*1000)  with pm3d;
+splot 'simulations/NADA_10_10_0-NADA_0_10_10.txt' using ($6*3600):($9*1000):($7*1000)  with pm3d;
