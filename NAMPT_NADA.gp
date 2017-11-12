@@ -2,7 +2,7 @@ set terminal postscript eps color enhanced 'Arial' 12
 set output 'NAMPT_NADA_expr.eps'
 set multiplot
 
-set xlabel 'cell devision rate (per h)'
+set xlabel 'cell division rate (per h)'
 
 set log x
 set format x "%g
