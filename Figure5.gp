@@ -54,12 +54,12 @@ set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set label 'C' font 'Arial,9' at screen 0.0, screen 0.6
 
 
-set label "*" at 0.000003,0.1,0.72 tc rgb "black" font ",20" front
+set label "*" at 0.000003,0.1,0.65 tc rgb "black" font ",20" front
 splot 'simulations/NamPRTkmscan_10.txt' using 4:($6*3600):($8*1000)  with pm3d;
 unset label
 
 set size 0.3,0.3
-set label "*" at 0.000003,0.1,3.5 tc rgb "black" font ",20" front
+set label "*" at 0.000003,0.1,3.16 tc rgb "black" font ",20" front
 set origin 0.3, 0.35
 set label 'D' font 'Arial,9' at screen 0.3, screen 0.6
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
@@ -81,22 +81,24 @@ set xrange [0.01:1]
 set xlabel 'cell division rate per h' 
 set size 0.3,0.3
 set origin 0.0, 0.0
-set ylabel 'NAD-consumption flux ({/Symbol m}M/s)' 
+set ylabel offset 0,0 'NAD-consumption flux ({/Symbol m}M/s)' 
 set label  'E' font 'Arial,9' at screen 0.0, screen 0.3
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
-set title 'Nam import 0.5{/Symbol m}M/s'
-
-plot 'simulations/NampRTNNMT_celldev_0_100.txt' using ($6*3600):($8*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'simulations/NampRTNNMT_celldev_10_100.txt' using ($6*3600):($8*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3, 'simulations/NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($8*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2, 'simulations/NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($8*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2;
+set title 'Nam import 0.1{/Symbol m}M/s'
 
 
-set title 'simulations/Nam import 0.5{/Symbol m}M/s'
-set yrange [0:130]
+
+plot 'simulations/NampRTNNMT_celldev_0_0_100.txt' using ($6*3600):($8*1000) title '   NamPRT_{km}=5nM w/o NNMT' w lines lt rgb "#00AA00" lw 3, 'simulations/NampRTNNMT_celldev_0_10_100.txt' using ($6*3600):($8*1000) title 'NamPRT_{km}=5nM w/ NNMT' w lines  lt  rgb "#3333FF" lw 3, 'simulations/NampRTNNMT_celldev_km001_0_0_100.txt' using ($6*3600):($8*1000) title 'NamPRT_{km}=1{/Symbol m}M w/o NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2, 'simulations/NampRTNNMT_celldev_km001_0_10_100.txt' using ($6*3600):($8*1000) title 'NamPRT_{km}=1{/Symbol m}M w/ NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2;
+
+
+set title 'Nam import 0.1{/Symbol m}M/s'
+set yrange [0:40]
 
 set label  'F' font 'Arial,9' at screen 0.3, screen 0.3
 set size 0.3,0.3
 set origin 0.3, 0.0
 
-set ylabel 'Concentration of free NAD  in {/Symbol m}M'
+set ylabel   'Concentration of free NAD  in {/Symbol m}M'
 
-plot 'simulations/NampRTNNMT_celldev_0_100.txt' using ($6*3600):($7*1000) title 'km=5nM-NNMT' w lines lt rgb "#00AA00" lw 3, 'simulations/NampRTNNMT_celldev_10_100.txt' using ($6*3600):($7*1000) title 'km=5nM+NNMT' w lines  lt  rgb "#3333FF" lw 3,'simulations/NampRTNNMT_celldev_km0001_0_100.txt' using ($6*3600):($7*1000) title 'km=100nM-NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2, 'simulations/NampRTNNMT_celldev_km0001_10_100.txt' using ($6*3600):($7*1000) title 'km=100nM+NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2;
+plot 'simulations/NampRTNNMT_celldev_0_0_100.txt' using ($6*3600):($7*1000) title '   NamPRT_{km}=5nM w/o NNMT' w lines lt rgb "#00AA00" lw 3, 'simulations/NampRTNNMT_celldev_0_10_100.txt' using ($6*3600):($7*1000) title 'NamPRT_{km}=5nM w/ NNMT' w lines  lt  rgb "#3333FF" lw 3,'simulations/NampRTNNMT_celldev_km001_0_0_100.txt' using ($6*3600):($7*1000) title 'NamPRT_{km}=1{/Symbol m}M w/o NNMT' w lines  lt  rgb "#AAAAAA" lw 3 dt 2, 'simulations/NampRTNNMT_celldev_km001_0_10_100.txt' using ($6*3600):($7*1000) title 'NamPRT_{km}=1{/Symbol m}M w/ NNMT' w lines  lt  rgb "#3333AA" lw 3 dt 2;
 

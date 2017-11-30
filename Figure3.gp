@@ -18,7 +18,7 @@ set yrange [0.01:1]
 set label 'A' font 'Arial, 9' at screen 0.0, screen 0.95
 set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
 set ylabel offset 0,-1 'Nam import rate ({/Symbol m}M/s)' rotate parallel
-set zrange [0:4]
+set zrange [0:3.5]
 set title 'NAD consumption flux without NNMT'
 
 splot 'simulations/NADA_10_0_0-NADA_0_0_10.txt' using ($6*3600):($9*1000):($8*1000) with pm3d;
@@ -26,7 +26,7 @@ splot 'simulations/NADA_10_0_0-NADA_0_0_10.txt' using ($6*3600):($9*1000):($8*10
 
 set size 0.5,0.5
 set origin 0.5,0.5
-set zrange [0:1800]
+set zrange [0:700]
 set label 'B' font 'Arial,9' at screen 0.5, screen 0.95
 #set yrange [-0.001:0.08]
 set title 'NAD concentration without NNMT'
@@ -35,7 +35,7 @@ splot 'simulations/NADA_10_0_0-NADA_0_0_10.txt' using ($6*3600):($9*1000):($7*10
 
 set size 0.5,0.5
 set origin 0, 0
-set zrange [-0.5:2.5  ]
+set zrange [-0.1:2]
 
 
 set zlabel 'NAD-consumption flux ({/Symbol m}M/s)' rotate by 90
@@ -46,7 +46,7 @@ splot 'simulations/NADA_10_10_0-NADA_0_10_10.txt' using ($6*3600):($9*1000):($8*
 
 
 
-set zrange [-2:15]
+set zrange [-1:14]
 set zlabel 'Concentration of free NAD  in {/Symbol m}M' rotate by 90
 set size 0.5,0.5
 set origin 0.5, 0
