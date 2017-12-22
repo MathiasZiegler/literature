@@ -47,7 +47,7 @@ set title 'NAD consumption flux ({/Symbol m}M/s)'
 set ylabel 'Flux NAD consumption({/Symbol m}M/s)'
 set title 'NAD consumption flux ({/Symbol m}M/s)'
 
-plot 'simulations/NADANamPRTNNMT_Namimport_1_0_0.txt' using ($9*1000):($8*1000) title 'NADA only' w lines lc rgb "#AA0000" lt 1 , 'simulations/NADANamPRTNNMT_Namimport_10_10_0.txt' using ($9*1000):($8*1000) title 'NADA+NNMT' w lines lc rgb "#AA00AA" lt 1, 'simulations/NADANamPRTNNMT_Namimport_0_0_100.txt' using ($9*1000):($8*1000) title 'NamPRT only' w lines lc rgb "#00AA00" lt 1, 'simulations/NADANamPRTNNMT_Namimport_0_10_100.txt' using ($9*1000):($8*1000) title 'NamPRT+NNMT' w lines lc  "#3333FF" lt 1;
+plot 'simulations/NADANamPRTNNMT_Namimport_1_0_0.txt' using ($9*1000):($8*1000) title 'NADA only' w lines lc rgb "#AA0000" lt 1 , 'simulations/NADANamPRTNNMT_Namimport_1_10_0.txt' using ($9*1000):($8*1000) title 'NADA+NNMT' w lines lc rgb "#AA00AA" lt 1, 'simulations/NADANamPRTNNMT_Namimport_0_0_100.txt' using ($9*1000):($8*1000) title 'NamPRT only' w lines lc rgb "#00AA00" lt 1, 'simulations/NADANamPRTNNMT_Namimport_0_10_100.txt' using ($9*1000):($8*1000) title 'NamPRT+NNMT' w lines lc  "#3333FF" lt 1;
 
 set yrange [-1:120]
 
