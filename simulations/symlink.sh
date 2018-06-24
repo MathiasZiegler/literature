@@ -1,7 +1,8 @@
 #!/bin/bash
 # converts all symlinks from the current directory and below into real links
 for f in $(find . -type l) ; do
-    ft=$(dirname ${f})/$(readlink ${f})
+    ft=$(readlink ${f})
+    echo ${ft} | grep -q '^/' || ft=$(dirname ${f})/${ft}
     if [ -f ${ft} ] ; then
         mv ${f} ${f}.bak
         ln ${ft} ${f}
