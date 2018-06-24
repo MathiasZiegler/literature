@@ -41,7 +41,9 @@ muall2 = []
 with open('activity.csv') as f:
 	next(f)
 	next(f)
-	for _ in minorlabel1:
+	for i in range(len(minorlabel1)):
+		if i == 1:
+			continue
 		wtbuf = []
 		mubuf = []
 		for _ in range(3):
@@ -72,13 +74,13 @@ with open('activity.csv') as f:
 		wtall2.append(tuple(wtbuf))
 		muall2.append(tuple(mubuf))
 
-wtstd2[0] = 0 # disable error bar for first element in second subplot
+minorlabel1 = [minorlabel1[0], minorlabel1[2]]
 
 fig = plt.figure(figsize = (img_width, img_height))
 ax1 = fig.add_subplot(1,2,1) # numrows, numcols, fignum
 ax2 = fig.add_subplot(1,2,2) # numrows, numcols, fignum
 
-ind1 = np.arange(3)  # the x locations for the groups
+ind1 = np.arange(2)  # the x locations for the groups
 ind2 = np.arange(2)  # the x locations for the groups
 width = 0.33       # the width of the bars
 offset = width/2
@@ -94,7 +96,7 @@ ax1.legend((wt_bar1[0], mu_bar1[0]), majorlabel, loc='upper right', frameon=Fals
 ax2.legend((wt_bar2[0], mu_bar2[0]), majorlabel, loc='upper left', frameon=False)
 
 ax1.xaxis.grid(False)
-ax1.set_xlim(0, 3)
+ax1.set_xlim(0, 2)
 ax1.set_ylim(0, 11)
 ax1.set_xticks(ind1 + width + 0.165)
 ax1.set_xticklabels(minorlabel1)
@@ -115,7 +117,7 @@ ax2.yaxis.set_ticks_position('left')
 plt.tight_layout()
 
 
-print('T-test pvalues: Nam,PRPP,ATP')
+'''print('T-test pvalues: Nam,PRPP,ATP')
 print('mu 1 vs. mu 3', stats.ttest_ind(muall1[0], muall1[2]).pvalue)
 print('mu 1 vs. mu 2', stats.ttest_ind(muall1[0], muall1[1]).pvalue)
 print('mu 2 vs. mu 3', stats.ttest_ind(muall1[1], muall1[2]).pvalue)
@@ -124,7 +126,7 @@ print('wt 1 vs. wt 2', stats.ttest_ind(wtall1[0], wtall1[1]).pvalue)
 print('wt 2 vs. wt 3', stats.ttest_ind(wtall1[1], wtall1[2]).pvalue)
 
 print('mu 4 vs. mu 5', stats.ttest_ind(muall2[0], muall2[1]).pvalue)
-print('wt 4 vs. wt 5', stats.ttest_ind(wtall2[0], wtall2[1]).pvalue)
+print('wt 4 vs. wt 5', stats.ttest_ind(wtall2[0], wtall2[1]).pvalue)'''
 
 if len(sys.argv) > 1 and sys.argv[1].startswith('sh'):
 	plt.show()
