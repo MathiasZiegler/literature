@@ -1,5 +1,5 @@
 set terminal postscript eps color enhanced 'Arial' 10
-set output 'Figure6.eps'
+set output 'Figure5.eps'
 set multiplot
 set format x "%g"
 set format y "%g"
