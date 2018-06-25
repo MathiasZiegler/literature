@@ -18,10 +18,8 @@ plt.rc('ytick', labelsize=fs)  # fontsize of the tick labels
 plt.rc('legend', fontsize=fs)  # legend fontsize
 plt.rc('figure', titlesize=fs) # fontsize of the figure title
 
-#color = sns.color_palette("colorblind", n_colors=2)
-
 majorlabel = ('wt NamPRT', '$\Delta$42-51 NamPRT')
-minorlabel1 = ('Nam 1\nPRPP 1\nATP 0', '1\n0.1\n0', '0.1\n1\n0')
+minorlabel1 = ('Nam 1\nPRPP 1\nATP 0', '0.1\n1\n0')
 minorlabel2 = ('0.1\n0.1\n0', '0.1\n0.1\n1')
 
 wt1 = []
@@ -41,15 +39,13 @@ muall2 = []
 with open('activity.csv') as f:
 	next(f)
 	next(f)
-	for i in range(len(minorlabel1)):
-		if i == 1:
-			continue
+	for _ in minorlabel1:
 		wtbuf = []
 		mubuf = []
 		for _ in range(3):
 			d = next(f).rstrip().replace(',', '.').split('\t')
-			wtbuf.append(float(d[5]))
-			mubuf.append(float(d[6]))
+			wtbuf.append(float(d[7]))
+			mubuf.append(float(d[8]))
 		wt1.append(np.mean(wtbuf))
 		mu1.append(np.mean(mubuf))
 		wtstd1.append(np.std(wtbuf))
@@ -63,8 +59,8 @@ with open('activity.csv') as f:
 		mubuf = []
 		for _ in range(3):
 			d = next(f).rstrip().replace(',', '.').split('\t')
-			wtbuf.append(float(d[5]))
-			mubuf.append(float(d[6]))
+			wtbuf.append(float(d[7]))
+			mubuf.append(float(d[8]))
 		if rel is None:
 			rel = np.mean(wtbuf)
 		wt2.append(np.mean(wtbuf)/rel)
@@ -73,8 +69,6 @@ with open('activity.csv') as f:
 		mustd2.append(np.std(mubuf)/rel)
 		wtall2.append(tuple(wtbuf))
 		muall2.append(tuple(mubuf))
-
-minorlabel1 = [minorlabel1[0], minorlabel1[2]]
 
 fig = plt.figure(figsize = (img_width, img_height))
 ax1 = fig.add_subplot(1,2,1) # numrows, numcols, fignum
@@ -97,10 +91,9 @@ ax2.legend((wt_bar2[0], mu_bar2[0]), majorlabel, loc='upper left', frameon=False
 
 ax1.xaxis.grid(False)
 ax1.set_xlim(0, 2)
-ax1.set_ylim(0, 11)
+ax1.set_ylim(0, 0.03)
 ax1.set_xticks(ind1 + width + 0.165)
 ax1.set_xticklabels(minorlabel1)
-#ax1.set_ylabel('NMN (nmol/mg enzyme/min)')
 ax1.set_ylabel('kcat (1/s)')
 ax1.xaxis.set_ticks_position('bottom')
 ax1.yaxis.set_ticks_position('left')
@@ -117,16 +110,12 @@ ax2.yaxis.set_ticks_position('left')
 plt.tight_layout()
 
 
-'''print('T-test pvalues: Nam,PRPP,ATP')
-print('mu 1 vs. mu 3', stats.ttest_ind(muall1[0], muall1[2]).pvalue)
+print('T-test pvalues: Nam,PRPP,ATP')
 print('mu 1 vs. mu 2', stats.ttest_ind(muall1[0], muall1[1]).pvalue)
-print('mu 2 vs. mu 3', stats.ttest_ind(muall1[1], muall1[2]).pvalue)
-print('wt 1 vs. wt 3', stats.ttest_ind(wtall1[0], wtall1[2]).pvalue)
 print('wt 1 vs. wt 2', stats.ttest_ind(wtall1[0], wtall1[1]).pvalue)
-print('wt 2 vs. wt 3', stats.ttest_ind(wtall1[1], wtall1[2]).pvalue)
 
 print('mu 4 vs. mu 5', stats.ttest_ind(muall2[0], muall2[1]).pvalue)
-print('wt 4 vs. wt 5', stats.ttest_ind(wtall2[0], wtall2[1]).pvalue)'''
+print('wt 4 vs. wt 5', stats.ttest_ind(wtall2[0], wtall2[1]).pvalue)
 
 if len(sys.argv) > 1 and sys.argv[1].startswith('sh'):
 	plt.show()
