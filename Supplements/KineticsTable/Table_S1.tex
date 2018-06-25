@@ -1,0 +1,130 @@
+\documentclass[a4paper,10pt]{article} \usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{booktabs,colortbl,tabularx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{footmisc}
+\usepackage{breqn}
+\restylefloat{table}
+
+
+\usepackage[pdftex,bookmarks=false,
+pdftex,
+%linkcolor=black,
+linkcolor=blue,
+citecolor=blue,
+colorlinks=true,                %%% hyper-references for pdflatex
+urlcolor=blue]{hyperref}
+
+\begin{document}
+
+\section*{Supplementary Table 1}
+\addcontentsline{toc}{section}{Supplementary Table 1}
+\begin{longtable}{p{3cm}p{2cm}p{3cm}cc}
+\multicolumn{5}{l}{\textbf{Overview of kinetic constants used for the
+construction of the model.}} \cr\toprule
+  \cr\textbf{Enzyme} &
+  \textbf{EC\linebreak number}&
+  \textbf{Kinetic\linebreak parameter} &
+  \textbf{References} &
+  \textbf{Rate Law} \\
+\cr\hline
+\endfirsthead
+\multicolumn{5}{c}{Table 1 -- Continued}
+\cr\hline
+\cr\textbf{Enzyme} &
+ \textbf{EC\linebreak number}&
+  \textbf{Kinetic\linebreak parameter} &
+  \textbf{Reference} &
+  \textbf{Rate Law} \\
+\cr\hline
+\endhead
+NADA & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC3/5/1/19.html}{3.5.1.19} &$K_M$:9.6$\mu$M  & \cite{Smith2012} & Product inhibition\\
+& & $K_{iP}$:120$\mu$M  & & 
+    \\
+    & & $k_{cat}$:0.65$s^{-1}$  & & 
+    \\
+    \hline
+NADS & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC6/3/5/1.html}{6.3.5.1}
+&$K_M$:190$\mu$M  & \cite{Yi1972} & HMM\\
+    & & $k_{cat}$:21$s^{-1}$  & & 
+    \\  \hline
+NMNAT &
+\href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/7/7/1.html}{2.7.7.1}/\href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/7/7/18.html}{2.7.7.18}
+&$K_{M_{NaMN}}$:67.7$\mu$M  & \cite{Sorci2007}\footnote{Values for NMNAT1 used}
+& Substrate Competition\\
+    & & $k_{{cat}_{NaMN}}$:42.9$s^{-1}$  & & \\
+    & & $K_{M_{NMN}}$:22.3$\mu$M & & \\
+    & & $k_{{cat}_{NMN}}$:53.8$s^{-1}$  & & \\
+	& & $K_{M_{NMN}}$:59$\mu$M  & & \\
+    & & $k_{{cat}_{NAD}}$:129.1$s^{-1}$  &\cite{Berger2005}\footnote{Keq used
+    for calculation of turnover rate of reverse reaction} &
+    \\
+    & & $K_{M_{NaAD}}$:502$\mu$M  & & \\
+    & & $k_{{cat}_{NaAD}}$:103.8$s^{-1}$  &\cite{Berger2005}\footnote{Equilibrium constant used for calculation of turnover rate of reverse reaction} &
+    \\ \hline
+NMNT & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/1/1/1.html}{2.1.1.1}
+&$K_M$:400$\mu$M  & \cite{Aksoy1994} & Product inhibition\\
+& & $K_{iP}$:60$\mu$M  & & 
+    \\
+    & & $k_{cat}$:8.1$s^{-1}$  & \cite{Alston1988}& 
+    \\  \hline
+NamPRT & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC6/3/5/1.html}{6.3.5.1}
+&$K_M$:5nM  & \cite{Burgos2008} & HMM\\
+    & & $k_{cat}$:0.0077$s^{-1}$  & & 
+    \\  \hline
+    NAPRT &
+       \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/4/2/11.html}{2.4.2.11}
+    &$K_M$:23$\mu$M  & \cite{Hanna1983} & HMM\\
+    & & $k_{cat}$:3.3$s^{-1}$  & & 
+    \\  \hline
+    SIRT1 &
+    \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC3/5/1/index.html}{3.5.1.-}
+    &$K_M$:29$\mu$M  & \cite{Borra2004} & Product inhibition\\
+    & & $K_{iP}$:60$\mu$M  & & 
+    \\
+    & & $k_{cat}$:0.67$s^{-1}$  & & 
+    \\  \hline
+    NT5 &
+    \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC3/1/3/5.html}{3.1.3.5}
+    &$K_M$:100$\mu$M  & \cite{} & HMM \\
+    & & $k_{cat}$:1$s^{-1}$ 
+    & & \\  \hline   
+  \bottomrule
+  \label{tab:kinetic}
+\end{longtable}
+
+The total enzyme concentration was set to 10 for all enzymes if not mentioned
+otherwise. Concentration of potentiantial cosubstrate was assumed to be constant
+and considered to be not limitng the reaction and thus represented by the
+maximal velocities given.
+
+\subsection*{Kinetic Rate Laws}
+
+
+\subsubsection*{Product Inhibition}
+\begin{equation}
+v=\cfrac{E_T\cdot k_{cat}\cdot S}{K_M + S + \cfrac{K_M\cdot P}{K_{iP}} }
+\end{equation}
+
+
+\subsubsection*{Henry-Michaelis Menten for irreversible reactions (HMM)}
+\begin{equation}
+v=\frac{E_T\cdot k_{cat}\cdot S}{K_M + S}
+\end{equation}
+
+
+\subsubsection*{Substrate Competition at NMNAT}
+\begin{equation}
+v=E_T \cdot \cfrac{\cfrac{k_{{cat}_{A}}\cdot A \cdot
+B}{K_{{M}_A}}-\cfrac{k_{{cat}_{P}}\cdot P \cdot
+Q}{K_{{M}_P}}}{1+\cfrac{A}{K_{{M}_A}}+\cfrac{B}{K_{{M}_B}}+\cfrac{P}{K_{{M}_P}}+\cfrac{Q}{K_{{M}_Q}}}
+\end{equation}
+
+
+
+\bibliographystyle{plos2009}
+\bibliography{TableS1}
+\end{document}
