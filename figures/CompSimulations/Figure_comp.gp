@@ -45,7 +45,7 @@ set yrange [0:1]
 set ylabel 'flux NAD consumption ({/Symbol m}M/s)'
 set label 'C' font 'Arial, 16' at screen 0.0, screen 0.45
 set title 'without NNMT'
-set ylabel ' concentration of free NAD ({/Symbol m}M)'
+
 
 plot 'NamPRTkmscan_compNADANamPRT_10.txt' using 5:($7*1000000) title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, 'NamPRTkmscan_compNADANamPRT_10.txt' using 5:($6*1000000) title 'NamPRT+NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
 
