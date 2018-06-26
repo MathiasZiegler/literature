@@ -61,9 +61,9 @@ first_replacements = {
 hard_replacements = {
 	r'\newpage': '',
 	r'\S': '§',
-	r'\beta': 'β',
-	r'\mu': 'µ',
-	r'\Delta': 'Δ',
+	r'$\beta$': 'β',
+	r'$\mu$': 'µ',
+	r'$\Delta$': 'Δ',
 	r'\,': '&thinsp;'}
 
 for key in first_replacements:
@@ -177,6 +177,10 @@ for line in lines:
 			line = re.sub(r'\\url\{([^\}\{\\]+)\}', r'<a href="\1">\1</a>', line)
 		if r'\href' in line:
 			line = re.sub(r'\\href\{([^\}\{\\]+)\}\{([^\}\{\\]+)\}', r'<a href="\1">\2</a>', line)
+		if r'\textsuperscript' in line:
+			line = re.sub(r'\\textsuperscript\{([^\}]+)\}', r'<sup>\1</sup>', line)
+		if r'\textsubscript' in line:
+			line = re.sub(r'\\textsubscript\{([^\}]+)\}', r'<sub>\1</sub>', line)
 
 		counter += 1
 
