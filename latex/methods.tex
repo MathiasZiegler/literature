@@ -1,10 +1,11 @@
 %%% TeX-master: "manuscript"
+% !TeX spellcheck=en_GB
 
 \section{Experimental Procedure}
 
 \subsection{Dynamic modelling}
 
-Kinetic parameters (substrate affinity (Km) and turnover rates (kcat), substrate and product inhibitions) were retrieved from the enzyme database BRENDA and additionally evaluated by checking the original literature especially with respect to measurement conditions. Parameter values from mammals were used if available. For enzymes not present in mammals, values from yeast were used. The full list of kinetic parameters including reference to original literature can be found in Supplementary table 1. For NMNAT, the previously developed rate law for substrate competition was used \cite{Schauble2013}. Despite these modifications, Henri-Michaelis-Menten kinetics were used for all reactions except the import and efflux of Nam, which were simulated using constant flux and mass action kinetics, respectively. All simulations were performed using the steady state calculation and parameter scan options provided by COPASI 4.22 \cite{Hoops2006}. The model will be available at the Biomodels database accession number xxx\todo[author=Ines]{Insert number}. Related figures were generated using gnuplot\todo[author=Ines]{Version?}.
+Kinetic parameters (substrate affinity ($K_{M}$) and turnover rates ($k_{cat}$), substrate and product inhibitions) were retrieved from the enzyme database BRENDA and additionally evaluated by checking the original literature especially with respect to measurement conditions. Parameter values from mammals were used if available. For enzymes not present in mammals, values from yeast were used. The full list of kinetic parameters including reference to original literature can be found in Supplementary table 1. For NMNAT, the previously developed rate law for substrate competition was used \cite{Schauble2013}. Despite these modifications, Henri-Michaelis-Menten kinetics were used for all reactions except the import and efflux of Nam, which were simulated using constant flux and mass action kinetics, respectively. All simulations were performed using the steady state calculation and parameter scan options provided by COPASI 4.22 \cite{Hoops2006}. The model will be available at the Biomodels database accession number xxx\todo[author=Ines]{Insert number}. Related figures were generated using gnuplot\todo[author=Ines]{Version?}.
 
 
 \subsection{Phylogenetic Analysis}
@@ -14,7 +15,7 @@ NADA, NamPRT, and NNMT enzymes or enzyme candidates were identified using Blastp
 
 \subsection{Generation of expression vectors encoding encoding wild-type and mutant human NamPRT}
 
-For eukaryotic expression with a C-terminal FLAG-epitope, the open reading frame (ORF) encoding human NamPT was inserted into pFLAG-CMV-5a (Merck - Sigma Aldrich) via EcoRI/BamHI sites. Using a PCR-based approach, this vector provided the basis for the generation of a plasmid encoding a NamPT deletion mutant lacking amino acid residues 42-51 (NamPT-$\Delta$42-51). For prokaryotic expression with an N-terminal 6xHis-tag, the wild-type and mutant ORFs were inserted into pQE-30 (Qiagen) via BamHI and PstI-sites. All cloned sequences were verified by DNA sequence analysis.
+For eukaryotic expression with a C-terminal FLAG-epitope, the open reading frame (ORF) encoding human NamPRT was inserted into pFLAG-CMV-5a (Merck - Sigma Aldrich) via EcoRI/BamHI sites. Using a PCR-based approach, this vector provided the basis for the generation of a plasmid encoding a NamPRT deletion mutant lacking amino acid residues 42-51 (NamPRT-$\Delta$42-51). For prokaryotic expression with an N-terminal 6xHis-tag, the wild-type and mutant ORFs were inserted into pQE-30 (Qiagen) via BamHI and PstI-sites. All cloned sequences were verified by DNA sequence analysis.
 
 
 \subsection{Transient transfection, immunocytochemstry, and confocal laser scanning microscopy}
@@ -24,7 +25,7 @@ HeLa S3 cells cultivated in Ham’s F12 medium supplemented with 10\% (v/v) FCS,
 
 \subsection{Purification of NamPRT}
 
-The cells were harvested by centrifugation and resuspended in lysis buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 4\,mM dithiltheritol (DTT), 1\,mg/mL lysozyme, 1X Complete EDTA-free protease inhibitor cocktail (Roche)). After sonification, the lysate was centrifuged for 30\,min at 13000\,g, and the clear lysate was incubated with 2\,mL of Nickel-NTA resin (Qiagen). Non-specific protein binding was removed with washing buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 1\,mM DTT, 20\,mM imidazole). The protein was eluted with 2.5\,mL of elution buffer (20 mM\,Tris-HCl pH 8.0, 500\,mM NaCl, 300\,mM imidazole).
+The cells were harvested by centrifugation and resuspended in lysis buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 4\,mM dithiothreitol (DTT), 1\,mg/mL lysozyme, 1X Complete EDTA-free protease inhibitor cocktail (Roche)). After sonification, the lysate was centrifuged for 30\,min at 13000\,g, and the clear lysate was incubated with 2\,mL of Nickel-NTA resin (Qiagen). Non-specific protein binding was removed with washing buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 1\,mM DTT, 20\,mM imidazole). The protein was eluted with 2.5\,mL of elution buffer (20 mM\,Tris-HCl pH 8.0, 500\,mM NaCl, 300\,mM imidazole).
 
 The eluted protein was immediately subjected to size exclusion chromatography (SEC) on an ÄKTA pure system (GE Healthcare) and loaded onto a HiLoad 16/60 Superdex 200\,pg column (GE Healthcare), run at a flow rate of 1\,mL/min with SEC buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl). Fractions corresponding to the size of recombinant protein were pooled and used for enzymatic assay. The purity and size of the protein were assessed by SDS-PAGE.
 
@@ -36,7 +37,7 @@ The eluted protein was immediately subjected to size exclusion chromatography (S
 
 \subsection{Sample preparation and NMR spectroscopy}
 
-The samples were dried with an Eppendorf Vacufuge Concentrator, and then resuspended with 200\,µl of NMR buffer containing 5\% deuterated H2O (D2O) and 1\,mM 4,4-dimethyl-4-silapentane-1-sulfonate (DSS).
+The samples were dried with an Eppendorf Vacufuge Concentrator, and then resuspended with 200\,µl of NMR buffer containing 5\% deuterated H2O (D2O) and 1\,mM 4,4-dimethyl-4-silapentane-1-sulfonate (DSS).
 
 1D 1H NMR spectra were acquired on a 850\,MHz Ascend Bruker spectrometer equipped with 5\,mm TCI triple-resonance CryoProbe and a pulse field gradients along the z-axis. The experiments were acquired with zgesgppe pulse sequence, allowing water suppression using excitation sculpting with gradients and perfect echo. The temperature was kept constant at 300\,K and the acquisition parameters were the following: number of scans = 2000, relaxation delay = 1\,s, acquisition time = 1.6\,s, data points = 65K, and spectral width = 14\,ppm.
 
