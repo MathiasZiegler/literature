@@ -9,14 +9,40 @@ Kinetic parameters (substrate affinity (Km) and turnover rates (kcat), substrate
 
 \subsection{Phylogenetic Analysis}
 
-NADA, NamPRT, and NNMT enzymes or enzyme candidates were identified using Blastp with known enzymes against the NCBI non-redundant protein sequence database (nr). A list of functionally verified enzymes used as templates is given in supplementary table 2. This table also includes the length cut-offs for identified enzymes. The e-value cut-off was 1e-30 for all enzymes. Blastp parameters were set to yield maximum 20,000 target sequences, using the BLOSUM62 matrix with a word size of 6 and gap opening and extension costs of 11 and 1, respectively. Low-complexity filtering was disabled. Obvious sequence contaminations were removed by manual inspection of the results. The taxonomy IDs of the species for each enzyme was derived from the accession2taxonomy database provided by NCBI. Scripts for creating, analysing, and visualising the phylogenetic tree were written in Python, using the ETE3 toolkit (Huerta-Cepas, 2010).
+NADA, NamPRT, and NNMT enzymes or enzyme candidates were identified using Blastp with known enzymes against the NCBI non-redundant protein sequence database (nr). A list of functionally verified enzymes used as templates is given in supplementary table 2. This table also includes the length cut-offs for identified enzymes. The e-value cut-off was 1e-30 for all enzymes. Blastp parameters were set to yield maximum 20\,000 target sequences, using the BLOSUM62 matrix with a word size of 6 and gap opening and extension costs of 11 and 1, respectively. Low-complexity filtering was disabled. Obvious sequence contaminations were removed by manual inspection of the results. The taxonomy IDs of the species for each enzyme was derived from the accession2taxonomy database provided by NCBI. Scripts for creating, analysing, and visualising the phylogenetic tree were written in Python, using the ETE3 toolkit (Huerta-Cepas, 2010).
 
 
-\subsection{Generation of eukaryotic expression vectors encoding C-terminally FLAG-tagged NamPT proteins}
+\subsection{Generation of eukaryotic expression vectors encoding C-terminally FLAG-tagged NamPRT proteins}
 
 The open reading frame (ORF) encoding human NamPRT was inserted into pFLAG-CMV-5a (Merck - Sigma Aldrich) via EcoRI/BamHI sites. Using a PCR-based approach, this vector provided the basis for the generation of a plasmid encoding a NamPRT deletion mutant lacking amino acid residues 42-51 (NamPRT-$\Delta$42-51). The sequences of the inserted ORFs were verified by DNA sequence analysis.
 
 
-\subsection{Transient transfection, immunocytochemstry and confocal laser scanning microscopy}
+\subsection{Transient transfection, immunocytochemstry, and confocal laser scanning microscopy}
 
-HeLa S3 cells cultivated in Ham’s F12 medium supplemented with 10\% (v/v) FCS, 2 mM L-glutamine, and penicillin/streptomycin, were seeded on cover slips in a 24 well plate. After one day, cells were transfected using Effectene transfection reagent (Qiagen) according to the manufacturer’s recommendations. Cells were fixed with 4\% paraformaldehyde in PBS 24 hours post transfection, permeabilised (0.5\% (v/v) Triton X-100 in PBS) and blocked for one hour with complete culture medium. After overnight incubation with primary FLAG-antibody (mouse M2, Sigma-Aldrich) diluted 1:2500 in complete medium, cells were washed and incubated for one hour with secondary AlexaFluor 594-conjugated goat anti mouse antibody (ThermoFisher, Invitrogen) diluted 1:1000 in complete culture medium. Nuclei were stained with DAPI and the cells washed. The cover slips were mounted on microscope slides using ProLong Gold (ThermoFisher, Invitrogen). Confocal laser scan imaging of cells was performed using a Leica TCS SP8 STED 3x microscope equipped with a 100x oil immersion objective (numerical aperture 1.4).
+HeLa S3 cells cultivated in Ham’s F12 medium supplemented with 10\% (v/v) FCS, 2\,mM L-glutamine, and penicillin/streptomycin, were seeded on cover slips in a 24 well plate. After one day, cells were transfected using Effectene transfection reagent (Qiagen) according to the manufacturer’s recommendations. Cells were fixed with 4\% paraformaldehyde in PBS 24 hours post transfection, permeabilised (0.5\% (v/v) Triton X-100 in PBS) and blocked for one hour with complete culture medium. After overnight incubation with primary FLAG-antibody (mouse M2, Sigma-Aldrich) diluted 1:2500 in complete medium, cells were washed and incubated for one hour with secondary AlexaFluor 594-conjugated goat anti mouse antibody (ThermoFisher, Invitrogen) diluted 1:1000 in complete culture medium. Nuclei were stained with DAPI and the cells washed. The cover slips were mounted on microscope slides using ProLong Gold (ThermoFisher, Invitrogen). Confocal laser scan imaging of cells was performed using a Leica TCS SP8 STED 3x microscope equipped with a 100x oil immersion objective (numerical aperture 1.4).
+
+
+\subsection{Generation of bacterial expression vectors encoding mutated or wildtype NamPRT proteins}
+
+BL21-codonPlus (DE3) RIL cells were transformed with pQE-30 NamPRT WT/pREP4 or pQE-30 NamPRT $\Delta$42-51/pREP4. Bacterial cells were grown at 37\,°C in 250\,rpm shaking incubator in 1\,L of LB medium containing 100\,µg/mL ampicillin, 50\,µg/mL kanamycin, and 32\,µg/mL chloramphenicol. Protein expression was induced with 0.2\,mM isopropyl-$\beta$-D-thiogalactoside (IPTG) at an OD600 of 0.4 to 0.6. Induction was done overnight at 18\,\textdegree C in 250\,rpm shaking incubator.
+
+
+\subsection{Purification of NamPRT}
+
+The cells were harvested by centrifugation and resuspended in lysis buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 4\,mM dithiltheritol (DTT), 1\,mg/mL lysozyme, 1X Complete EDTA-free protease inhibitor cocktail (Roche)). After sonification, the lysate was centrifuged for 30\,min at 13000\,g, and the clear lysate was incubated with 2\,mL of Nickel-NTA resin (Qiagen). Non-specific protein binding was removed with washing buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 1\,mM DTT, 20\,mM imidazole). The protein was eluted with 2.5\,mL of elution buffer (20 mM\,Tris-HCl pH 8.0, 500\,mM NaCl, 300\,mM imidazole).
+
+The eluted protein was immediately subjected to size exclusion chromatography (SEC) on an ÄKTA pure system (GE Healthcare) and loaded onto a HiLoad 16/60 Superdex 200\,pg column (GE Healthcare), run at a flow rate of 1\,mL/min with SEC buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl). Fractions corresponding to the size of recombinant protein were pooled and used for enzymatic assay. The purity and size of the protein were assessed by SDS-PAGE.
+
+
+\subsection{Enzymatic Assay}
+
+2\,µM of enzyme were incubated with 5-phospho-D-ribose 1-diphosphate (PRPP, 0.1\,mM or 1\,mM) and nicotinamide (Nam, 0.1\,mM or 1\,mM) in reaction buffer (20\,mM Tris-HCl pH 8.0, 500\,mM NaCl, 2\,mM MgCl2, and 0.03\% BSA), in absence or presence of 1\,mM of adenosine triphosphate (ATP). The 1.2\,mL reaction was incubated for 10 minutes at 30\,°C and the enzymatic activity stopped with 0.1\,mM of FK866, the samples were frozen in liquid nitrogen.
+
+
+\subsection{Sample preparation and NMR spectroscopy}
+
+The samples were dried with an Eppendorf Vacufuge Concentrator, and then resuspended with 200\,µl of NMR buffer containing 5\% deuterated H2O (D2O) and 1\,mM 4,4-dimethyl-4-silapentane-1-sulfonate (DSS).
+
+1D 1H NMR spectra were acquired on a 850\,MHz Ascend Bruker spectrometer equipped with 5\,mm TCI triple-resonance CryoProbe and a pulse field gradients along the z-axis. The experiments were acquired with zgesgppe pulse sequence, allowing water suppression using excitation sculpting with gradients and perfect echo. The temperature was kept constant at 300\,K and the acquisition parameters were the following: number of scans = 2000, relaxation delay = 1\,s, acquisition time = 1.6\,s, data points = 65K, and spectral width = 14\,ppm.
+
+The spectra phase and baseline were automatically and manually corrected using TopSpin 3.5 software (Bruker Biospin). Quantification of nicotinamide mononucleotide (NMN) was done by the integration of the peak at 9.57\,ppm and DSS used as an internal standard.
