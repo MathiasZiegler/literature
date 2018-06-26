@@ -2,6 +2,8 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 \documentclass[paper=a4, 12pt]{scrartcl}
 
+\usepackage{graphicx}
+\usepackage[font=footnotesize]{caption}
 \usepackage[utf8]{inputenc}
 \usepackage[colorlinks=true,
 	linkcolor=black,
@@ -14,13 +16,16 @@
 
 \setlength{\marginparwidth}{4cm}
 
+\frenchspacing
+\graphicspath{ {../} }
+
 \begin{document}
 
 
 \noindent
 {\huge\sffamily\bfseries NamPRT and NNMT – key drivers of NAD-dependent signalling \par}
 
-\vspace{2cm}
+\vspace{15mm}
 
 \noindent
 Mathias Bockwoldt$^{1}$, Dorothée Houry$^{2}$,  Marc Niere$^{2}$, Toni I. Gossmann$^{3}$, Mathias Ziegler$^{2}$ and Ines Heiland$^{1,\S}$
@@ -63,6 +68,8 @@ We have used mathematical modelling approaches to resolve these counterintuitive
 \input{methods}
 
 \input{figurelegends}
+
+\input{supplementaries}
 
 \bibliographystyle{plain}
 \bibliography{library}
