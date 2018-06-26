@@ -147,10 +147,8 @@ for line in lines:
 
 	if r'_' in line:
 		line = re.sub(r'_\{([^\}]+)\}', r'<sub>\1</sub>', line)
-		line = re.sub(r'_(.)', r'<sub>\1</sub>', line)
 	if r'^' in line:
 		line = re.sub(r'\^\{([^\}]+)\}', r'<sup>\1</sup>', line)
-		line = re.sub(r'^(.)', r'<sup>\1</sup>', line)
 	if '$' in line:
 		line = re.sub(r'\$([^\$]+)\$', r'<i>\1</i>', line)
 	if r'\%' in line:
@@ -197,9 +195,9 @@ for i in range(len(out)):
 		out[i] = '<p>{}</p>'.format(out[i])
 	if 'LABEL' in out[i]:
 		for label in figure_labels:
-			out[i] = out[i].replace(label, 'fig. ' + figure_labels[label])
+			out[i] = out[i].replace(label, figure_labels[label])
 		for label in table_labels:
-			out[i] = out[i].replace(label, 'tab. ' + table_labels[label])
+			out[i] = out[i].replace(label, table_labels[label])
 
 open('/run/shm/manuscript.html', 'w').write('\n'.join(out))
 
