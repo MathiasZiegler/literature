@@ -12,19 +12,14 @@ Kinetic parameters (substrate affinity (Km) and turnover rates (kcat), substrate
 NADA, NamPRT, and NNMT enzymes or enzyme candidates were identified using Blastp with known enzymes against the NCBI non-redundant protein sequence database (nr). A list of functionally verified enzymes used as templates is given in supplementary table 2. This table also includes the length cut-offs for identified enzymes. The e-value cut-off was 1e-30 for all enzymes. Blastp parameters were set to yield maximum 20\,000 target sequences, using the BLOSUM62 matrix with a word size of 6 and gap opening and extension costs of 11 and 1, respectively. Low-complexity filtering was disabled. Obvious sequence contaminations were removed by manual inspection of the results. The taxonomy IDs of the species for each enzyme was derived from the accession2taxonomy database provided by NCBI. Scripts for creating, analysing, and visualising the phylogenetic tree were written in Python, using the ETE3 toolkit (Huerta-Cepas, 2010).
 
 
-\subsection{Generation of eukaryotic expression vectors encoding C-terminally FLAG-tagged NamPRT proteins}
+\subsection{Generation of expression vectors encoding encoding wild-type and mutant human NamPRT}
 
-The open reading frame (ORF) encoding human NamPRT was inserted into pFLAG-CMV-5a (Merck - Sigma Aldrich) via EcoRI/BamHI sites. Using a PCR-based approach, this vector provided the basis for the generation of a plasmid encoding a NamPRT deletion mutant lacking amino acid residues 42-51 (NamPRT-$\Delta$42-51). The sequences of the inserted ORFs were verified by DNA sequence analysis.
+For eukaryotic expression with a C-terminal FLAG-epitope, the open reading frame (ORF) encoding human NamPT was inserted into pFLAG-CMV-5a (Merck - Sigma Aldrich) via EcoRI/BamHI sites. Using a PCR-based approach, this vector provided the basis for the generation of a plasmid encoding a NamPT deletion mutant lacking amino acid residues 42-51 (NamPT-$\Delta$42-51). For prokaryotic expression with an N-terminal 6xHis-tag, the wild-type and mutant ORFs were inserted into pQE-30 (Qiagen) via BamHI and PstI-sites. All cloned sequences were verified by DNA sequence analysis.
 
 
 \subsection{Transient transfection, immunocytochemstry, and confocal laser scanning microscopy}
 
 HeLa S3 cells cultivated in Ham’s F12 medium supplemented with 10\% (v/v) FCS, 2\,mM L-glutamine, and penicillin/streptomycin, were seeded on cover slips in a 24 well plate. After one day, cells were transfected using Effectene transfection reagent (Qiagen) according to the manufacturer’s recommendations. Cells were fixed with 4\% paraformaldehyde in PBS 24 hours post transfection, permeabilised (0.5\% (v/v) Triton X-100 in PBS) and blocked for one hour with complete culture medium. After overnight incubation with primary FLAG-antibody (mouse M2, Sigma-Aldrich) diluted 1:2500 in complete medium, cells were washed and incubated for one hour with secondary AlexaFluor 594-conjugated goat anti mouse antibody (ThermoFisher, Invitrogen) diluted 1:1000 in complete culture medium. Nuclei were stained with DAPI and the cells washed. The cover slips were mounted on microscope slides using ProLong Gold (ThermoFisher, Invitrogen). Confocal laser scan imaging of cells was performed using a Leica TCS SP8 STED 3x microscope equipped with a 100x oil immersion objective (numerical aperture 1.4).
-
-
-\subsection{Generation of bacterial expression vectors encoding mutated or wildtype NamPRT proteins}
-
-BL21-codonPlus (DE3) RIL cells were transformed with pQE-30 NamPRT WT/pREP4 or pQE-30 NamPRT $\Delta$42-51/pREP4. Bacterial cells were grown at 37\,°C in 250\,rpm shaking incubator in 1\,L of LB medium containing 100\,µg/mL ampicillin, 50\,µg/mL kanamycin, and 32\,µg/mL chloramphenicol. Protein expression was induced with 0.2\,mM isopropyl-$\beta$-D-thiogalactoside (IPTG) at an OD600 of 0.4 to 0.6. Induction was done overnight at 18\,\textdegree C in 250\,rpm shaking incubator.
 
 
 \subsection{Purification of NamPRT}

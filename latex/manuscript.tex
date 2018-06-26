@@ -2,6 +2,8 @@
 \RequirePackage[l2tabu, orthodox]{nag}
 \documentclass[paper=a4, 12pt]{scrartcl}
 
+\usepackage{graphicx}
+\usepackage[font=footnotesize]{caption}
 \usepackage[utf8]{inputenc}
 \usepackage[colorlinks=true,
 	linkcolor=black,
@@ -14,13 +16,16 @@
 
 \setlength{\marginparwidth}{4cm}
 
+\frenchspacing
+\graphicspath{ {../} }
+
 \begin{document}
 
 
 \noindent
 {\huge\sffamily\bfseries NamPRT and NNMT – key drivers of NAD-dependent signalling \par}
 
-\vspace{2cm}
+\vspace{15mm}
 
 \noindent
 Mathias Bockwoldt$^{1}$, Dorothée Houry$^{2}$,  Marc Niere$^{2}$, Toni I. Gossmann$^{3}$, Mathias Ziegler$^{2}$ and Ines Heiland$^{1,\S}$
@@ -31,12 +36,10 @@ Mathias Bockwoldt$^{1}$, Dorothée Houry$^{2}$,  Marc Niere$^{2}$, Toni I. Gossm
 $^{1}$Department of Arctic and Marine Biology, UiT The Arctic University of Norway, Biologibygget, Framstredet 39, 9017 Tromsø, Norway
 
 \noindent
-$^{2}$Department of Molecular Biology, University of Bergen, Thormøhlensgt. 55
-5020 Bergen, Norway
+$^{2}$Department of Molecular Biology, University of Bergen, Thormøhlensgt. 55, 5020 Bergen, Norway
 
 \noindent
-$^{3}$Department of Animal and Plant Sciences, Western Bank, University of Sheffield
-Sheffield, S10 2TN, United Kingdom
+$^{3}$Department of Animal and Plant Sciences, Western Bank, University of Sheffield, Sheffield, S10 2TN, United Kingdom
 
 \noindent
 § Corresponding author: ines.heiland@uit.no
@@ -63,6 +66,8 @@ We have used mathematical modelling approaches to resolve these counterintuitive
 \input{methods}
 
 \input{figurelegends}
+
+\input{supplementaries}
 
 \bibliographystyle{plain}
 \bibliography{library}
