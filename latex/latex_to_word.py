@@ -83,7 +83,7 @@ table_labels = {}
 figure_counter = 1
 table_counter = 1
 
-lines_to_skip = [r'\noindent', r'\vspace', r'\centering']
+lines_to_skip = [r'\noindent', r'\vspace', r'\centering', r'\bibliography']
 
 lines = iter(tex.split('\n'))
 
@@ -94,7 +94,7 @@ for line in lines:
 			active = True
 		continue
 
-	if line.startswith(r'\bibliography'):
+	if line.startswith(r'\end{document}'):
 		break
 
 	has_comment = re_comment.search(line)
