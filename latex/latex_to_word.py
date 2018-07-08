@@ -162,6 +162,8 @@ for line in lines:
 			line = re.sub(r'\\textbf\{([^\}\{\\]+)\}', r'<b>\1</b>', line)
 		if r'\textit' in line:
 			line = re.sub(r'\\textit\{([^\}\{\\]+)\}', r'<i>\1</i>', line)
+		if r'\textsc' in line:
+			line = re.sub(r'\\textsc\{([^\}\{\\]+)\}', lambda match: match.group(1).upper(), line)
 		if r'\todo' in line:
 			line = re.sub(r'\\todo\{([^\}\{\\]+)\}', r'<span class="todo">\1</span>', line)
 			line = re.sub(r'\\todo\[author=([^\]\{\\]+)\]\{([^\}\{\\]+)\}', r'<span class="todo"><i>\1</i>: \2</span>', line)
