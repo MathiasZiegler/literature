@@ -1,4 +1,4 @@
-(NADA[1]).ET	(NAMPT[0]).ET	(NAMPT[1]).ET	(NNMT[0]).ET	Values[Km NamPRT]	(SIRT[0]).Flux	(SIRT[1]).Flux	[NAD{Host}]	[NAD{Pathogen}]	Values[Nam transporter].InitialValue	Values[cell devision all].InitialValue	(Nam uptake).v
+(NADA[1]).ET	(NAMPT[0]).ET	(NAMPT[1]).ET	(NNMT[0]).ET	Values[Km NamPRT]	(SIRT[0]).Flux	(SIRT[1]).Flux	[NAD{Host}]	[NAD{Pathogen}]	Values[Nam transporter].InitialValue	Values[cell division all].InitialValue	(Nam uptake).v
 100	100	0	0	1e-07	7.68717e-07	6.54532e-07	0.00384761	10.8848	100	1e-05	0.0001
 100	100	0	0	1.09648e-07	7.687e-07	6.54532e-07	0.00384752	10.8848	100	1e-05	0.0001
 100	100	0	0	1.20226e-07	7.68682e-07	6.54532e-07	0.00384741	10.8848	100	1e-05	0.0001
