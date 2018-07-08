@@ -1,4 +1,4 @@
-set terminal postscript eps color enhanced 'Arial' 10
+set terminal postscript eps size 10cm,4cm enhanced color font 'Arial,12'
 set output 'Figure5.eps'
 set multiplot
 set format x "%g"
@@ -6,39 +6,36 @@ set format y "%g"
 set view 60,15
 set parametric
 
-set xlabel offset 0,-1  'K_m NamPRT (mM)'
-set ylabel offset 1,-1.2 'K_m NNMT (mM)'rotate parallel
+set xlabel offset 0,-1.5  'K_{M} NamPRT ({/Symbol m}M)' #rotate parallel
+set ylabel offset 1,-1.5 'K_{M} NNMT ({/Symbol m}M)' rotate parallel
 
+set xtics offset 0,-0.3
+set ytics offset 0,0
+set ztics offset 1,0
 
-
-#set size 1, 1
-set key font "Arial, 10"
 set pm3d
-set yrange[0.001:1]
-set xrange[1e-07:0.001]
-#set logscale xy
+set yrange[1:1000]
+set xrange[0.0001:1]
+set logscale xy
 set xyplan 0
 unset key
-#unset clabel
-set logscale xy
 set grid x, y, z
-set size 0.5,0.5
-set origin 0.0,0.5
+set size 0.5, 1
 
-set label "*" at 3e-06,0.4,0.65 tc rgb "black" font ",20" front
+
+set label "{/Symbol \052}" at 0.003,400,0.65 tc rgb "black" font "Arial,18" front
+set origin 0.0, 0.0
 set title "NAD consumption ({/Symbol m}M/s)"
-set label 'A' font 'Arial, 16' at screen 0.0, screen 0.9
+set label 'A' font 'Arial, 16' at screen 0.01, screen 0.95
 
-splot 'simulations/kmscanNNMTNamPRT.txt' using 4:5:($8*1000)  with pm3d;
+splot 'simulations/kmscanNNMTNamPRT.txt' using ($4*1000):($5*1000):($8*1000)  with pm3d;
 
 unset label
 
-set label "*" at 0.000003,0.4,3.2 tc rgb "black" font ",20" front
-
-set size 0.5,0.5
-set origin 0.5,0.5
-set label 'B' font 'Arial,16' at screen 0.5, screen 0.9
+set label "{/Symbol \052}" at 0.003,400,3.2 tc rgb "black" font "Arial,18" front
+set origin 0.5, 0.0
+set label 'B' font 'Arial,16' at screen 0.51, screen 0.95
 set title "NAD concentration ({/Symbol m}M)"
 
-splot 'simulations/kmscanNNMTNamPRT.txt' using 4:5:($7*1000)  with pm3d
+splot 'simulations/kmscanNNMTNamPRT.txt' using ($4*1000):($5*1000):($7*1000)  with pm3d
 
