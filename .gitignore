@@ -6,6 +6,7 @@
 *.eps
 *~
 
-figures_as_document.pdf
 manuscript.pdf
 manuscript.docx
+fix_library.py
+latex_to_word.py
