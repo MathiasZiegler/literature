@@ -33,8 +33,8 @@ title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
 title 'NamPRT' w lines lc rgb "#00AA00" lt 1 lw 2;
 
 
-set xlabel 'K_{M} NamPRT (mM)'
-set xrange[1e-07:0.001]
+set xlabel 'K_{M} NamPRT ({/Symbol m}M)'
+set xrange[0.0001:1]
 set title 'with NNMT'
 
 
@@ -43,9 +43,9 @@ set yrange [0:1]
 set ylabel 'NAD consump. flux ({/Symbol m}M/s)'
 set label 'C' font 'Arial, 16' at screen 0.0, screen 0.47
 
-plot 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using 5:($7*1000000) \
+plot 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($7*1000000) \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
-'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using 5:($6*1000000) \
+'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($6*1000000) \
 title 'NamPRT and NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
 
 
@@ -54,8 +54,8 @@ set yrange [0:5]
 set ylabel 'free NAD conc. ({/Symbol m}M)'
 set label 'D' font 'Arial,16' at screen 0.5, screen 0.47
 
-plot 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using 5:($9*1000) \
+plot 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($9*1000) \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
-'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using 5:($8*1000) \
+'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($8*1000) \
 title 'NamPRT and NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
 
