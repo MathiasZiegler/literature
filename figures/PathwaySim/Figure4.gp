@@ -94,7 +94,7 @@ title 'NamPRT K_{M} = 5 nM' w lines lt rgb "#00AA00" lw 3, \
 'simulations/NampRTNNMT_celldev_0_10_100.txt' using ($6*3600):($8*1000) \
 title 'NamPRT K_{M} = 5 nM + NNMT' w lines lt rgb "#3333FF" lw 3, \
 'simulations/NampRTNNMT_celldev_km001_0_0_100.txt' using ($6*3600):($8*1000) \
-title 'NamPRT K_{M} = 1 {/Symbol m}M' w lines lt rgb "#AAAAAA" lw 3 dt 2, \
+title 'NamPRT K_{M} = 1 {/Symbol m}M' w lines lt rgb "#777777" lw 3 dt 2, \
 'simulations/NampRTNNMT_celldev_km001_0_10_100.txt' using ($6*3600):($8*1000) \
 title 'NamPRT K_{M} = 1 {/Symbol m}M + NNMT' w lines lt rgb "#3333AA" lw 3 dt 2;
 
@@ -110,6 +110,6 @@ title 'NamPRT K_{M} = 5 nM' w lines lt rgb "#00AA00" lw 3, \
 'simulations/NampRTNNMT_celldev_0_10_100.txt' using ($6*3600):($7*1000) \
 title 'NamPRT K_{M} = 5 nM + NNMT' w lines lt rgb "#3333FF" lw 3, \
 'simulations/NampRTNNMT_celldev_km001_0_0_100.txt' using ($6*3600):($7*1000) \
-title 'NamPRT K_{M} = 1 {/Symbol m}M' w lines lt rgb "#AAAAAA" lw 3 dt 2, \
+title 'NamPRT K_{M} = 1 {/Symbol m}M' w lines lt rgb "#777777" lw 3 dt 2, \
 'simulations/NampRTNNMT_celldev_km001_0_10_100.txt' using ($6*3600):($7*1000) \
 title 'NamPRT K_{M} = 1 {/Symbol m}M + NNMT' w lines lt rgb "#3333AA" lw 3 dt 2;
