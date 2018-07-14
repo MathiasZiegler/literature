@@ -91,7 +91,7 @@ ax2.legend((wt_bar2[0], mu_bar2[0]), majorlabel, loc='upper left', frameon=False
 
 ax1.xaxis.grid(False)
 ax1.set_xlim(0, 2)
-ax1.set_ylim(0, 0.03)
+ax1.set_ylim(0, 0.014)
 ax1.set_xticks(ind1 + width + 0.165)
 ax1.set_xticklabels(minorlabel1)
 ax1.set_ylabel('kcat (1/s)')
@@ -100,7 +100,7 @@ ax1.yaxis.set_ticks_position('left')
 
 ax2.xaxis.grid(False)
 ax2.set_xlim(0, 2)
-ax2.set_ylim(0, 3)
+ax2.set_ylim(0, 2.5)
 ax2.set_xticks(ind2 + width + 0.165)
 ax2.set_xticklabels(minorlabel2)
 ax2.set_ylabel('kcat (rel. to mean WT w/o ATP)')
