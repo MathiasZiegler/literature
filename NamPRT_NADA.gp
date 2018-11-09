@@ -1,5 +1,5 @@
 set terminal postscript eps color enhanced 'Arial' 12
-set output 'NAMPT_NADA_expr.eps'
+set output 'NamPRT_NADA_expr.eps'
 set multiplot
 
 set xlabel 'cell division rate (per h)'

@@ -1,5 +1,5 @@
 set terminal postscript eps color enhanced 'Arial' 10
-set output 'NamptNNMTkm_woANC.eps'
+set output 'NamPRTNNMTkm_woANC.eps'
 set multiplot
 set format x "%g"
 set format y "%g"
