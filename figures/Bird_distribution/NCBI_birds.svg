@@ -13,7 +13,7 @@
    version="1.2"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="birds.svg">
+   sodipodi:docname="NCBI_birds.svg">
   <metadata
      id="metadata6966">
     <rdf:RDF>
@@ -36,12 +36,12 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1027"
+     inkscape:window-height="1174"
      id="namedview6964"
      showgrid="false"
      inkscape:zoom="0.95353537"
-     inkscape:cx="357.80973"
-     inkscape:cy="428.11499"
+     inkscape:cx="190.53749"
+     inkscape:cy="426.01753"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -7654,7 +7654,7 @@
      font-weight="400"
      font-style="normal"
      id="text6922"
-     style="font-style:normal;font-weight:400;font-size:8.15927505px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPRT</text>
+     style="font-style:normal;font-weight:400;font-size:8.15927505px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPT</text>
   <text
      xml:space="preserve"
      x="83.240295"
@@ -7672,5 +7672,5 @@
      font-weight="400"
      font-style="normal"
      id="text6938"
-     style="font-style:normal;font-weight:400;font-size:8.15927505px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPRT + NNMT</text>
+     style="font-style:normal;font-weight:400;font-size:8.15927505px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPT + NNMT</text>
 </svg>

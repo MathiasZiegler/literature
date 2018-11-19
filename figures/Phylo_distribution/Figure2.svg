@@ -19,7 +19,7 @@
    sodipodi:docname="Figure2.svg"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -30,13 +30,13 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1027"
+     inkscape:window-height="1147"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="0.5"
-     inkscape:cx="159.54744"
-     inkscape:cy="647.89696"
-     inkscape:window-x="0"
+     inkscape:cx="660.54744"
+     inkscape:cy="603.89696"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10"
@@ -988,14 +988,14 @@
          sodipodi:linespacing="125%"
          id="text4915-3"
          y="-225.6683"
-         x="865.44879"
+         x="879.15582"
          style="font-style:normal;font-weight:normal;font-size:28px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:22px"
            y="-225.6683"
-           x="865.44879"
+           x="879.15582"
            id="tspan4917-6"
-           sodipodi:role="line">NamPRT</tspan></text>
+           sodipodi:role="line">NamPT</tspan></text>
 <text
          transform="scale(1,-1)"
          sodipodi:linespacing="125%"
@@ -1014,14 +1014,14 @@
          sodipodi:linespacing="125%"
          id="text4915-35"
          y="-155.2654"
-         x="769.92926"
+         x="783.63629"
          style="font-style:normal;font-weight:normal;font-size:28px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:22px"
            y="-155.2654"
-           x="769.92926"
+           x="783.63629"
            id="tspan4917-62"
-           sodipodi:role="line">NADA + NamPRT</tspan></text>
+           sodipodi:role="line">NADA + NamPT</tspan></text>
 <text
          transform="scale(1,-1)"
          sodipodi:linespacing="125%"
@@ -1040,40 +1040,40 @@
          sodipodi:linespacing="125%"
          id="text4915-2"
          y="-84.862495"
-         x="767.65192"
+         x="781.35895"
          style="font-style:normal;font-weight:normal;font-size:28px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:22px"
            y="-84.862495"
-           x="767.65192"
+           x="781.35895"
            id="tspan4917-7"
-           sodipodi:role="line">NamPRT + NNMT</tspan></text>
+           sodipodi:role="line">NamPT + NNMT</tspan></text>
 <text
          transform="scale(1,-1)"
          sodipodi:linespacing="125%"
          id="text4915-0"
          y="-49.661041"
-         x="672.13239"
+         x="685.83942"
          style="font-style:normal;font-weight:normal;font-size:28px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="font-size:22px"
            y="-49.661041"
-           x="672.13239"
+           x="685.83942"
            id="tspan4917-9"
-           sodipodi:role="line">NADA + NamPRT + NNMT</tspan></text>
+           sodipodi:role="line">NADA + NamPT + NNMT</tspan></text>
 </g><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:28px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="14.996822"
+       x="9.0763378"
        y="-1046.3168"
        id="text5064"
        sodipodi:linespacing="125%"
        transform="scale(1,-1)"><tspan
          sodipodi:role="line"
          id="tspan5066"
-         x="14.996822"
+         x="9.0763378"
          y="-1046.3168"
-         style="font-size:40px">A</tspan></text>
+         style="font-size:40px">a</tspan></text>
 <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:28px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -1086,7 +1086,7 @@
          id="tspan5070"
          x="9.0763378"
          y="-673.70337"
-         style="font-size:40px">B</tspan></text>
+         style="font-size:40px">b</tspan></text>
 <g
        transform="matrix(0.8,0,0,-0.8,-78.830151,1369.7504)"
        id="g4836"><path

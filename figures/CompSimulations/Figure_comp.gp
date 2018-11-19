@@ -14,26 +14,26 @@ set title 'without NNMT'
 set origin 0.0,0.5
 set yrange [0:1]
 set ylabel 'NAD consump. flux ({/Symbol m}M/s)'
-set label 'A' font 'Arial, 16' at screen 0.0, screen 0.97
+set label 'a' font 'Arial, 16' at screen 0.0, screen 0.97
 
 plot 'celldevscan_compNADANamPRT_0.txt' using ($10*3600):($6*1000000) \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
 'celldevscan_compNADANamPRT_0.txt' using ($10*3600):($5*1000000) \
-title 'NamPRT' w lines lc rgb "#00AA00" lt 1 lw 2;
+title 'NamPT' w lines lc rgb "#00AA00" lt 1 lw 2;
 
 
 set origin 0.5,0.5
 set yrange [-1:40]
 set ylabel 'free NAD conc. (mM)'
-set label 'B' font 'Arial, 16' at screen 0.5, screen 0.97
+set label 'b' font 'Arial, 16' at screen 0.5, screen 0.97
 
 plot 'celldevscan_compNADANamPRT_0.txt' using ($10*3600):8 \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
 'celldevscan_compNADANamPRT_0.txt' using ($10*3600):7 \
-title 'NamPRT' w lines lc rgb "#00AA00" lt 1 lw 2;
+title 'NamPT' w lines lc rgb "#00AA00" lt 1 lw 2;
 
 
-set xlabel 'K_{M} NamPRT ({/Symbol m}M)'
+set xlabel 'K_{M} NamPT ({/Symbol m}M)'
 set xrange[0.0001:1]
 set title 'with NNMT'
 
@@ -41,21 +41,21 @@ set title 'with NNMT'
 set origin 0.0,0.0
 set yrange [0:1]
 set ylabel 'NAD consump. flux ({/Symbol m}M/s)'
-set label 'C' font 'Arial, 16' at screen 0.0, screen 0.47
+set label 'c' font 'Arial, 16' at screen 0.0, screen 0.47
 
 plot 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($7*1000000) \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($6*1000000) \
-title 'NamPRT and NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
+title 'NamPT and NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
 
 
 set origin 0.5,0.0
 set yrange [0:5]
 set ylabel 'free NAD conc. ({/Symbol m}M)'
-set label 'D' font 'Arial,16' at screen 0.5, screen 0.47
+set label 'd' font 'Arial,16' at screen 0.5, screen 0.47
 
 plot 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($9*1000) \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
 'NamPRTkmscan_compNADANamPRT_10_fixed.txt' using ($5*1000):($8*1000) \
-title 'NamPRT and NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
+title 'NamPT and NNMT' w lines lc rgb "#3333FF" lt 1 lw 2;
 

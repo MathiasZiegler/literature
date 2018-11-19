@@ -6,7 +6,7 @@ set format y "%g"
 set view 60,15
 set parametric
 
-set xlabel offset 0,-1.5  'K_{M} NamPRT ({/Symbol m}M)' #rotate parallel
+set xlabel offset 0,-1.5  'K_{M} NamPT ({/Symbol m}M)' #rotate parallel
 set ylabel offset 1,-1.5 'K_{M} NNMT ({/Symbol m}M)' rotate parallel
 
 set xtics offset 0,-0.3
@@ -26,7 +26,7 @@ set size 0.5, 1
 set label "{/Symbol \052}" at 0.003,400,0.65 tc rgb "black" font "Arial,18" front
 set origin 0.0, 0.0
 set title "NAD consumption ({/Symbol m}M/s)"
-set label 'A' font 'Arial, 16' at screen 0.01, screen 0.95
+set label 'a' font 'Arial, 16' at screen 0.01, screen 0.95
 
 splot 'simulations/kmscanNNMTNamPRT.txt' using ($4*1000):($5*1000):($8*1000)  with pm3d;
 
@@ -34,7 +34,7 @@ unset label
 
 set label "{/Symbol \052}" at 0.003,400,3.2 tc rgb "black" font "Arial,18" front
 set origin 0.5, 0.0
-set label 'B' font 'Arial,16' at screen 0.51, screen 0.95
+set label 'b' font 'Arial,16' at screen 0.51, screen 0.95
 set title "NAD concentration ({/Symbol m}M)"
 
 splot 'simulations/kmscanNNMTNamPRT.txt' using ($4*1000):($5*1000):($7*1000)  with pm3d
