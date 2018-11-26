@@ -13,7 +13,7 @@
    version="1.2"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="PrumBirdTree.svg">
+   sodipodi:docname="Prum2015_birds.svg">
   <metadata
      id="metadata2914">
     <rdf:RDF>
@@ -35,13 +35,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="847"
+     inkscape:window-width="1920"
+     inkscape:window-height="1174"
      id="namedview2912"
      showgrid="false"
-     inkscape:zoom="0.20389731"
-     inkscape:cx="484.14316"
-     inkscape:cy="751.8061"
+     inkscape:zoom="0.28835434"
+     inkscape:cx="263.2415"
+     inkscape:cy="1309.4363"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -3880,7 +3880,7 @@
      font-weight="400"
      font-style="normal"
      id="text2870"
-     style="font-style:normal;font-weight:400;font-size:35.90362549px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPRT</text>
+     style="font-style:normal;font-weight:400;font-size:35.90362549px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPT</text>
   <path
      vector-effect="non-scaling-stroke"
      d="m 90.976388,61.144843 c 0,15.8631 -12.85982,28.7229 -28.7229,28.7229 -15.86323,0 -28.7229,-12.8598 -28.7229,-28.7229 0,-15.8632 12.85967,-28.7229 28.7229,-28.7229 15.86308,0 28.7229,12.8597 28.7229,28.7229"
@@ -3895,5 +3895,5 @@
      font-weight="400"
      font-style="normal"
      id="text2886"
-     style="font-style:normal;font-weight:400;font-size:35.90362549px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPRT + NNMT</text>
+     style="font-style:normal;font-weight:400;font-size:35.90362549px;font-family:Verdana;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">NamPT + NNMT</text>
 </svg>
