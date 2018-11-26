@@ -1,0 +1,34 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=3cm]{geometry}
+\usepackage{booktabs}
+\usepackage{textcomp}
+
+\begin{document}
+
+We performed all-atom molecular dynamics simulations with explicit solvent for NamPT (PDB Code: 2H3D \cite{Wang2006}) with and without loop insertion. We used the AMBER99SB-ILDN force field \cite{Lindorff-Larsen2010} with the TIP3P water model \cite{Jorgensen1983} in GROMACS 5.1.2 \cite{Abraham2015}. The structures were simulated each in a box of water with distance between the solute and the box set to 0.2\,nm at a temperature of 300\,K for a total time of 1\,\textmu s. A time step of 2\,fs and the stochastic dynamics integrator were used. For the evaluation of the root mean square fluctuations (RMSF) the first 100\,ns of the simulations were omitted.
+ 
+\begin{table}
+ \caption{Root mean square deviation (RMSD) values between different structures (in \AA). The alignment and RMSD calculation was done with PyMOL\cite{PyMOL}. The structures are 2H3D (human NAMPT) \cite{Wang2006}, 3DGR (human NAMPT$\cdot$AMPcP complex) \cite{Burgos2009}, 3DHD (human NAMPT$\cdot$NMN$\cdot$Mg$_2$PPi complex) \cite{Burgos2009}, 3DHF (human BeF$_{3^-}$-NAMPT$\cdot$NMN$\cdot$Mg$_2$PPi complex) \cite{Burgos2009}, 3DKJ (human NAMPT$\cdot$PRPP$\cdot$BzAM complex) \cite{Burgos2009}, and 3DKL (human BeF$_{3^-}$-NAMPT$\cdot$Mg$_2$PRPP$\cdot$BzAM complex) \cite{Burgos2009}. The structural resolution of the PDB structures ranges from 1.8\,\AA~to 2.1\,\AA.}
+ \begin{tabular}{l|cccccc}
+  \toprule
+  %\hline
+  PDB Code & 2H3D & 3DGR & 3DHD & 3DHF & 3DKJ & 3DKL \\ 
+  \midrule
+  %\hline
+  2H3D & - & 0.95 & 0.85 & 0.86 & 0.88 & 0.88 \\
+  %\hline
+  3DGR &   &  -   & 0.61 & 0.61 & 0.55 & 0.57 \\
+  %\hlineM
+  3DHD &   &      &  -   & 0.43 & 0.40 & 0.43 \\
+  %\hline
+  3DHF &   &      &      &  -   & 0.42 & 0.33 \\
+  %\hline
+  3DKJ &   &      &      &      &  -   & 0.39 \\
+  %\hline
+  3DKL &   &      &      &      &      &  -   \\
+  %\hline
+ \bottomrule
+ \end{tabular}
+\end{table}
+\end{document}
