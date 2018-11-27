@@ -41,3 +41,7 @@ The samples were dried with an Eppendorf Vacufuge Concentrator, and then resuspe
 1D 1H NMR spectra were acquired on a 850\,MHz Ascend Bruker spectrometer equipped with 5\,mm TCI triple-resonance CryoProbe and a pulse field gradients along the z-axis. The experiments were acquired with the zgesgppe pulse sequence, allowing water suppression using excitation sculpting with gradients and perfect echo. The temperature was kept constant at 300\,K and the acquisition was started with 2000 scans, 1\,s relaxation delay, 1.6\,s acquisition time, 65\,000 data points, and a spectral width of 14\,ppm.
 
 The spectra phase and baseline were automatically and manually corrected using TopSpin 3.5 software (Bruker Biospin). Quantification of nicotinamide mononucleotide (NMN) was done by the integration of the peak at 9.52\,ppm and DSS used as an internal standard.
+
+
+\subsection{Molecular dynamics simulations}
+We performed all-atom molecular dynamics simulations with explicit solvent for NamPT (PDB Code: 2H3D \cite{Wang2006}) with and without loop insertion. We used the AMBER99SB-ILDN force field \cite{Lindorff-Larsen2010} with the TIP3P water model \cite{Jorgensen1983} in GROMACS 5.1.2 \cite{Abraham2015}. The structures were simulated each in a box of water with distance between the solute and the box set to 0.2\,nm at a temperature of 300\,K for a total time of 1\,\textmu s. A time step of 2\,fs and the stochastic dynamics integrator were used. For the evaluation of the root mean square fluctuations (RMSF) the first 100\,ns of the simulations were omitted.
