@@ -23,7 +23,7 @@ urlcolor=blue]{hyperref}
 
 \section*{Supplementary Table 2}
 \setcounter{table}{1}
-\begin{longtable}{p{2cm}p{2cm}p{2cm}cc}
+\begin{longtable}{p{1.5cm}p{1.5cm}p{2.5cm}cc}
 \multicolumn{5}{l}{\textbf{Overview of kinetic constants used for the
 construction of the model.}} \cr\toprule
   \cr\textbf{Enzyme} &
@@ -53,10 +53,10 @@ NADS & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC6/3/5/1.html}{6.3.5.1}
     & & $k_{cat}$:21$s^{-1}$  & &
     \\  \hline
 NMNAT &
-\href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/7/7/1.html}{2.7.7.1}/\href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/7/7/18.html}{2.7.7.18}
+\href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/7/7/1.html}{2.7.7.1}  
 &$K_{M_{NaMN}}$:67.7$\mu$M  & \cite{Sorci2007}\footnote{Values for NMNAT1 used}
 & Substrate Competition\\
-    & & $k_{{cat}_{NaMN}}$:42.9$s^{-1}$  & & \\
+&  \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/7/7/18.html}{2.7.7.18}   & $k_{{cat}_{NaMN}}$:42.9$s^{-1}$  & & \\
     & & $K_{M_{NMN}}$:22.3$\mu$M & & \\
     & & $k_{{cat}_{NMN}}$:53.8$s^{-1}$  & & \\
 	& & $K_{M_{NMN}}$:59$\mu$M  & & \\
@@ -73,8 +73,10 @@ NMNT & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/1/1/1.html}{2.1.1.1}
     & & $k_{cat}$:8.1$s^{-1}$  & \cite{Alston1988}&
     \\  \hline
 NamPT & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC6/3/5/1.html}{6.3.5.1}
-&$K_M$:5nM  & \cite{Burgos2008} & HMM\\
+&$K_M$:5nM  & \cite{Burgos2008} & Competitive inhibition\\
     & & $k_{cat}$:0.0077$s^{-1}$  & &
+    \\
+     & & $K_{i_{NAD}}$:  2.1$\mu$M& &
     \\  \hline
     NAPRT &
        \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC2/4/2/11.html}{2.4.2.11}
@@ -107,14 +109,12 @@ NamPT & \href{http://www.chem.qmul.ac.uk/iubmb/enzyme/EC6/3/5/1.html}{6.3.5.1}
     & & $k_{cat}$:0.23$s^{-1}$
     & & \\  \hline
   \bottomrule
-   \caption{The total enzyme concentration was set to 10 for all enzymes except NamPT and NMNAT, for which the concentration was set to 100. Concentration of potential co-substrate was assumed to be constant and not-limiting for the reaction. Thus they were implicitly represented by the
-maximal velocities given in the table.}
   \label{tab:kinetic}
 
 \end{longtable}
 
-
-
+\subsection*{Amount of enzymes and import rates}
+The total enzyme concentration was set to 10 for all enzymes except NamPT and NMNAT, for which the concentration was set to 100. Concentration of potential co-substrate was assumed to be constant and not-limiting for the reaction. Thus being implicitly represented by turnover rates measured at saturating conditions for the cosubstrate. Nam import rates for iport into the system was set to 0.1 $\mu$M/ls for all simulations. For the two compartment simulation compartmentsize was equal to ... for both compartments. The Nam import rates were set to 100/s for both compartments. The amount of NADA present was set to 100. Thus equal to the amount of NamPT used.
 
 \subsection*{Kinetic Rate Laws}
 
@@ -122,6 +122,11 @@ maximal velocities given in the table.}
 \subsubsection*{Product Inhibition}
 \begin{equation}
 v=\cfrac{E_T\cdot k_{cat}\cdot S}{K_M + S + \cfrac{K_M\cdot P}{K_{iP}} }
+\end{equation}
+
+\subsubsection*{Competitive Inhibition}
+\begin{equation}
+v=\cfrac{E_T\cdot k_{cat}\cdot S}{K_M + S + \cfrac{K_M\cdot I}{K_{iI}} }
 \end{equation}
 
 
