@@ -1,0 +1,33 @@
+% !TeX spellcheck=en_GB
+
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[paper=a4, 12pt]{scrartcl}
+
+\usepackage{graphicx}
+\usepackage[font=footnotesize]{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	urlcolor=black]{hyperref}
+\usepackage{textcomp}
+\usepackage[left=1cm,right=5cm,top=2cm,bottom=2cm,nohead,nofoot]{geometry}
+\usepackage[textsize=scriptsize]{todonotes}
+
+\setlength{\marginparwidth}{4cm}
+
+\frenchspacing
+\graphicspath{ {../} }
+
+\begin{document}
+
+\input{figurelegends}
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{library}
+
+
+\end{document}
