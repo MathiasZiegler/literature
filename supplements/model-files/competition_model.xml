@@ -1,0 +1,4099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by COPASI version 4.25 (Build 198) on 2018-12-12 14:31 with libSBML version 5.17.0. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1" level="3" version="1" layout:required="false" render:required="false">
+  <model metaid="COPASI0" id="New_Model" name="NAD Phylogeny" substanceUnits="substance" timeUnits="time" volumeUnits="volume" areaUnits="area" lengthUnits="length" extentUnits="substance">
+    <annotation>
+      <COPASI xmlns="http://www.copasi.org/static/sbml">
+        <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+          <rdf:Description rdf:about="#COPASI0">
+            <dcterms:created>
+              <rdf:Description>
+                <dcterms:W3CDTF>2011-03-18T13:29:02Z</dcterms:W3CDTF>
+              </rdf:Description>
+            </dcterms:created>
+            <dcterms:creator>
+              <rdf:Description>
+                <vCard:N>
+                  <rdf:Description>
+                    <vCard:Family>Heiland</vCard:Family>
+                    <vCard:Given>Ines</vCard:Given>
+                  </rdf:Description>
+                </vCard:N>
+                <vCard:ORG>
+                  <rdf:Description>
+                    <vCard:Orgname>UiT Arctic University of Norway</vCard:Orgname>
+                  </rdf:Description>
+                </vCard:ORG>
+              </rdf:Description>
+            </dcterms:creator>
+          </rdf:Description>
+        </rdf:RDF>
+      </COPASI>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#COPASI0">
+          <dcterms:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Heiland</vCard:Family>
+                  <vCard:Given>Ines</vCard:Given>
+                </vCard:N>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>UiT Arctic University of Norway</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dcterms:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2011-03-18T13:29:02Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2011-03-18T13:29:02Z</dcterms:W3CDTF>
+          </dcterms:modified>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfFunctionDefinitions>
+      <functionDefinition metaid="COPASI118" id="TwosubstratesMMs2constant" name="TwosubstratesMMs2constant">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI118">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T13:32:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> E_T </ci>
+            </bvar>
+            <bvar>
+              <ci> turnover </ci>
+            </bvar>
+            <bvar>
+              <ci> s1 </ci>
+            </bvar>
+            <bvar>
+              <ci> s2 </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> Km </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> s1 </ci>
+                <ci> s2 </ci>
+                <ci> scaling </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km </ci>
+                <ci> s1 </ci>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI119" id="Constant_flux__irreversible" name="Constant flux (irreversible)">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI119">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-08-21T19:04:50Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> v </ci>
+            </bvar>
+            <ci> v </ci>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI120" id="Product_inhibition_two_susbtrates_s2_const_scaling" name="Product inhibition two susbtrates s2 const scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI120">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T09:06:55Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> ET </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> Kcat </ci>
+            </bvar>
+            <bvar>
+              <ci> S1 </ci>
+            </bvar>
+            <bvar>
+              <ci> S2 </ci>
+            </bvar>
+            <bvar>
+              <ci> Km </ci>
+            </bvar>
+            <bvar>
+              <ci> I </ci>
+            </bvar>
+            <bvar>
+              <ci> Ki </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> S1 </ci>
+                <ci> S2 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <plus/>
+                  <ci> Km </ci>
+                  <ci> S1 </ci>
+                </apply>
+                <apply>
+                  <plus/>
+                  <cn> 1 </cn>
+                  <apply>
+                    <divide/>
+                    <ci> I </ci>
+                    <ci> Ki </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI121" id="Competitie_inhibition_two_substrates_s2_const_scaling" name="Competitie inhibition two substrates s2 const scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI121">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T15:28:34Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> E_T </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> kcat_A </ci>
+            </bvar>
+            <bvar>
+              <ci> A </ci>
+            </bvar>
+            <bvar>
+              <ci> Km_A </ci>
+            </bvar>
+            <bvar>
+              <ci> kcat_PA </ci>
+            </bvar>
+            <bvar>
+              <ci> PA </ci>
+            </bvar>
+            <bvar>
+              <ci> Km_PA </ci>
+            </bvar>
+            <bvar>
+              <ci> B </ci>
+            </bvar>
+            <bvar>
+              <ci> Km_B </ci>
+            </bvar>
+            <bvar>
+              <ci> PB </ci>
+            </bvar>
+            <bvar>
+              <ci> Km_PB </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> E_T </ci>
+                <ci> scaling </ci>
+                <apply>
+                  <minus/>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> kcat_A </ci>
+                      <ci> A </ci>
+                    </apply>
+                    <ci> Km_A </ci>
+                  </apply>
+                  <apply>
+                    <divide/>
+                    <apply>
+                      <times/>
+                      <ci> kcat_PA </ci>
+                      <ci> PA </ci>
+                    </apply>
+                    <ci> Km_PA </ci>
+                  </apply>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <cn> 1 </cn>
+                <apply>
+                  <divide/>
+                  <ci> A </ci>
+                  <ci> Km_A </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> B </ci>
+                  <ci> Km_B </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> PA </ci>
+                  <ci> Km_PA </ci>
+                </apply>
+                <apply>
+                  <divide/>
+                  <ci> PB </ci>
+                  <ci> Km_PB </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI122" id="Competitive_inhibition_scaling" name="Competitive inhibition scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI122">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:04:09Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> ET </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> Kcat </ci>
+            </bvar>
+            <bvar>
+              <ci> S </ci>
+            </bvar>
+            <bvar>
+              <ci> Km </ci>
+            </bvar>
+            <bvar>
+              <ci> I </ci>
+            </bvar>
+            <bvar>
+              <ci> Ki </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> S </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km </ci>
+                <ci> S </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> Km </ci>
+                    <ci> I </ci>
+                  </apply>
+                  <ci> Ki </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI123" id="Product_inhibition_scaling" name="Product inhibition scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI123">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:04:09Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> ET </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> Kcat </ci>
+            </bvar>
+            <bvar>
+              <ci> S </ci>
+            </bvar>
+            <bvar>
+              <ci> Km </ci>
+            </bvar>
+            <bvar>
+              <ci> I </ci>
+            </bvar>
+            <bvar>
+              <ci> Ki </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> S </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km </ci>
+                <ci> S </ci>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <ci> Km </ci>
+                    <ci> I </ci>
+                  </apply>
+                  <ci> Ki </ci>
+                </apply>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+      <functionDefinition metaid="COPASI124" id="MM_with_ET_and_scaling" name="MM with ET and scaling">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI124">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T16:42:14Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <lambda>
+            <bvar>
+              <ci> ET </ci>
+            </bvar>
+            <bvar>
+              <ci> scaling </ci>
+            </bvar>
+            <bvar>
+              <ci> kcat </ci>
+            </bvar>
+            <bvar>
+              <ci> S </ci>
+            </bvar>
+            <bvar>
+              <ci> Km </ci>
+            </bvar>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> S </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km </ci>
+                <ci> S </ci>
+              </apply>
+            </apply>
+          </lambda>
+        </math>
+      </functionDefinition>
+    </listOfFunctionDefinitions>
+    <listOfUnitDefinitions>
+      <unitDefinition id="length" name="length">
+        <listOfUnits>
+          <unit kind="metre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="area" name="area">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="volume" name="volume">
+        <listOfUnits>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="time" name="time">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="substance" name="substance">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment metaid="COPASI1" id="Copartment_NamPT" name="Copartment_NamPT" spatialDimensions="3" size="0.001" units="volume" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI1">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-24T15:46:49Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </compartment>
+      <compartment metaid="COPASI2" id="Compartment_NADA" name="Compartment_NADA" spatialDimensions="3" size="0.001" units="volume" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI2">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-24T15:46:49Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </compartment>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="COPASI3" id="Gln_Copartment_NamPT" name="Gln" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI3">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:57Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI4" id="DNA_damage_Copartment_NamPT" name="DNA_damage" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI4">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-18T13:28:17Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI5" id="DNA_ADPR_Copartment_NamPT" name="DNA_ADPR" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI5">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-18T13:28:17Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI6" id="NADbound_Copartment_NamPT" name="NADbound" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI6">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2017-11-13T15:14:14Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI7" id="H3_ac_Copartment_NamPT" name="H3_ac" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI7">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:46:50Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI8" id="H3_deac_Copartment_NamPT" name="H3_deac" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI8">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:46:50Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI9" id="Glu_Copartment_NamPT" name="Glu" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI9">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:54Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI10" id="NR_Copartment_NamPT" name="NR" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI10">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-23T10:36:27Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI11" id="Pi_Copartment_NamPT" name="Pi" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI11">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:36:42Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI12" id="NAR_copy_Copartment_NamPT" name="NAR_copy" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI12">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T13:51:59Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI13" id="NAM_copy_Copartment_NamPT" name="NAM_copy" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI13">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:00:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI14" id="NaAD_Copartment_NamPT" name="NaAD" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI14">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI15" id="_1_methyl_NAM_Copartment_NamPT" name="1-methyl-NAM" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI15">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:45:07Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI16" id="H2O_Copartment_NamPT" name="H2O" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI16">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:52Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI17" id="PPi_Copartment_NamPT" name="PPi" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI17">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:26Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI18" id="AMP_Copartment_NamPT" name="AMP" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI18">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI19" id="NMN_Copartment_NamPT" name="NMN" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI19">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T09:28:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI20" id="NA_Copartment_NamPT" name="NA" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI20">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:48Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI21" id="NaMN_Copartment_NamPT" name="NaMN" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI21">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:44:57Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI22" id="ADP_Copartment_NamPT" name="ADP" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI22">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:45:06Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI23" id="SAM_Copartment_NamPT" name="SAM" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI23">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:44Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI24" id="SAH_Copartment_NamPT" name="SAH" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI24">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:45:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI25" id="NAM_Copartment_NamPT" name="NAM" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI25">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:00:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI26" id="NAD_Copartment_NamPT" name="NAD" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI26">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:28Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI27" id="NAR_Copartment_NamPT" name="NAR" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI27">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T13:51:59Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI28" id="PRPP_Copartment_NamPT" name="PRPP" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI28">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:38Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI29" id="ATP_Copartment_NamPT" name="ATP" compartment="Copartment_NamPT" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI29">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:59Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI30" id="Gln_Compartment_NADA" name="Gln" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI30">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:57Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI31" id="DNA_damage_Compartment_NADA" name="DNA_damage" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI31">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-18T13:28:17Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI32" id="DNA_ADPR_Compartment_NADA" name="DNA_ADPR" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI32">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-18T13:28:17Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI33" id="NADbound_Compartment_NADA" name="NADbound" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI33">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2017-11-13T15:14:15Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI34" id="H3_ac_Compartment_NADA" name="H3_ac" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI34">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:46:50Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI35" id="H3_deac_Compartment_NADA" name="H3_deac" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI35">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:46:50Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI36" id="Glu_Compartment_NADA" name="Glu" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI36">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:54Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI37" id="NR_Compartment_NADA" name="NR" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI37">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-23T10:36:27Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI38" id="Pi_Compartment_NADA" name="Pi" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI38">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:36:42Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI39" id="NAR_copy_Compartment_NADA" name="NAR_copy" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI39">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T13:51:59Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI40" id="NAM_copy_Compartment_NADA" name="NAM_copy" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI40">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:00:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI41" id="NaAD_Compartment_NADA" name="NaAD" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI41">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI42" id="_1_methyl_NAM_Compartment_NADA" name="1-methyl-NAM" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI42">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:45:07Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI43" id="H2O_Compartment_NADA" name="H2O" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI43">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:52Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI44" id="PPi_Compartment_NADA" name="PPi" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI44">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:26Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI45" id="AMP_Compartment_NADA" name="AMP" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI45">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI46" id="NMN_Compartment_NADA" name="NMN" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI46">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T09:28:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI47" id="NA_Compartment_NADA" name="NA" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI47">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:48Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI48" id="NaMN_Compartment_NADA" name="NaMN" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI48">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:44:57Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI49" id="ADP_Compartment_NADA" name="ADP" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI49">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:45:06Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI50" id="SAM_Compartment_NADA" name="SAM" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI50">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:44Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI51" id="SAH_Compartment_NADA" name="SAH" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI51">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:45:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI52" id="NAM_Compartment_NADA" name="NAM" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI52">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:00:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI53" id="NAD_Compartment_NADA" name="NAD" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI53">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:28Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI54" id="NAR_Compartment_NADA" name="NAR" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI54">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T13:51:59Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI55" id="PRPP_Compartment_NADA" name="PRPP" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI55">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:02:38Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI56" id="ATP_Compartment_NADA" name="ATP" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI56">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T15:01:59Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+      <species metaid="COPASI57" id="Nam_ex" name="Nam_ex" compartment="Compartment_NADA" substanceUnits="substance" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI57">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2017-11-13T15:23:20Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter metaid="COPASI58" id="scaling" name="scaling" value="0.001" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI58">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:42:49Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI59" id="celldivision_compartment_NamPT" name="celldivision_compartment_NamPT" value="2.8e-05" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI59">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-12-14T13:12:34Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI60" id="celldivision_compartment_NADA" name="celldivision_compartment_NADA" value="2.8e-05" constant="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI60">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-12-14T13:12:34Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI61" id="Nam_transporter" name="Nam transporter" value="100" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI61">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2017-11-13T16:06:18Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI62" id="Km_NamPT" name="Km NamPT" value="5e-06" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI62">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-06-08T18:44:46Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI63" id="Kcat_NamPT" name="Kcat NamPT" value="0.0077" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI63">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-06-08T18:44:16Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter metaid="COPASI64" id="cell_devision_all" name="cell devision all" value="2.8e-05" constant="true">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI64">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2018-06-14T14:31:03Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+      </parameter>
+      <parameter id="ModelValue_8_0" name="Initial for cell devision all" value="2.8e-05" constant="true">
+        <annotation>
+          <initialValue xmlns="http://copasi.org/initialValue" parent="cell_devision_all"/>
+        </annotation>
+      </parameter>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <initialAssignment symbol="ModelValue_8_0">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> cell_devision_all </ci>
+        </math>
+      </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule variable="celldivision_compartment_NamPT">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> ModelValue_8_0 </ci>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="celldivision_compartment_NADA">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> ModelValue_8_0 </ci>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction metaid="COPASI65" id="NMN_efflux_0" name="NMN-efflux[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI65">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NamPT </ci>
+              <ci> NMN_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI66" id="NAPRT_0" name="NAPRT[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI66">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:6224784"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T13:35:20Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.4.2.11"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI66">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.4.2.11"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/6224784"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NA_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="PRPP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NaMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="ADP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="PPi_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NA_Copartment_NamPT </ci>
+                <ci> ATP_Copartment_NamPT </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="3.3"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="0.00015"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI67" id="NMNAT1_NMN_0" name="NMNAT1-NMN[0]" reversible="true" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI67">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T09:33:17Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="PPi_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NaMN_Copartment_NamPT"/>
+          <modifierSpeciesReference species="NaAD_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> Competitie_inhibition_two_substrates_s2_const_scaling </ci>
+                <ci> E_T </ci>
+                <ci> scaling </ci>
+                <ci> kcat_A </ci>
+                <ci> NMN_Copartment_NamPT </ci>
+                <ci> Km_A </ci>
+                <ci> kcat_PA </ci>
+                <ci> NAD_Copartment_NamPT </ci>
+                <ci> Km_PA </ci>
+                <ci> NaMN_Copartment_NamPT </ci>
+                <ci> Km_B </ci>
+                <ci> NaAD_Copartment_NamPT </ci>
+                <ci> Km_PB </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="100"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat_A" name="kcat_A" value="53.8"/>
+            <localParameter id="Km_A" name="Km_A" value="0.0223"/>
+            <localParameter id="kcat_PA" name="kcat_PA" value="129.1"/>
+            <localParameter id="Km_PA" name="Km_PA" value="0.059"/>
+            <localParameter id="Km_B" name="Km_B" value="0.0677"/>
+            <localParameter id="Km_PB" name="Km_PB" value="0.502"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI68" id="NMNAT1_NaMN_0" name="NMNAT1-NaMN[0]" reversible="true" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI68">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>values used</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Keq</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T14:33:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1"/>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI68">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.18"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/16118205"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/17402747"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/0003-9861(67)90262-7"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NaMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NaAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NMN_Copartment_NamPT"/>
+          <modifierSpeciesReference species="NAD_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> Competitie_inhibition_two_substrates_s2_const_scaling </ci>
+                <ci> E_T </ci>
+                <ci> scaling </ci>
+                <ci> kcat_A </ci>
+                <ci> NaMN_Copartment_NamPT </ci>
+                <ci> Km_A </ci>
+                <ci> kcat_PA </ci>
+                <ci> NaAD_Copartment_NamPT </ci>
+                <ci> Km_PA </ci>
+                <ci> NMN_Copartment_NamPT </ci>
+                <ci> Km_B </ci>
+                <ci> NAD_Copartment_NamPT </ci>
+                <ci> Km_PB </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="100"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat_A" name="kcat_A" value="42.9"/>
+            <localParameter id="Km_A" name="Km_A" value="0.0677"/>
+            <localParameter id="kcat_PA" name="kcat_PA" value="103.8"/>
+            <localParameter id="Km_PA" name="Km_PA" value="0.502"/>
+            <localParameter id="Km_B" name="Km_B" value="22.3"/>
+            <localParameter id="Km_PB" name="Km_PB" value="0.059"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI69" id="NADS_0" name="NADS[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI69">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:4340699"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T14:36:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:6.3.5.1"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI69">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/6.3.5.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/4340699"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NaAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="Gln_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Glu_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="PPi_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="AMP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NaAD_Copartment_NamPT </ci>
+                <ci> ATP_Copartment_NamPT </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="21"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="0.19"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI70" id="NT5_NMN_0" name="NT5-NMN[0]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>KM and Kcat for CN-III</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI70">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T15:21:48Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI70">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NMN_Copartment_NamPT </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="0.5"/>
+            <localParameter id="Km" name="Km" value="5"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI71" id="PNP_NR_0" name="PNP-NR[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI71">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>original work calf Km and kcat calculated with MW of 92kDa</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-23T10:54:08Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI71">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/S0163-7258(00)00097-8"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="Pi_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NAR_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NR_Copartment_NamPT </ci>
+                <ci> Pi_Copartment_NamPT </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="40"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="1.48"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI72" id="NNMT_0" name="NNMT[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI72">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km from recombinant human enzyme, similar to mouse Km</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:8182091"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>turnover calculated from enzyme 1300 fold purified from porcine liver, Km=0.83</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:2963591"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T14:29:45Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:brenda:441255"/>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.1.1.1"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI72">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/brenda/441255"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.1.1.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/8182091"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/2963591"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="SAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="_1_methyl_NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="SAH_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> Product_inhibition_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> NAM_Copartment_NamPT </ci>
+                <ci> Km </ci>
+                <ci> _1_methyl_NAM_Copartment_NamPT </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="0"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Kcat" name="Kcat" value="8.1"/>
+            <localParameter id="Km" name="Km" value="0.4"/>
+            <localParameter id="Ki" name="Ki" value="0.06"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI73" id="Nam_efflux_0" name="Nam-efflux[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI73">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NamPT </ci>
+              <ci> NAM_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI74" id="NT5_NaMN_0" name="NT5-NaMN[0]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Km and Kcat from CN-II</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI74">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T09:44:57Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI74">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NaMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NaMN_Copartment_NamPT </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="2.8"/>
+            <localParameter id="Km" name="Km" value="3.5"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI75" id="SIRT_0" name="SIRT[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI75">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:44:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI75">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1021/bi049592e"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="H3_ac_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="H3_deac_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> Product_inhibition_two_susbtrates_s2_const_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> NAD_Copartment_NamPT </ci>
+                <ci> H3_ac_Copartment_NamPT </ci>
+                <ci> Km </ci>
+                <ci> NAM_Copartment_NamPT </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Kcat" name="Kcat" value="0.67"/>
+            <localParameter id="Km" name="Km" value="0.029"/>
+            <localParameter id="Ki" name="Ki" value="0.06"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI76" id="NAD_consumption_without_Nam_inhibition_0" name="NAD-consumption without Nam inhibition[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI76">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-24T14:33:30Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NAD_Copartment_NamPT </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="0"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="1"/>
+            <localParameter id="Km" name="Km" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI77" id="NADA_0" name="NADA[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI77">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km 0.033 and Kcat 8.5</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:3036844"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>used values</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:22229411"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T13:29:56Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:isPartOf rdf:resource="urn:miriam:ec-code:3.5.1.19"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI77">
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.5.1.19"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/22229411"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/3036844"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NA_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> Product_inhibition_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> NAM_Copartment_NamPT </ci>
+                <ci> Km </ci>
+                <ci> NA_Copartment_NamPT </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="0"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Kcat" name="Kcat" value="0.69"/>
+            <localParameter id="Km" name="Km" value="0.009"/>
+            <localParameter id="Ki" name="Ki" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI78" id="NAM_import_0" name="NAM import[0]" reversible="true" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>cell size HeLa 3e-12 l
+fibro blast 1e-12l
+
+maximal E. coli uptake NA http://www.jbc.org/content/248/14/5144.full.pdf 630 molceules per cell and s 
+
+thus approx. 1 miktoM/ls
+
+ HeLa (epithelial; 8.2 ± 0.3 fmol/10 min), 
+NIH-3T3 cells : The apparent Km of NAD transport was ∼190 μM while the Vmax was 429 pmol/well/10 min. 
+http://www.jbc.org/content/283/10/6367.full  
+
+(1.2e6 cells per well according to thermo fisher cell culture specifications)
+
+thus approx. 0.2 mikroM/s
+
+15mg uptake per 60kg body = 2.5e-8 mmol/ls</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI78">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="Nam_ex" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> Nam_transporter </ci>
+                  <ci> Nam_ex </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Nam_transporter </ci>
+                  <ci> NAM_Copartment_NamPT </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI79" id="NAMPT_0" name="NAMPT[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI79">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T08:19:58Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="PRPP_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="Pi_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NAD_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> Competitive_inhibition_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat_NamPT </ci>
+                <ci> NAM_Copartment_NamPT </ci>
+                <ci> Km_NamPT </ci>
+                <ci> NAD_Copartment_NamPT </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="100"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Ki" name="Ki" value="0.0021"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI80" id="NAR_efflux_0" name="NAR-efflux[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI80">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NamPT </ci>
+              <ci> NAR_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI81" id="NA_efflux_0" name="NA-efflux[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI81">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NA_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NamPT </ci>
+              <ci> NA_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI82" id="NAD_binding_0" name="NAD-binding[0]" reversible="true" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI82">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-12-09T15:18:22Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NADbound_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> NAD_Copartment_NamPT </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> NADbound_Copartment_NamPT </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k1" name="k1" value="1"/>
+            <localParameter id="k2" name="k2" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI83" id="NRK1_NaMN_0" name="NRK1-NaMN[0]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol for NMN</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI83">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-09-30T10:16:21Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI83">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NaMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NR_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NAR_Copartment_NamPT </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="0.23"/>
+            <localParameter id="Km" name="Km" value="0.0034"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI84" id="PNP_NAR_0" name="PNP-NAR[0]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Parameter have to be adjusted for NAR...currently NR affinities are used</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI84">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>original work calf Km and kcat calculated with MW of 92kDa</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-23T10:54:08Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI84">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/S0163-7258(00)00097-8"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+          <speciesReference species="Pi_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NA_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NR_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NAR_Copartment_NamPT </ci>
+                <ci> Pi_Copartment_NamPT </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="40"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="1.48"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI85" id="NR_efflux_0" name="NR-efflux[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI85">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NamPT </ci>
+              <ci> NR_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI86" id="NRK1_NMN_0" name="NRK1-NMN[0]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI86">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-09-30T10:16:21Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI86">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NR_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NMN_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NAR_Copartment_NamPT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NR_Copartment_NamPT </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="0.23"/>
+            <localParameter id="Km" name="Km" value="0.0034"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI87" id="NMN_efflux_1" name="NMN-efflux[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI87">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <ci> celldivision_compartment_NADA </ci>
+              <ci> NMN_Compartment_NADA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI88" id="NAPRT_1" name="NAPRT[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI88">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:6224784"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T13:35:20Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.4.2.11"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI88">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.4.2.11"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/6224784"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NA_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PRPP_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NaMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="ADP_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PPi_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NA_Compartment_NADA </ci>
+                <ci> ATP_Compartment_NADA </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="3.3"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="0.00015"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI89" id="NMNAT1_NMN_1" name="NMNAT1-NMN[1]" reversible="true" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI89">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T09:33:17Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PPi_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NaMN_Compartment_NADA"/>
+          <modifierSpeciesReference species="NaAD_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> Competitie_inhibition_two_substrates_s2_const_scaling </ci>
+                <ci> E_T </ci>
+                <ci> scaling </ci>
+                <ci> kcat_A </ci>
+                <ci> NMN_Compartment_NADA </ci>
+                <ci> Km_A </ci>
+                <ci> kcat_PA </ci>
+                <ci> NAD_Compartment_NADA </ci>
+                <ci> Km_PA </ci>
+                <ci> NaMN_Compartment_NADA </ci>
+                <ci> Km_B </ci>
+                <ci> NaAD_Compartment_NADA </ci>
+                <ci> Km_PB </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="100"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat_A" name="kcat_A" value="53.8"/>
+            <localParameter id="Km_A" name="Km_A" value="0.0223"/>
+            <localParameter id="kcat_PA" name="kcat_PA" value="129.1"/>
+            <localParameter id="Km_PA" name="Km_PA" value="0.059"/>
+            <localParameter id="Km_B" name="Km_B" value="0.0677"/>
+            <localParameter id="Km_PB" name="Km_PB" value="0.502"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI90" id="NMNAT1_NaMN_1" name="NMNAT1-NaMN[1]" reversible="true" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI90">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>values used</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Keq</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T14:33:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1"/>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI90">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.18"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/2.7.7.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/16118205"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/0003-9861(67)90262-7"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/17402747"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NaMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NaAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NMN_Compartment_NADA"/>
+          <modifierSpeciesReference species="NAD_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> Competitie_inhibition_two_substrates_s2_const_scaling </ci>
+                <ci> E_T </ci>
+                <ci> scaling </ci>
+                <ci> kcat_A </ci>
+                <ci> NaMN_Compartment_NADA </ci>
+                <ci> Km_A </ci>
+                <ci> kcat_PA </ci>
+                <ci> NaAD_Compartment_NADA </ci>
+                <ci> Km_PA </ci>
+                <ci> NMN_Compartment_NADA </ci>
+                <ci> Km_B </ci>
+                <ci> NAD_Compartment_NADA </ci>
+                <ci> Km_PB </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="100"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat_A" name="kcat_A" value="42.9"/>
+            <localParameter id="Km_A" name="Km_A" value="0.0677"/>
+            <localParameter id="kcat_PA" name="kcat_PA" value="103.8"/>
+            <localParameter id="Km_PA" name="Km_PA" value="0.502"/>
+            <localParameter id="Km_B" name="Km_B" value="22.3"/>
+            <localParameter id="Km_PB" name="Km_PB" value="0.059"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI91" id="NADS_1" name="NADS[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI91">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:4340699"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T14:36:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:is rdf:resource="urn:miriam:ec-code:6.3.5.1"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI91">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/6.3.5.1"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/4340699"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NaAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="Gln_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Glu_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="NAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PPi_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="AMP_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NaAD_Compartment_NADA </ci>
+                <ci> ATP_Compartment_NADA </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="21"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="0.19"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI92" id="NT5_NMN_1" name="NT5-NMN[1]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>KM and Kcat for CN-III</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI92">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T15:21:48Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI92">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NR_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NMN_Compartment_NADA </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="0.5"/>
+            <localParameter id="Km" name="Km" value="5"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI93" id="PNP_NR_1" name="PNP-NR[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI93">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>original work calf Km and kcat calculated with MW of 92kDa</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-23T10:54:08Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI93">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/S0163-7258(00)00097-8"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NR_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="Pi_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NAR_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NR_Compartment_NADA </ci>
+                <ci> Pi_Compartment_NADA </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="40"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="1.48"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI94" id="Nam_efflux_1" name="Nam-efflux[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI94">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <ci> celldivision_compartment_NADA </ci>
+              <ci> NAM_Compartment_NADA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI95" id="NT5_NaMN_1" name="NT5-NaMN[1]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Km and Kcat from CN-II</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI95">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T09:44:57Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI95">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/26385918"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NaMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAR_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NaMN_Compartment_NADA </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="2.8"/>
+            <localParameter id="Km" name="Km" value="3.5"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI96" id="SIRT_1" name="SIRT[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI96">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-16T14:44:39Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI96">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1021/bi049592e"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="H3_ac_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="H3_deac_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> Product_inhibition_two_susbtrates_s2_const_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> NAD_Compartment_NADA </ci>
+                <ci> H3_ac_Compartment_NADA </ci>
+                <ci> Km </ci>
+                <ci> NAM_Compartment_NADA </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Kcat" name="Kcat" value="0.67"/>
+            <localParameter id="Km" name="Km" value="0.029"/>
+            <localParameter id="Ki" name="Ki" value="0.06"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI97" id="NAD_consumption_without_Nam_inhibition_1" name="NAD-consumption without Nam inhibition[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI97">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-24T14:33:30Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NAD_Compartment_NADA </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="0"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="1"/>
+            <localParameter id="Km" name="Km" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI98" id="NADA_1" name="NADA[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI98">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Km 0.033 and Kcat 8.5</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:3036844"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>used values</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:22229411"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2011-03-18T13:29:56Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+                <CopasiMT:isPartOf rdf:resource="urn:miriam:ec-code:3.5.1.19"/>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI98">
+              <bqbiol:isPartOf>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/ec-code/3.5.1.19"/>
+                </rdf:Bag>
+              </bqbiol:isPartOf>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/22229411"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/3036844"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NA_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> Product_inhibition_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat </ci>
+                <ci> NAM_Compartment_NADA </ci>
+                <ci> Km </ci>
+                <ci> NA_Compartment_NADA </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="100"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Kcat" name="Kcat" value="0.69"/>
+            <localParameter id="Km" name="Km" value="0.009"/>
+            <localParameter id="Ki" name="Ki" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI99" id="NAM_import_1" name="NAM import[1]" reversible="true" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>cell size HeLa 3e-12 l
+fibro blast 1e-12l
+
+maximal E. coli uptake NA http://www.jbc.org/content/248/14/5144.full.pdf 630 molceules per cell and s 
+
+thus approx. 1 miktoM/ls
+
+ HeLa (epithelial; 8.2 ± 0.3 fmol/10 min), 
+NIH-3T3 cells : The apparent Km of NAD transport was ∼190 μM while the Vmax was 429 pmol/well/10 min. 
+http://www.jbc.org/content/283/10/6367.full  
+
+(1.2e6 cells per well according to thermo fisher cell culture specifications)
+
+thus approx. 0.2 mikroM/s
+
+15mg uptake per 60kg body = 2.5e-8 mmol/ls</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI99">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="Nam_ex" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> Nam_transporter </ci>
+                  <ci> Nam_ex </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> Nam_transporter </ci>
+                  <ci> NAM_Compartment_NADA </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI100" id="NAMPT_1" name="NAMPT[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI100">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-09-07T08:19:58Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAM_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PRPP_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="Pi_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NAD_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> Competitive_inhibition_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> Kcat_NamPT </ci>
+                <ci> NAM_Compartment_NADA </ci>
+                <ci> Km_NamPT </ci>
+                <ci> NAD_Compartment_NADA </ci>
+                <ci> Ki </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="0"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Ki" name="Ki" value="0.0021"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI101" id="NAR_efflux_1" name="NAR-efflux[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI101">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAR_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <ci> celldivision_compartment_NADA </ci>
+              <ci> NAR_Compartment_NADA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI102" id="NA_efflux_1" name="NA-efflux[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI102">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NA_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <ci> celldivision_compartment_NADA </ci>
+              <ci> NA_Compartment_NADA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI103" id="NAD_binding_1" name="NAD-binding[1]" reversible="true" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI103">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-12-09T15:18:22Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NADbound_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <minus/>
+                <apply>
+                  <times/>
+                  <ci> k1 </ci>
+                  <ci> NAD_Compartment_NADA </ci>
+                </apply>
+                <apply>
+                  <times/>
+                  <ci> k2 </ci>
+                  <ci> NADbound_Compartment_NADA </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k1" name="k1" value="1"/>
+            <localParameter id="k2" name="k2" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI104" id="NRK1_NaMN_1" name="NRK1-NaMN[1]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol for NMN</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI104">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-09-30T10:16:21Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI104">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAR_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NaMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NR_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NAR_Compartment_NADA </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="0.23"/>
+            <localParameter id="Km" name="Km" value="0.0034"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI105" id="PNP_NAR_1" name="PNP-NAR[1]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Parameter have to be adjusted for NAR...currently NR affinities are used</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI105">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>original work calf Km and kcat calculated with MW of 92kDa</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-11-23T10:54:08Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI105">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/doi/10.1016/S0163-7258(00)00097-8"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/9030766"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAR_Compartment_NADA" stoichiometry="1" constant="true"/>
+          <speciesReference species="Pi_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NA_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NR_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> TwosubstratesMMs2constant </ci>
+                <ci> E_T </ci>
+                <ci> turnover </ci>
+                <ci> NAR_Compartment_NADA </ci>
+                <ci> Pi_Compartment_NADA </ci>
+                <ci> scaling </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="E_T" name="E_T" value="10"/>
+            <localParameter id="turnover" name="turnover" value="40"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="Km" name="Km" value="1.48"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI106" id="NR_efflux_1" name="NR-efflux[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI106">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NR_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <ci> celldivision_compartment_NADA </ci>
+              <ci> NR_Compartment_NADA </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI107" id="NRK1_NMN_1" name="NRK1-NMN[1]" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI107">
+                <dcterms:bibliographicCitation>
+                  <rdf:Description>
+                    <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
+                    <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704"/>
+                  </rdf:Description>
+                </dcterms:bibliographicCitation>
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2016-09-30T10:16:21Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#COPASI107">
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="http://identifiers.org/pubmed/19027704"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NR_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NMN_Compartment_NADA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="NAR_Compartment_NADA"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> MM_with_ET_and_scaling </ci>
+                <ci> ET </ci>
+                <ci> scaling </ci>
+                <ci> kcat </ci>
+                <ci> NR_Compartment_NADA </ci>
+                <ci> Km </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="ET" name="ET" value="10"/>
+            <localParameter id="scaling" name="scaling" value="0.001"/>
+            <localParameter id="kcat" name="kcat" value="0.23"/>
+            <localParameter id="Km" name="Km" value="0.0034"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI108" id="NAD_efflux_0" name="NAD-efflux[0]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI108">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NamPT </ci>
+              <ci> NAD_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI109" id="NAD_efflux_1" name="NAD-efflux[1]" reversible="false" fast="false">
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI109">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="NAD_Copartment_NamPT" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Copartment_NamPT </ci>
+              <ci> celldivision_compartment_NADA </ci>
+              <ci> NAD_Copartment_NamPT </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="COPASI110" id="Nam_uptake" name="Nam uptake" reversible="false" fast="false">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <pre>cell size HeLa 3e-12 l
+fibro blast 1e-12l
+
+maximal E. coli uptake NA http://www.jbc.org/content/248/14/5144.full.pdf 630 molceules per cell and s 
+
+thus approx. 1 miktoM/ls
+
+ HeLa (epithelial; 8.2 ± 0.3 fmol/10 min), 
+NIH-3T3 cells : The apparent Km of NAD transport was ∼190 μM while the Vmax was 429 pmol/well/10 min. 
+http://www.jbc.org/content/283/10/6367.full  
+
+(1.2e6 cells per well according to thermo fisher cell culture specifications)
+
+thus approx. 0.2 mikroM/s
+
+15mg uptake per 60kg body = 2.5e-8 mmol/ls</pre>
+          </body>
+        </notes>
+        <annotation>
+          <COPASI xmlns="http://www.copasi.org/static/sbml">
+            <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about="#COPASI110">
+                <dcterms:created>
+                  <rdf:Description>
+                    <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
+                  </rdf:Description>
+                </dcterms:created>
+              </rdf:Description>
+            </rdf:RDF>
+          </COPASI>
+        </annotation>
+        <listOfProducts>
+          <speciesReference species="Nam_ex" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Compartment_NADA </ci>
+              <apply>
+                <ci> Constant_flux__irreversible </ci>
+                <ci> v </ci>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="v" name="v" value="1e-05"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
