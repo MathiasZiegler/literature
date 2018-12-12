@@ -12,7 +12,7 @@ set title 'without NNMT'
 
 
 set origin 0.0,0.5
-set yrange [0:1]
+set yrange [0:10]
 set ylabel 'NAD consump. flux ({/Symbol m}M/s)'
 set label 'a' font 'Arial, 16' at screen 0.0, screen 0.97
 
@@ -23,7 +23,7 @@ title 'NamPT' w lines lc rgb "#00AA00" lt 1 lw 2;
 
 
 set origin 0.5,0.5
-set yrange [-1:40]
+set yrange [-0.1:6]
 set ylabel 'free NAD conc. (mM)'
 set label 'b' font 'Arial, 16' at screen 0.5, screen 0.97
 
