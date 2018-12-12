@@ -16,9 +16,9 @@ set yrange [0:10]
 set ylabel 'NAD consump. flux ({/Symbol m}M/s)'
 set label 'a' font 'Arial, 16' at screen 0.0, screen 0.97
 
-plot 'celldevscan_compNADANamPRT_0.txt' using ($10*3600):($6*1000000) \
+plot 'celldevscan_compNADANamPRT_0.txt' using ($11*3600):($7*1000000) \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
-'celldevscan_compNADANamPRT_0.txt' using ($10*3600):($5*1000000) \
+'celldevscan_compNADANamPRT_0.txt' using ($11*3600):($6*1000000) \
 title 'NamPT' w lines lc rgb "#00AA00" lt 1 lw 2;
 
 
@@ -27,9 +27,9 @@ set yrange [-0.1:6]
 set ylabel 'free NAD conc. (mM)'
 set label 'b' font 'Arial, 16' at screen 0.5, screen 0.97
 
-plot 'celldevscan_compNADANamPRT_0.txt' using ($10*3600):8 \
+plot 'celldevscan_compNADANamPRT_0.txt' using ($11*3600):9 \
 title 'NADA' w lines lc rgb "#AA0000" lt 1 lw 2, \
-'celldevscan_compNADANamPRT_0.txt' using ($10*3600):7 \
+'celldevscan_compNADANamPRT_0.txt' using ($11*3600):8 \
 title 'NamPT' w lines lc rgb "#00AA00" lt 1 lw 2;
 
 
