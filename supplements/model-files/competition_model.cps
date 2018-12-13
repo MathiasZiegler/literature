@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.25 (Build 198) (http://www.copasi.org) at 2018-12-12T13:32:14Z -->
+<!-- generated with COPASI 4.25 (Build 198) (http://www.copasi.org) at 2018-12-12T16:01:54Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="25" versionDevel="198" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -226,43 +226,41 @@ Reaction scheme where the products are created from the reactants and the change
       </ListOfParameterDescriptions>
     </Function>
   </ListOfFunctions>
-  <Model key="Model_0" name="NAD Phylogeny" simulationType="time" timeUnit="s" volumeUnit="l" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.0221417899999999e+23">
+  <Model key="Model_0" name="New Model" simulationType="time" timeUnit="s" volumeUnit="l" areaUnit="m²" lengthUnit="m" quantityUnit="mmol" type="deterministic" avogadroConstant="6.0221417899999999e+23">
     <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Model_0">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2011-03-18T13:29:02Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <dcterms:creator>
-      <rdf:Description>
-        <vCard:N>
-          <rdf:Description>
-            <vCard:Family>Heiland</vCard:Family>
-            <vCard:Given>Ines</vCard:Given>
-          </rdf:Description>
-        </vCard:N>
-        <vCard:ORG>
-          <rdf:Description>
-            <vCard:Orgname>UiT Arctic University of Norway</vCard:Orgname>
-          </rdf:Description>
-        </vCard:ORG>
-      </rdf:Description>
-    </dcterms:creator>
   </rdf:Description>
 </rdf:RDF>
 
     </MiriamAnnotation>
     <ListOfCompartments>
-      <Compartment key="Compartment_1" name="Copartment_NamPT" simulationType="fixed" dimensionality="3" addNoise="false">
+      <Compartment key="Compartment_0" name="Cytosol" simulationType="fixed" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Compartment_0">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-24T15:46:49Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+
+        </MiriamAnnotation>
+      </Compartment>
+      <Compartment key="Compartment_1" name="NamPT_compartment" simulationType="fixed" dimensionality="3" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_1">
     <dcterms:created>
       <rdf:Description>
@@ -271,14 +269,11 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </Compartment>
-      <Compartment key="Compartment_2" name="Compartment_NADA" simulationType="fixed" dimensionality="3" addNoise="false">
+      <Compartment key="Compartment_2" name="NADA_compartment" simulationType="fixed" dimensionality="3" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#Compartment_2">
     <dcterms:created>
       <rdf:Description>
@@ -287,11 +282,361 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </Compartment>
     </ListOfCompartments>
     <ListOfMetabolites>
+      <Metabolite key="Metabolite_0" name="NA" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_0">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:48Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_1" name="NaMN" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_1">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T14:44:57Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_2" name="NAM" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_2">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:00:02Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_3" name="NAD" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_3">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:28Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_4" name="NaAD" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_4">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:39Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_5" name="NMN" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_5">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-09-07T09:28:02Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_6" name="NAR" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_6">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2015-05-26T13:51:59Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_7" name="H2O" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_7">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:52Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_8" name="ADP" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_8">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T14:45:06Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_9" name="ATP" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_9">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:59Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_10" name="PPi" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_10">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:02:26Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_11" name="PRPP" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_11">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:02:38Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_12" name="1-methyl-NAM" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_12">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T14:45:07Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_13" name="SAH" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_13">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T14:45:00Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_14" name="SAM" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_14">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:02:44Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_15" name="AMP" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_15">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:02:02Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_16" name="Gln" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_16">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:57Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_17" name="Glu" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_17">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:01:54Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_18" name="H3_ac" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_18">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-17T11:46:50Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_19" name="H3_deac" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_19">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-17T11:46:50Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_20" name="DNA_ADPR" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_20">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-18T13:28:17Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_21" name="DNA_damage" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_21">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-18T13:28:17Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_22" name="Pi" simulationType="fixed" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_22">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2015-05-26T10:36:42Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_23" name="NR" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_23">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2016-11-23T10:36:27Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_24" name="NADbound" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_24">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2017-11-13T15:14:16Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_25" name="NAR_copy" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_25">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2015-05-26T13:51:59Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
+      <Metabolite key="Metabolite_26" name="NAM_copy" simulationType="reactions" compartment="Compartment_0" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Metabolite_26">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-04-16T15:00:02Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </Metabolite>
       <Metabolite key="Metabolite_27" name="Gln" simulationType="fixed" compartment="Compartment_1" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -1011,9 +1356,7 @@ Reaction scheme where the products are created from the reactants and the change
     <ListOfModelValues>
       <ModelValue key="ModelValue_0" name="scaling" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_0">
     <dcterms:created>
       <rdf:Description>
@@ -1022,14 +1365,37 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_3" name="celldivision_compartment_NamPT" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_1" name="E_T NMNAT" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_1">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2012-06-08T12:05:45Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_2" name="NADbiosynthesis" simulationType="fixed" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#ModelValue_2">
+    <dcterms:created>
+      <rdf:Description>
+        <dcterms:W3CDTF>2015-10-07T15:04:47Z</dcterms:W3CDTF>
+      </rdf:Description>
+    </dcterms:created>
+  </rdf:Description>
+</rdf:RDF>
+        </MiriamAnnotation>
+      </ModelValue>
+      <ModelValue key="ModelValue_3" name="cell division rate" simulationType="assignment" addNoise="false">
+        <MiriamAnnotation>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_3">
     <dcterms:created>
       <rdf:Description>
@@ -1038,17 +1404,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Expression>
-          &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue>
+          &lt;CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue>
         </Expression>
       </ModelValue>
-      <ModelValue key="ModelValue_4" name="celldivision_compartment_NADA" simulationType="assignment" addNoise="false">
+      <ModelValue key="ModelValue_4" name="celldivision_pathogen" simulationType="assignment" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_4">
     <dcterms:created>
       <rdf:Description>
@@ -1057,17 +1420,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Expression>
-          &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue>
+          &lt;CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue>
         </Expression>
       </ModelValue>
       <ModelValue key="ModelValue_5" name="Nam transporter" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_5">
     <dcterms:created>
       <rdf:Description>
@@ -1076,14 +1436,11 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_6" name="Km NamPT" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_6" name="Km NamPRT" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_6">
     <dcterms:created>
       <rdf:Description>
@@ -1092,14 +1449,11 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </ModelValue>
-      <ModelValue key="ModelValue_7" name="Kcat NamPT" simulationType="fixed" addNoise="false">
+      <ModelValue key="ModelValue_7" name="Kcat NamPRT" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_7">
     <dcterms:created>
       <rdf:Description>
@@ -1108,14 +1462,11 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </ModelValue>
       <ModelValue key="ModelValue_8" name="cell devision all" simulationType="fixed" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="#ModelValue_8">
     <dcterms:created>
       <rdf:Description>
@@ -1124,17 +1475,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
       </ModelValue>
     </ListOfModelValues>
     <ListOfReactions>
-      <Reaction key="Reaction_23" name="NMN-efflux[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_0" name="NMN-efflux[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_23">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_0">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -1142,15 +1490,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_43" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_5111" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5063" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_3"/>
@@ -1161,16 +1508,13 @@ Reaction scheme where the products are created from the reactants and the change
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_24" name="NAPRT[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_1" name="NAPRT[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_24">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_1">
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:6224784"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:6224784" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1178,10 +1522,9 @@ Reaction scheme where the products are created from the reactants and the change
         <dcterms:W3CDTF>2011-03-18T13:35:20Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.4.2.11"/>
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.4.2.11" />
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_44" stoichiometry="1"/>
@@ -1194,18 +1537,18 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_41" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5112" name="E_T" value="10"/>
-          <Constant key="Parameter_5104" name="turnover" value="3.3"/>
-          <Constant key="Parameter_5109" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5114" name="Km" value="0.00015"/>
+          <Constant key="Parameter_5065" name="E_T" value="10"/>
+          <Constant key="Parameter_5066" name="turnover" value="3.3"/>
+          <Constant key="Parameter_5060" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5062" name="Km" value="0.00015"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_5112"/>
+              <SourceParameter reference="Parameter_5065"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_5104"/>
+              <SourceParameter reference="Parameter_5066"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_44"/>
@@ -1214,20 +1557,18 @@ Reaction scheme where the products are created from the reactants and the change
               <SourceParameter reference="Metabolite_53"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_5109"/>
+              <SourceParameter reference="Parameter_5060"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_5114"/>
+              <SourceParameter reference="Parameter_5062"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_25" name="NMNAT1-NMN[0]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_2" name="NMNAT1-NMN[0]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_25">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_2">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-09-07T09:33:17Z</dcterms:W3CDTF>
@@ -1235,7 +1576,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_43" stoichiometry="1"/>
@@ -1250,78 +1590,75 @@ Reaction scheme where the products are created from the reactants and the change
           <Modifier metabolite="Metabolite_38" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5115" name="E_T" value="100"/>
-          <Constant key="Parameter_5116" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5117" name="kcat_A" value="53.8"/>
-          <Constant key="Parameter_5122" name="Km_A" value="0.0223"/>
-          <Constant key="Parameter_5119" name="kcat_PA" value="129.1"/>
-          <Constant key="Parameter_5121" name="Km_PA" value="0.059"/>
-          <Constant key="Parameter_5120" name="Km_B" value="0.0677"/>
-          <Constant key="Parameter_5118" name="Km_PB" value="0.502"/>
+          <Constant key="Parameter_5061" name="E_T" value="100"/>
+          <Constant key="Parameter_5064" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5067" name="kcat_A" value="53.8"/>
+          <Constant key="Parameter_5058" name="Km_A" value="0.0223"/>
+          <Constant key="Parameter_5056" name="kcat_PA" value="129.1"/>
+          <Constant key="Parameter_5055" name="Km_PA" value="0.059"/>
+          <Constant key="Parameter_5059" name="Km_B" value="0.0677"/>
+          <Constant key="Parameter_5057" name="Km_PB" value="0.502"/>
         </ListOfConstants>
-        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_275">
-              <SourceParameter reference="Parameter_5115"/>
+              <SourceParameter reference="Parameter_5061"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_274">
-              <SourceParameter reference="Parameter_5116"/>
+              <SourceParameter reference="Parameter_5064"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_273">
-              <SourceParameter reference="Parameter_5117"/>
+              <SourceParameter reference="Parameter_5067"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_272">
               <SourceParameter reference="Metabolite_43"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_266">
-              <SourceParameter reference="Parameter_5122"/>
+              <SourceParameter reference="Parameter_5058"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_276">
-              <SourceParameter reference="Parameter_5119"/>
+              <SourceParameter reference="Parameter_5056"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_277">
               <SourceParameter reference="Metabolite_50"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_278">
-              <SourceParameter reference="Parameter_5121"/>
+              <SourceParameter reference="Parameter_5055"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_279">
               <SourceParameter reference="Metabolite_45"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_280">
-              <SourceParameter reference="Parameter_5120"/>
+              <SourceParameter reference="Parameter_5059"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_281">
               <SourceParameter reference="Metabolite_38"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_282">
-              <SourceParameter reference="Parameter_5118"/>
+              <SourceParameter reference="Parameter_5057"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_26" name="NMNAT1-NaMN[0]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_3" name="NMNAT1-NaMN[0]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_26">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_3">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>values used</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Keq</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1329,11 +1666,10 @@ Reaction scheme where the products are created from the reactants and the change
         <dcterms:W3CDTF>2011-03-18T14:33:39Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1"/>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18"/>
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1" />
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18" />
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_45" stoichiometry="1"/>
@@ -1346,66 +1682,63 @@ Reaction scheme where the products are created from the reactants and the change
           <Modifier metabolite="Metabolite_50" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5125" name="E_T" value="100"/>
-          <Constant key="Parameter_5124" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5123" name="kcat_A" value="42.9"/>
-          <Constant key="Parameter_5180" name="Km_A" value="0.0677"/>
-          <Constant key="Parameter_5185" name="kcat_PA" value="103.8"/>
-          <Constant key="Parameter_5142" name="Km_PA" value="0.502"/>
-          <Constant key="Parameter_5179" name="Km_B" value="22.3"/>
-          <Constant key="Parameter_5182" name="Km_PB" value="0.059"/>
+          <Constant key="Parameter_5032" name="E_T" value="100"/>
+          <Constant key="Parameter_5030" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5029" name="kcat_A" value="42.9"/>
+          <Constant key="Parameter_5033" name="Km_A" value="0.0677"/>
+          <Constant key="Parameter_5031" name="kcat_PA" value="103.8"/>
+          <Constant key="Parameter_5035" name="Km_PA" value="0.502"/>
+          <Constant key="Parameter_5050" name="Km_B" value="22.3"/>
+          <Constant key="Parameter_5038" name="Km_PB" value="0.059"/>
         </ListOfConstants>
-        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_275">
-              <SourceParameter reference="Parameter_5125"/>
+              <SourceParameter reference="Parameter_5032"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_274">
-              <SourceParameter reference="Parameter_5124"/>
+              <SourceParameter reference="Parameter_5030"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_273">
-              <SourceParameter reference="Parameter_5123"/>
+              <SourceParameter reference="Parameter_5029"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_272">
               <SourceParameter reference="Metabolite_45"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_266">
-              <SourceParameter reference="Parameter_5180"/>
+              <SourceParameter reference="Parameter_5033"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_276">
-              <SourceParameter reference="Parameter_5185"/>
+              <SourceParameter reference="Parameter_5031"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_277">
               <SourceParameter reference="Metabolite_38"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_278">
-              <SourceParameter reference="Parameter_5142"/>
+              <SourceParameter reference="Parameter_5035"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_279">
               <SourceParameter reference="Metabolite_43"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_280">
-              <SourceParameter reference="Parameter_5179"/>
+              <SourceParameter reference="Parameter_5050"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_281">
               <SourceParameter reference="Metabolite_50"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_282">
-              <SourceParameter reference="Parameter_5182"/>
+              <SourceParameter reference="Parameter_5038"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_27" name="NADS[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_4" name="NADS[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_27">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_4">
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:4340699"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:4340699" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1413,10 +1746,9 @@ Reaction scheme where the products are created from the reactants and the change
         <dcterms:W3CDTF>2011-03-18T14:36:00Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:6.3.5.1"/>
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:6.3.5.1" />
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_38" stoichiometry="1"/>
@@ -1431,18 +1763,18 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_42" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5128" name="E_T" value="10"/>
-          <Constant key="Parameter_5130" name="turnover" value="21"/>
-          <Constant key="Parameter_5131" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5181" name="Km" value="0.19"/>
+          <Constant key="Parameter_5052" name="E_T" value="10"/>
+          <Constant key="Parameter_5053" name="turnover" value="21"/>
+          <Constant key="Parameter_5047" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5034" name="Km" value="0.19"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_5128"/>
+              <SourceParameter reference="Parameter_5052"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_5130"/>
+              <SourceParameter reference="Parameter_5053"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_38"/>
@@ -1451,25 +1783,22 @@ Reaction scheme where the products are created from the reactants and the change
               <SourceParameter reference="Metabolite_53"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_5131"/>
+              <SourceParameter reference="Parameter_5047"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_5181"/>
+              <SourceParameter reference="Parameter_5034"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_28" name="NT5-NMN[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_5" name="NT5-NMN[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_28">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_5">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1479,7 +1808,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           KM and Kcat for CN-III
@@ -1492,47 +1820,44 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_34" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5127" name="ET" value="10"/>
-          <Constant key="Parameter_5126" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5129" name="kcat" value="0.5"/>
-          <Constant key="Parameter_5132" name="Km" value="5"/>
+          <Constant key="Parameter_5042" name="ET" value="10"/>
+          <Constant key="Parameter_5049" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5036" name="kcat" value="0.5"/>
+          <Constant key="Parameter_5048" name="Km" value="5"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_5127"/>
+              <SourceParameter reference="Parameter_5042"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_5126"/>
+              <SourceParameter reference="Parameter_5049"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_5129"/>
+              <SourceParameter reference="Parameter_5036"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_43"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_5132"/>
+              <SourceParameter reference="Parameter_5048"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_29" name="PNP-NR[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_6" name="PNP-NR[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_29">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_6">
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>original work calf Km and kcat calculated with MW of 92kDa</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1542,7 +1867,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_34" stoichiometry="1"/>
@@ -1555,18 +1879,18 @@ Reaction scheme where the products are created from the reactants and the change
           <Modifier metabolite="Metabolite_51" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_5141" name="E_T" value="10"/>
-          <Constant key="Parameter_5138" name="turnover" value="40"/>
-          <Constant key="Parameter_5137" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5139" name="Km" value="1.48"/>
+          <Constant key="Parameter_5041" name="E_T" value="10"/>
+          <Constant key="Parameter_5045" name="turnover" value="40"/>
+          <Constant key="Parameter_5040" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5044" name="Km" value="1.48"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_5141"/>
+              <SourceParameter reference="Parameter_5041"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_5138"/>
+              <SourceParameter reference="Parameter_5045"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_34"/>
@@ -1575,31 +1899,28 @@ Reaction scheme where the products are created from the reactants and the change
               <SourceParameter reference="Metabolite_35"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_5137"/>
+              <SourceParameter reference="Parameter_5040"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_5139"/>
+              <SourceParameter reference="Parameter_5044"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_30" name="NNMT[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_7" name="NNMT[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_30">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_7">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km from recombinant human enzyme, similar to mouse Km</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:8182091"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:8182091" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>turnover calculated from enzyme 1300 fold purified from porcine liver, Km=0.83</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:2963591"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:2963591" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1607,11 +1928,10 @@ Reaction scheme where the products are created from the reactants and the change
         <dcterms:W3CDTF>2011-03-18T14:29:45Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <CopasiMT:is rdf:resource="urn:miriam:brenda:441255"/>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.1.1.1"/>
+    <CopasiMT:is rdf:resource="urn:miriam:brenda:441255" />
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.1.1.1" />
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_49" stoichiometry="1"/>
@@ -1622,44 +1942,42 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_48" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5134" name="ET" value="0"/>
-          <Constant key="Parameter_5133" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5135" name="Kcat" value="8.1"/>
-          <Constant key="Parameter_5140" name="Km" value="0.4"/>
-          <Constant key="Parameter_5136" name="Ki" value="0.06"/>
+          <Constant key="Parameter_5043" name="ET" value="10"/>
+          <Constant key="Parameter_5046" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5051" name="Kcat" value="8.1"/>
+          <Constant key="Parameter_5037" name="Km" value="0.4"/>
+          <Constant key="Parameter_5039" name="Ki" value="0.06"/>
         </ListOfConstants>
-        <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_294">
-              <SourceParameter reference="Parameter_5134"/>
+              <SourceParameter reference="Parameter_5043"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_293">
-              <SourceParameter reference="Parameter_5133"/>
+              <SourceParameter reference="Parameter_5046"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_292">
-              <SourceParameter reference="Parameter_5135"/>
+              <SourceParameter reference="Parameter_5051"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_291">
               <SourceParameter reference="Metabolite_49"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_290">
-              <SourceParameter reference="Parameter_5140"/>
+              <SourceParameter reference="Parameter_5037"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_289">
               <SourceParameter reference="Metabolite_39"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_288">
-              <SourceParameter reference="Parameter_5136"/>
+              <SourceParameter reference="Parameter_5039"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_31" name="Nam-efflux[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_8" name="Nam-efflux[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_31">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_8">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -1667,15 +1985,14 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_49" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_5021" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5054" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_3"/>
@@ -1686,17 +2003,14 @@ Reaction scheme where the products are created from the reactants and the change
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_32" name="NT5-NaMN[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_9" name="NT5-NaMN[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_32">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_9">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:26385918" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1706,7 +2020,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           Km and Kcat from CN-II
@@ -1719,41 +2032,38 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_51" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5026" name="ET" value="10"/>
-          <Constant key="Parameter_5023" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5024" name="kcat" value="2.8"/>
-          <Constant key="Parameter_5027" name="Km" value="3.5"/>
+          <Constant key="Parameter_5068" name="ET" value="10"/>
+          <Constant key="Parameter_5069" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5075" name="kcat" value="2.8"/>
+          <Constant key="Parameter_5074" name="Km" value="3.5"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_5026"/>
+              <SourceParameter reference="Parameter_5068"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_5023"/>
+              <SourceParameter reference="Parameter_5069"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_5024"/>
+              <SourceParameter reference="Parameter_5075"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_45"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_5027"/>
+              <SourceParameter reference="Parameter_5074"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_33" name="SIRT[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_10" name="SIRT[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_33">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_10">
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1763,7 +2073,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_50" stoichiometry="1"/>
@@ -1774,22 +2083,22 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_32" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5015" name="ET" value="10"/>
-          <Constant key="Parameter_5022" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5020" name="Kcat" value="0.67"/>
-          <Constant key="Parameter_5019" name="Km" value="0.029"/>
-          <Constant key="Parameter_5025" name="Ki" value="0.06"/>
+          <Constant key="Parameter_5076" name="ET" value="10"/>
+          <Constant key="Parameter_5071" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5070" name="Kcat" value="0.67"/>
+          <Constant key="Parameter_5073" name="Km" value="0.029"/>
+          <Constant key="Parameter_5072" name="Ki" value="0.06"/>
         </ListOfConstants>
-        <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_296">
-              <SourceParameter reference="Parameter_5015"/>
+              <SourceParameter reference="Parameter_5076"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_295">
-              <SourceParameter reference="Parameter_5022"/>
+              <SourceParameter reference="Parameter_5071"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_283">
-              <SourceParameter reference="Parameter_5020"/>
+              <SourceParameter reference="Parameter_5070"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_284">
               <SourceParameter reference="Metabolite_50"/>
@@ -1798,23 +2107,21 @@ Reaction scheme where the products are created from the reactants and the change
               <SourceParameter reference="Metabolite_31"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_286">
-              <SourceParameter reference="Parameter_5019"/>
+              <SourceParameter reference="Parameter_5073"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_287">
               <SourceParameter reference="Metabolite_49"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_297">
-              <SourceParameter reference="Parameter_5025"/>
+              <SourceParameter reference="Parameter_5072"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_34" name="NAD-consumption without Nam inhibition[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_11" name="NAD-consumption without Nam inhibition[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_34">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_11">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-24T14:33:30Z</dcterms:W3CDTF>
@@ -1822,7 +2129,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_50" stoichiometry="1"/>
@@ -1831,48 +2137,45 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_49" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5018" name="ET" value="0"/>
-          <Constant key="Parameter_5016" name="scaling" value="0.001"/>
-          <Constant key="Parameter_5017" name="kcat" value="1"/>
-          <Constant key="Parameter_5177" name="Km" value="1"/>
+          <Constant key="Parameter_5077" name="ET" value="10"/>
+          <Constant key="Parameter_5081" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5079" name="kcat" value="1"/>
+          <Constant key="Parameter_5078" name="Km" value="1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_5018"/>
+              <SourceParameter reference="Parameter_5077"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_5016"/>
+              <SourceParameter reference="Parameter_5081"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_5017"/>
+              <SourceParameter reference="Parameter_5079"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_50"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_5177"/>
+              <SourceParameter reference="Parameter_5078"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_35" name="NADA[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_12" name="NADA[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_35">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_12">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km 0.033 and Kcat 8.5</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:3036844"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:3036844" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>used values</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:22229411"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:22229411" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -1880,10 +2183,9 @@ Reaction scheme where the products are created from the reactants and the change
         <dcterms:W3CDTF>2011-03-18T13:29:56Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <CopasiMT:isPartOf rdf:resource="urn:miriam:ec-code:3.5.1.19"/>
+    <CopasiMT:isPartOf rdf:resource="urn:miriam:ec-code:3.5.1.19" />
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_49" stoichiometry="1"/>
@@ -1893,44 +2195,42 @@ Reaction scheme where the products are created from the reactants and the change
           <Product metabolite="Metabolite_44" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_5178" name="ET" value="0"/>
-          <Constant key="Parameter_4879" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4878" name="Kcat" value="0.69"/>
-          <Constant key="Parameter_4877" name="Km" value="0.009"/>
-          <Constant key="Parameter_4876" name="Ki" value="0.1"/>
+          <Constant key="Parameter_5082" name="ET" value="0"/>
+          <Constant key="Parameter_5080" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5084" name="Kcat" value="0.69"/>
+          <Constant key="Parameter_5086" name="Km" value="0.009"/>
+          <Constant key="Parameter_5087" name="Ki" value="0.1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_294">
-              <SourceParameter reference="Parameter_5178"/>
+              <SourceParameter reference="Parameter_5082"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_293">
-              <SourceParameter reference="Parameter_4879"/>
+              <SourceParameter reference="Parameter_5080"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_292">
-              <SourceParameter reference="Parameter_4878"/>
+              <SourceParameter reference="Parameter_5084"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_291">
               <SourceParameter reference="Metabolite_49"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_290">
-              <SourceParameter reference="Parameter_4877"/>
+              <SourceParameter reference="Parameter_5086"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_289">
               <SourceParameter reference="Metabolite_44"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_288">
-              <SourceParameter reference="Parameter_4876"/>
+              <SourceParameter reference="Parameter_5087"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_36" name="NAM import[0]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_13" name="NAM import[0]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_36">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_13">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
@@ -1938,7 +2238,6 @@ Reaction scheme where the products are created from the reactants and the change
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           cell size HeLa 3e-12 l
@@ -1965,10 +2264,10 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_49" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4875" name="k1" value="100"/>
-          <Constant key="Parameter_4874" name="k2" value="100"/>
+          <Constant key="Parameter_5083" name="k1" value="100"/>
+          <Constant key="Parameter_5085" name="k2" value="100"/>
         </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="ConcentrationPerTime" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_14" unitType="ConcentrationPerTime" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
               <SourceParameter reference="ModelValue_5"/>
@@ -1985,12 +2284,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_37" name="NAMPT[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_14" name="NAMPT[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_37">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_14">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-09-07T08:19:58Z</dcterms:W3CDTF>
@@ -1998,7 +2295,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_49" stoichiometry="1"/>
@@ -2012,19 +2308,19 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_50" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4873" name="ET" value="100"/>
-          <Constant key="Parameter_4872" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4871" name="Kcat" value="0.0077"/>
-          <Constant key="Parameter_4870" name="Km" value="5e-06"/>
-          <Constant key="Parameter_4869" name="Ki" value="0.0021"/>
+          <Constant key="Parameter_5090" name="ET" value="100"/>
+          <Constant key="Parameter_5091" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5092" name="Kcat" value="0.0077"/>
+          <Constant key="Parameter_5088" name="Km" value="5e-06"/>
+          <Constant key="Parameter_5089" name="Ki" value="0.0021"/>
         </ListOfConstants>
-        <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_305">
-              <SourceParameter reference="Parameter_4873"/>
+              <SourceParameter reference="Parameter_5090"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_304">
-              <SourceParameter reference="Parameter_4872"/>
+              <SourceParameter reference="Parameter_5091"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_303">
               <SourceParameter reference="ModelValue_7"/>
@@ -2039,17 +2335,15 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_50"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_299">
-              <SourceParameter reference="Parameter_4869"/>
+              <SourceParameter reference="Parameter_5089"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_38" name="NAR-efflux[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_15" name="NAR-efflux[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_38">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_15">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2057,15 +2351,14 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_51" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4868" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5093" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_3"/>
@@ -2076,12 +2369,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_39" name="NA-efflux[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_16" name="NA-efflux[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_39">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_16">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2089,15 +2380,14 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_44" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4867" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5095" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_3"/>
@@ -2108,12 +2398,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_40" name="NAD-binding[0]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_17" name="NAD-binding[0]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_40">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_17">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-12-09T15:18:22Z</dcterms:W3CDTF>
@@ -2121,7 +2409,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_50" stoichiometry="1"/>
@@ -2130,19 +2417,19 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_30" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4866" name="k1" value="1"/>
-          <Constant key="Parameter_4865" name="k2" value="0.1"/>
+          <Constant key="Parameter_5094" name="k1" value="100"/>
+          <Constant key="Parameter_5096" name="k2" value="10"/>
         </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_4866"/>
+              <SourceParameter reference="Parameter_5094"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_50"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_4865"/>
+              <SourceParameter reference="Parameter_5096"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_30"/>
@@ -2150,17 +2437,14 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_41" name="NRK1-NaMN[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_18" name="NRK1-NaMN[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_41">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_18">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -2170,7 +2454,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol for NMN
@@ -2185,47 +2468,44 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_34" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4864" name="ET" value="10"/>
-          <Constant key="Parameter_4863" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4862" name="kcat" value="0.23"/>
-          <Constant key="Parameter_4861" name="Km" value="0.0034"/>
+          <Constant key="Parameter_5097" name="ET" value="10"/>
+          <Constant key="Parameter_5098" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5099" name="kcat" value="0.23"/>
+          <Constant key="Parameter_5100" name="Km" value="0.0034"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4864"/>
+              <SourceParameter reference="Parameter_5097"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4863"/>
+              <SourceParameter reference="Parameter_5098"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4862"/>
+              <SourceParameter reference="Parameter_5099"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_51"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4861"/>
+              <SourceParameter reference="Parameter_5100"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_42" name="PNP-NAR[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_19" name="PNP-NAR[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_42">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_19">
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>original work calf Km and kcat calculated with MW of 92kDa</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:9030766" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -2235,7 +2515,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           Parameter have to be adjusted for NAR...currently NR affinities are used
@@ -2251,18 +2530,18 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_34" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4860" name="E_T" value="10"/>
-          <Constant key="Parameter_4859" name="turnover" value="40"/>
-          <Constant key="Parameter_4858" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4857" name="Km" value="1.48"/>
+          <Constant key="Parameter_5101" name="E_T" value="10"/>
+          <Constant key="Parameter_5108" name="turnover" value="40"/>
+          <Constant key="Parameter_5107" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5106" name="Km" value="1.48"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_4860"/>
+              <SourceParameter reference="Parameter_5101"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_4859"/>
+              <SourceParameter reference="Parameter_5108"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_51"/>
@@ -2271,20 +2550,18 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_35"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_4858"/>
+              <SourceParameter reference="Parameter_5107"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_4857"/>
+              <SourceParameter reference="Parameter_5106"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_43" name="NR-efflux[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_20" name="NR-efflux[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_43">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_20">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2292,15 +2569,14 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_34" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4856" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5105" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_3"/>
@@ -2311,17 +2587,14 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_44" name="NRK1-NMN[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_21" name="NRK1-NMN[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_44">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_21">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:19027704" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -2331,7 +2604,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           Kcat calculated from vmax of purified enzyme (600nmol/min*mg) using an MW of 23193 g/mol
@@ -2346,35 +2618,35 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_51" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4855" name="ET" value="10"/>
-          <Constant key="Parameter_4854" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4853" name="kcat" value="0.23"/>
-          <Constant key="Parameter_4852" name="Km" value="0.0034"/>
+          <Constant key="Parameter_5103" name="ET" value="10"/>
+          <Constant key="Parameter_5102" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5113" name="kcat" value="0.23"/>
+          <Constant key="Parameter_5110" name="Km" value="0.0034"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4855"/>
+              <SourceParameter reference="Parameter_5103"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4854"/>
+              <SourceParameter reference="Parameter_5102"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4853"/>
+              <SourceParameter reference="Parameter_5113"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_34"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4852"/>
+              <SourceParameter reference="Parameter_5110"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_45" name="NMN-efflux[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_22" name="NMN-efflux[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_45">
+  <rdf:Description rdf:about="#Reaction_22">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2387,9 +2659,9 @@ thus approx. 0.2 mikroM/s
           <Substrate metabolite="Metabolite_70" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4851" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5111" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_4"/>
@@ -2400,10 +2672,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_46" name="NAPRT[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_23" name="NAPRT[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_46">
+  <rdf:Description rdf:about="#Reaction_23">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:6224784" />
@@ -2429,18 +2701,18 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_68" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4850" name="E_T" value="10"/>
-          <Constant key="Parameter_4849" name="turnover" value="3.3"/>
-          <Constant key="Parameter_4848" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4847" name="Km" value="0.00015"/>
+          <Constant key="Parameter_5112" name="E_T" value="10"/>
+          <Constant key="Parameter_5104" name="turnover" value="3.3"/>
+          <Constant key="Parameter_5109" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5114" name="Km" value="0.00015"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_4850"/>
+              <SourceParameter reference="Parameter_5112"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_4849"/>
+              <SourceParameter reference="Parameter_5104"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_71"/>
@@ -2449,20 +2721,18 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_80"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_4848"/>
+              <SourceParameter reference="Parameter_5109"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_4847"/>
+              <SourceParameter reference="Parameter_5114"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_47" name="NMNAT1-NMN[1]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_24" name="NMNAT1-NMN[1]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_47">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_24">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-09-07T09:33:17Z</dcterms:W3CDTF>
@@ -2470,7 +2740,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_70" stoichiometry="1"/>
@@ -2485,78 +2754,75 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_65" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4846" name="E_T" value="100"/>
-          <Constant key="Parameter_4845" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4844" name="kcat_A" value="53.8"/>
-          <Constant key="Parameter_4843" name="Km_A" value="0.0223"/>
-          <Constant key="Parameter_4842" name="kcat_PA" value="129.1"/>
-          <Constant key="Parameter_4841" name="Km_PA" value="0.059"/>
-          <Constant key="Parameter_4840" name="Km_B" value="0.0677"/>
-          <Constant key="Parameter_4839" name="Km_PB" value="0.502"/>
+          <Constant key="Parameter_5115" name="E_T" value="100"/>
+          <Constant key="Parameter_5116" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5117" name="kcat_A" value="53.8"/>
+          <Constant key="Parameter_5122" name="Km_A" value="0.0223"/>
+          <Constant key="Parameter_5119" name="kcat_PA" value="129.1"/>
+          <Constant key="Parameter_5121" name="Km_PA" value="0.059"/>
+          <Constant key="Parameter_5120" name="Km_B" value="0.0677"/>
+          <Constant key="Parameter_5118" name="Km_PB" value="0.502"/>
         </ListOfConstants>
-        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_275">
-              <SourceParameter reference="Parameter_4846"/>
+              <SourceParameter reference="Parameter_5115"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_274">
-              <SourceParameter reference="Parameter_4845"/>
+              <SourceParameter reference="Parameter_5116"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_273">
-              <SourceParameter reference="Parameter_4844"/>
+              <SourceParameter reference="Parameter_5117"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_272">
               <SourceParameter reference="Metabolite_70"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_266">
-              <SourceParameter reference="Parameter_4843"/>
+              <SourceParameter reference="Parameter_5122"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_276">
-              <SourceParameter reference="Parameter_4842"/>
+              <SourceParameter reference="Parameter_5119"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_277">
               <SourceParameter reference="Metabolite_77"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_278">
-              <SourceParameter reference="Parameter_4841"/>
+              <SourceParameter reference="Parameter_5121"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_279">
               <SourceParameter reference="Metabolite_72"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_280">
-              <SourceParameter reference="Parameter_4840"/>
+              <SourceParameter reference="Parameter_5120"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_281">
               <SourceParameter reference="Metabolite_65"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_282">
-              <SourceParameter reference="Parameter_4839"/>
+              <SourceParameter reference="Parameter_5118"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_48" name="NMNAT1-NaMN[1]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_25" name="NMNAT1-NaMN[1]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#"
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_48">
+<rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_25">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>values used</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:17402747" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/0003-9861(67)90262-7" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Keq</dcterms:description>
-        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205"/>
+        <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:16118205" />
       </rdf:Description>
     </dcterms:bibliographicCitation>
     <dcterms:created>
@@ -2564,11 +2830,10 @@ thus approx. 0.2 mikroM/s
         <dcterms:W3CDTF>2011-03-18T14:33:39Z</dcterms:W3CDTF>
       </rdf:Description>
     </dcterms:created>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1"/>
-    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18"/>
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.1" />
+    <CopasiMT:is rdf:resource="urn:miriam:ec-code:2.7.7.18" />
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_72" stoichiometry="1"/>
@@ -2581,60 +2846,60 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_77" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4838" name="E_T" value="100"/>
-          <Constant key="Parameter_4837" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4836" name="kcat_A" value="42.9"/>
-          <Constant key="Parameter_4835" name="Km_A" value="0.0677"/>
-          <Constant key="Parameter_4834" name="kcat_PA" value="103.8"/>
-          <Constant key="Parameter_4833" name="Km_PA" value="0.502"/>
-          <Constant key="Parameter_4832" name="Km_B" value="22.3"/>
-          <Constant key="Parameter_4831" name="Km_PB" value="0.059"/>
+          <Constant key="Parameter_5125" name="E_T" value="100"/>
+          <Constant key="Parameter_5124" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5123" name="kcat_A" value="42.9"/>
+          <Constant key="Parameter_5180" name="Km_A" value="0.0677"/>
+          <Constant key="Parameter_5185" name="kcat_PA" value="103.8"/>
+          <Constant key="Parameter_5142" name="Km_PA" value="0.502"/>
+          <Constant key="Parameter_5179" name="Km_B" value="22.3"/>
+          <Constant key="Parameter_5182" name="Km_PB" value="0.059"/>
         </ListOfConstants>
-        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_42" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_275">
-              <SourceParameter reference="Parameter_4838"/>
+              <SourceParameter reference="Parameter_5125"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_274">
-              <SourceParameter reference="Parameter_4837"/>
+              <SourceParameter reference="Parameter_5124"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_273">
-              <SourceParameter reference="Parameter_4836"/>
+              <SourceParameter reference="Parameter_5123"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_272">
               <SourceParameter reference="Metabolite_72"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_266">
-              <SourceParameter reference="Parameter_4835"/>
+              <SourceParameter reference="Parameter_5180"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_276">
-              <SourceParameter reference="Parameter_4834"/>
+              <SourceParameter reference="Parameter_5185"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_277">
               <SourceParameter reference="Metabolite_65"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_278">
-              <SourceParameter reference="Parameter_4833"/>
+              <SourceParameter reference="Parameter_5142"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_279">
               <SourceParameter reference="Metabolite_70"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_280">
-              <SourceParameter reference="Parameter_4832"/>
+              <SourceParameter reference="Parameter_5179"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_281">
               <SourceParameter reference="Metabolite_77"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_282">
-              <SourceParameter reference="Parameter_4831"/>
+              <SourceParameter reference="Parameter_5182"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_49" name="NADS[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_26" name="NADS[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_49">
+  <rdf:Description rdf:about="#Reaction_26">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <CopasiMT:isDescribedBy rdf:resource="urn:miriam:pubmed:4340699" />
@@ -2662,18 +2927,18 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_69" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4830" name="E_T" value="10"/>
-          <Constant key="Parameter_4829" name="turnover" value="21"/>
-          <Constant key="Parameter_4828" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4827" name="Km" value="0.19"/>
+          <Constant key="Parameter_5128" name="E_T" value="10"/>
+          <Constant key="Parameter_5130" name="turnover" value="21"/>
+          <Constant key="Parameter_5131" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5181" name="Km" value="0.19"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_4830"/>
+              <SourceParameter reference="Parameter_5128"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_4829"/>
+              <SourceParameter reference="Parameter_5130"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_65"/>
@@ -2682,18 +2947,18 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_80"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_4828"/>
+              <SourceParameter reference="Parameter_5131"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_4827"/>
+              <SourceParameter reference="Parameter_5181"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_50" name="NT5-NMN[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_27" name="NT5-NMN[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_50">
+  <rdf:Description rdf:about="#Reaction_27">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km</dcterms:description>
@@ -2719,35 +2984,35 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_61" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4826" name="ET" value="10"/>
-          <Constant key="Parameter_4825" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4824" name="kcat" value="0.5"/>
-          <Constant key="Parameter_4823" name="Km" value="5"/>
+          <Constant key="Parameter_5127" name="ET" value="10"/>
+          <Constant key="Parameter_5126" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5129" name="kcat" value="0.5"/>
+          <Constant key="Parameter_5132" name="Km" value="5"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4826"/>
+              <SourceParameter reference="Parameter_5127"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4825"/>
+              <SourceParameter reference="Parameter_5126"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4824"/>
+              <SourceParameter reference="Parameter_5129"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_70"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4823"/>
+              <SourceParameter reference="Parameter_5132"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_51" name="PNP-NR[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_28" name="PNP-NR[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_51">
+  <rdf:Description rdf:about="#Reaction_28">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8" />
@@ -2778,18 +3043,18 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_78" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4822" name="E_T" value="10"/>
-          <Constant key="Parameter_4821" name="turnover" value="40"/>
-          <Constant key="Parameter_4820" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4819" name="Km" value="1.48"/>
+          <Constant key="Parameter_5141" name="E_T" value="10"/>
+          <Constant key="Parameter_5138" name="turnover" value="40"/>
+          <Constant key="Parameter_5137" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5139" name="Km" value="1.48"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_4822"/>
+              <SourceParameter reference="Parameter_5141"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_4821"/>
+              <SourceParameter reference="Parameter_5138"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_61"/>
@@ -2798,18 +3063,18 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_62"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_4820"/>
+              <SourceParameter reference="Parameter_5137"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_4819"/>
+              <SourceParameter reference="Parameter_5139"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_52" name="Nam-efflux[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_29" name="Nam-efflux[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_52">
+  <rdf:Description rdf:about="#Reaction_29">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -2822,9 +3087,9 @@ thus approx. 0.2 mikroM/s
           <Substrate metabolite="Metabolite_76" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4818" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_5134" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_4"/>
@@ -2835,10 +3100,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_53" name="NT5-NaMN[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_30" name="NT5-NaMN[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_53">
+  <rdf:Description rdf:about="#Reaction_30">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km</dcterms:description>
@@ -2864,35 +3129,35 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_78" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4817" name="ET" value="10"/>
-          <Constant key="Parameter_4816" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4815" name="kcat" value="2.8"/>
-          <Constant key="Parameter_4814" name="Km" value="3.5"/>
+          <Constant key="Parameter_5133" name="ET" value="10"/>
+          <Constant key="Parameter_5135" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5140" name="kcat" value="2.8"/>
+          <Constant key="Parameter_5136" name="Km" value="3.5"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4817"/>
+              <SourceParameter reference="Parameter_5133"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4816"/>
+              <SourceParameter reference="Parameter_5135"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4815"/>
+              <SourceParameter reference="Parameter_5140"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_72"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4814"/>
+              <SourceParameter reference="Parameter_5136"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_54" name="SIRT[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_31" name="SIRT[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_54">
+  <rdf:Description rdf:about="#Reaction_31">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1021/bi049592e" />
@@ -2915,22 +3180,22 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_59" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4813" name="ET" value="10"/>
-          <Constant key="Parameter_4812" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4811" name="Kcat" value="0.67"/>
-          <Constant key="Parameter_4810" name="Km" value="0.029"/>
-          <Constant key="Parameter_4809" name="Ki" value="0.06"/>
+          <Constant key="Parameter_5021" name="ET" value="10"/>
+          <Constant key="Parameter_5026" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5023" name="Kcat" value="0.67"/>
+          <Constant key="Parameter_5024" name="Km" value="0.029"/>
+          <Constant key="Parameter_5027" name="Ki" value="0.06"/>
         </ListOfConstants>
-        <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_44" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_296">
-              <SourceParameter reference="Parameter_4813"/>
+              <SourceParameter reference="Parameter_5021"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_295">
-              <SourceParameter reference="Parameter_4812"/>
+              <SourceParameter reference="Parameter_5026"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_283">
-              <SourceParameter reference="Parameter_4811"/>
+              <SourceParameter reference="Parameter_5023"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_284">
               <SourceParameter reference="Metabolite_77"/>
@@ -2939,21 +3204,21 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_58"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_286">
-              <SourceParameter reference="Parameter_4810"/>
+              <SourceParameter reference="Parameter_5024"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_287">
               <SourceParameter reference="Metabolite_76"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_297">
-              <SourceParameter reference="Parameter_4809"/>
+              <SourceParameter reference="Parameter_5027"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_55" name="NAD-consumption without Nam inhibition[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_32" name="NAD-consumption without Nam inhibition[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_55">
+  <rdf:Description rdf:about="#Reaction_32">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-11-24T14:33:30Z</dcterms:W3CDTF>
@@ -2969,35 +3234,35 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_76" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4808" name="ET" value="0"/>
-          <Constant key="Parameter_4807" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4806" name="kcat" value="1"/>
-          <Constant key="Parameter_4805" name="Km" value="1"/>
+          <Constant key="Parameter_5015" name="ET" value="10"/>
+          <Constant key="Parameter_5022" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5020" name="kcat" value="1"/>
+          <Constant key="Parameter_5019" name="Km" value="1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4808"/>
+              <SourceParameter reference="Parameter_5015"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4807"/>
+              <SourceParameter reference="Parameter_5022"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4806"/>
+              <SourceParameter reference="Parameter_5020"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_77"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4805"/>
+              <SourceParameter reference="Parameter_5019"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_56" name="NADA[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_33" name="NADA[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_56">
+  <rdf:Description rdf:about="#Reaction_33">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Km 0.033 and Kcat 8.5</dcterms:description>
@@ -3027,42 +3292,42 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_71" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4804" name="ET" value="100"/>
-          <Constant key="Parameter_4803" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4802" name="Kcat" value="0.69"/>
-          <Constant key="Parameter_4801" name="Km" value="0.009"/>
-          <Constant key="Parameter_4800" name="Ki" value="0.1"/>
+          <Constant key="Parameter_5025" name="ET" value="100"/>
+          <Constant key="Parameter_5018" name="scaling" value="0.001"/>
+          <Constant key="Parameter_5016" name="Kcat" value="0.69"/>
+          <Constant key="Parameter_5017" name="Km" value="0.009"/>
+          <Constant key="Parameter_5177" name="Ki" value="0.1"/>
         </ListOfConstants>
-        <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_43" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_294">
-              <SourceParameter reference="Parameter_4804"/>
+              <SourceParameter reference="Parameter_5025"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_293">
-              <SourceParameter reference="Parameter_4803"/>
+              <SourceParameter reference="Parameter_5018"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_292">
-              <SourceParameter reference="Parameter_4802"/>
+              <SourceParameter reference="Parameter_5016"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_291">
               <SourceParameter reference="Metabolite_76"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_290">
-              <SourceParameter reference="Parameter_4801"/>
+              <SourceParameter reference="Parameter_5017"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_289">
               <SourceParameter reference="Metabolite_71"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_288">
-              <SourceParameter reference="Parameter_4800"/>
+              <SourceParameter reference="Parameter_5177"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_57" name="NAM import[1]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_34" name="NAM import[1]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_57">
+  <rdf:Description rdf:about="#Reaction_34">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
@@ -3096,10 +3361,10 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_76" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4799" name="k1" value="100"/>
-          <Constant key="Parameter_4798" name="k2" value="100"/>
+          <Constant key="Parameter_5178" name="k1" value="100"/>
+          <Constant key="Parameter_4879" name="k2" value="100"/>
         </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="ConcentrationPerTime" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_14" unitType="ConcentrationPerTime" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
               <SourceParameter reference="ModelValue_5"/>
@@ -3116,10 +3381,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_58" name="NAMPT[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_35" name="NAMPT[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_58">
+  <rdf:Description rdf:about="#Reaction_35">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-09-07T08:19:58Z</dcterms:W3CDTF>
@@ -3140,19 +3405,19 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_77" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4797" name="ET" value="0"/>
-          <Constant key="Parameter_4796" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4795" name="Kcat" value="0.0077"/>
-          <Constant key="Parameter_4794" name="Km" value="5e-06"/>
-          <Constant key="Parameter_4793" name="Ki" value="0.0021"/>
+          <Constant key="Parameter_4878" name="ET" value="0"/>
+          <Constant key="Parameter_4877" name="scaling" value="0.001"/>
+          <Constant key="Parameter_4876" name="Kcat" value="0.0077"/>
+          <Constant key="Parameter_4875" name="Km" value="5e-06"/>
+          <Constant key="Parameter_4874" name="Ki" value="0.0021"/>
         </ListOfConstants>
-        <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_45" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_305">
-              <SourceParameter reference="Parameter_4797"/>
+              <SourceParameter reference="Parameter_4878"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_304">
-              <SourceParameter reference="Parameter_4796"/>
+              <SourceParameter reference="Parameter_4877"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_303">
               <SourceParameter reference="ModelValue_7"/>
@@ -3167,15 +3432,15 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_77"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_299">
-              <SourceParameter reference="Parameter_4793"/>
+              <SourceParameter reference="Parameter_4874"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_59" name="NAR-efflux[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_36" name="NAR-efflux[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_59">
+  <rdf:Description rdf:about="#Reaction_36">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -3188,9 +3453,9 @@ thus approx. 0.2 mikroM/s
           <Substrate metabolite="Metabolite_78" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4792" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_4873" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_4"/>
@@ -3201,12 +3466,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_60" name="NA-efflux[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_37" name="NA-efflux[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_60">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_37">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -3214,15 +3477,14 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_71" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4791" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_4872" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_4"/>
@@ -3233,10 +3495,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_61" name="NAD-binding[1]" reversible="true" fast="false" addNoise="false">
+      <Reaction key="Reaction_38" name="NAD-binding[1]" reversible="true" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_61">
+  <rdf:Description rdf:about="#Reaction_38">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2016-12-09T15:18:22Z</dcterms:W3CDTF>
@@ -3252,19 +3514,19 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_57" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4790" name="k1" value="1"/>
-          <Constant key="Parameter_4789" name="k2" value="0.1"/>
+          <Constant key="Parameter_4871" name="k1" value="100"/>
+          <Constant key="Parameter_4870" name="k2" value="10"/>
         </ListOfConstants>
-        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_14" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_69">
-              <SourceParameter reference="Parameter_4790"/>
+              <SourceParameter reference="Parameter_4871"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_68">
               <SourceParameter reference="Metabolite_77"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_78">
-              <SourceParameter reference="Parameter_4789"/>
+              <SourceParameter reference="Parameter_4870"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_79">
               <SourceParameter reference="Metabolite_57"/>
@@ -3272,10 +3534,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_62" name="NRK1-NaMN[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_39" name="NRK1-NaMN[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_62">
+  <rdf:Description rdf:about="#Reaction_39">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
@@ -3303,35 +3565,35 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_61" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4788" name="ET" value="10"/>
-          <Constant key="Parameter_4787" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4786" name="kcat" value="0.23"/>
-          <Constant key="Parameter_4785" name="Km" value="0.0034"/>
+          <Constant key="Parameter_4869" name="ET" value="10"/>
+          <Constant key="Parameter_4868" name="scaling" value="0.001"/>
+          <Constant key="Parameter_4867" name="kcat" value="0.23"/>
+          <Constant key="Parameter_4866" name="Km" value="0.0034"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4788"/>
+              <SourceParameter reference="Parameter_4869"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4787"/>
+              <SourceParameter reference="Parameter_4868"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4786"/>
+              <SourceParameter reference="Parameter_4867"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_78"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4785"/>
+              <SourceParameter reference="Parameter_4866"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_63" name="PNP-NAR[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_40" name="PNP-NAR[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_63">
+  <rdf:Description rdf:about="#Reaction_40">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <CopasiMT:isDescribedBy rdf:resource="urn:miriam:doi:10.1016/S0163-7258(00)00097-8" />
@@ -3365,18 +3627,18 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_61" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4784" name="E_T" value="10"/>
-          <Constant key="Parameter_4783" name="turnover" value="40"/>
-          <Constant key="Parameter_4782" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4781" name="Km" value="1.48"/>
+          <Constant key="Parameter_4865" name="E_T" value="10"/>
+          <Constant key="Parameter_4864" name="turnover" value="40"/>
+          <Constant key="Parameter_4863" name="scaling" value="0.001"/>
+          <Constant key="Parameter_4862" name="Km" value="1.48"/>
         </ListOfConstants>
-        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_40" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_264">
-              <SourceParameter reference="Parameter_4784"/>
+              <SourceParameter reference="Parameter_4865"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_263">
-              <SourceParameter reference="Parameter_4783"/>
+              <SourceParameter reference="Parameter_4864"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_262">
               <SourceParameter reference="Metabolite_78"/>
@@ -3385,18 +3647,18 @@ thus approx. 0.2 mikroM/s
               <SourceParameter reference="Metabolite_62"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_250">
-              <SourceParameter reference="Parameter_4782"/>
+              <SourceParameter reference="Parameter_4863"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_265">
-              <SourceParameter reference="Parameter_4781"/>
+              <SourceParameter reference="Parameter_4862"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_64" name="NR-efflux[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_41" name="NR-efflux[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_64">
+  <rdf:Description rdf:about="#Reaction_41">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -3409,9 +3671,9 @@ thus approx. 0.2 mikroM/s
           <Substrate metabolite="Metabolite_61" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4780" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_4861" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_4"/>
@@ -3422,10 +3684,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_65" name="NRK1-NMN[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_42" name="NRK1-NMN[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:CopasiMT="http://www.copasi.org/RDF/MiriamTerms#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_65">
+  <rdf:Description rdf:about="#Reaction_42">
     <dcterms:bibliographicCitation>
       <rdf:Description>
         <dcterms:description>Vmax of purified anzyme and Km for NR</dcterms:description>
@@ -3453,37 +3715,35 @@ thus approx. 0.2 mikroM/s
           <Modifier metabolite="Metabolite_78" stoichiometry="1"/>
         </ListOfModifiers>
         <ListOfConstants>
-          <Constant key="Parameter_4779" name="ET" value="10"/>
-          <Constant key="Parameter_4778" name="scaling" value="0.001"/>
-          <Constant key="Parameter_4777" name="kcat" value="0.23"/>
-          <Constant key="Parameter_4776" name="Km" value="0.0034"/>
+          <Constant key="Parameter_4860" name="ET" value="10"/>
+          <Constant key="Parameter_4859" name="scaling" value="0.001"/>
+          <Constant key="Parameter_4858" name="kcat" value="0.23"/>
+          <Constant key="Parameter_4857" name="Km" value="0.0034"/>
         </ListOfConstants>
-        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_41" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_271">
-              <SourceParameter reference="Parameter_4779"/>
+              <SourceParameter reference="Parameter_4860"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_270">
-              <SourceParameter reference="Parameter_4778"/>
+              <SourceParameter reference="Parameter_4859"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_269">
-              <SourceParameter reference="Parameter_4777"/>
+              <SourceParameter reference="Parameter_4858"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_268">
               <SourceParameter reference="Metabolite_61"/>
             </CallParameter>
             <CallParameter functionParameter="FunctionParameter_267">
-              <SourceParameter reference="Parameter_4776"/>
+              <SourceParameter reference="Parameter_4857"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_66" name="NAD-efflux[0]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_43" name="NAD-efflux[0]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_66">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_43">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -3491,15 +3751,14 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <ListOfSubstrates>
           <Substrate metabolite="Metabolite_50" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4775" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_4856" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_3"/>
@@ -3510,10 +3769,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_67" name="NAD-efflux[1]" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_44" name="NAD-efflux[1]" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
 <rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_67">
+  <rdf:Description rdf:about="#Reaction_44">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2015-05-26T10:26:00Z</dcterms:W3CDTF>
@@ -3526,9 +3785,9 @@ thus approx. 0.2 mikroM/s
           <Substrate metabolite="Metabolite_50" stoichiometry="1"/>
         </ListOfSubstrates>
         <ListOfConstants>
-          <Constant key="Parameter_4774" name="k1" value="2.8e-05"/>
+          <Constant key="Parameter_4855" name="k1" value="2.8e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]">
+        <KineticLaw function="Function_13" unitType="Default" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_80">
               <SourceParameter reference="ModelValue_4"/>
@@ -3539,12 +3798,10 @@ thus approx. 0.2 mikroM/s
           </ListOfCallParameters>
         </KineticLaw>
       </Reaction>
-      <Reaction key="Reaction_68" name="Nam uptake" reversible="false" fast="false" addNoise="false">
+      <Reaction key="Reaction_45" name="Nam uptake" reversible="false" fast="false" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="#Reaction_68">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="#Reaction_45">
     <dcterms:created>
       <rdf:Description>
         <dcterms:W3CDTF>2012-04-17T11:49:02Z</dcterms:W3CDTF>
@@ -3552,7 +3809,6 @@ thus approx. 0.2 mikroM/s
     </dcterms:created>
   </rdf:Description>
 </rdf:RDF>
-
         </MiriamAnnotation>
         <Comment>
           cell size HeLa 3e-12 l
@@ -3576,12 +3832,12 @@ thus approx. 0.2 mikroM/s
           <Product metabolite="Metabolite_81" stoichiometry="1"/>
         </ListOfProducts>
         <ListOfConstants>
-          <Constant key="Parameter_4773" name="v" value="1e-05"/>
+          <Constant key="Parameter_4854" name="v" value="1e-05"/>
         </ListOfConstants>
-        <KineticLaw function="Function_6" unitType="ConcentrationPerTime" scalingCompartment="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]">
+        <KineticLaw function="Function_6" unitType="ConcentrationPerTime" scalingCompartment="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]">
           <ListOfCallParameters>
             <CallParameter functionParameter="FunctionParameter_49">
-              <SourceParameter reference="Parameter_4773"/>
+              <SourceParameter reference="Parameter_4854"/>
             </CallParameter>
           </ListOfCallParameters>
         </KineticLaw>
@@ -3590,410 +3846,440 @@ thus approx. 0.2 mikroM/s
     <ListOfModelParameterSets activeSet="ModelParameterSet_0">
       <ModelParameterSet key="ModelParameterSet_0" name="Initial State">
         <ModelParameterGroup cn="String=Initial Time" type="Group">
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny" value="0" type="Model" simulationType="time"/>
+          <ModelParameter cn="CN=Root,Model=New Model" value="0" type="Model" simulationType="time"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Compartment Sizes" type="Group">
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT]" value="0.001" type="Compartment" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA]" value="0.001" type="Compartment" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol]" value="0.001" type="Compartment" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment]" value="0.001" type="Compartment" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment]" value="0.001" type="Compartment" simulationType="fixed"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Species Values" type="Group">
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[Gln]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[DNA_damage]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[DNA_ADPR]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NADbound]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[H3_ac]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[H3_deac]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[Glu]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NR]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[Pi]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAR_copy]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAM_copy]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NaAD]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[1-methyl-NAM]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[H2O]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[PPi]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[AMP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NMN]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NA]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NaMN]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[ADP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[SAM]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[SAH]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAM]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAD]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAR]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[PRPP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[ATP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[Gln]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[DNA_damage]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[DNA_ADPR]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NADbound]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[H3_ac]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[H3_deac]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[Glu]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NR]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[Pi]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAR_copy]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAM_copy]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NaAD]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[1-methyl-NAM]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[H2O]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[PPi]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[AMP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NMN]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NA]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NaMN]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[ADP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[SAM]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[SAH]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAM]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAD]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAR]" value="NaN" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[PRPP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[ATP]" value="NaN" type="Species" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[Nam_ex]" value="NaN" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NA]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaMN]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaAD]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NMN]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAR]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[H2O]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[ADP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[ATP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[PPi]" value="7226570148000036" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[PRPP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM]" value="0" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[SAH]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[SAM]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[AMP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[Gln]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[Glu]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[H3_ac]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[H3_deac]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[DNA_ADPR]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[DNA_damage]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[Pi]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NR]" value="6.0221417900000077e+17" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NADbound]" value="6.0221417900000077e+17" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAR_copy]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM_copy]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[Gln]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[DNA_damage]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[DNA_ADPR]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NADbound]" value="6.0221417900000077e+17" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[H3_ac]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[H3_deac]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[Glu]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NR]" value="6.0221417900000077e+17" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[Pi]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAR_copy]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAM_copy]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NaAD]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[1-methyl-NAM]" value="0" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[H2O]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[PPi]" value="7226570148000037" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[AMP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NMN]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NA]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NaMN]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[ADP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[SAM]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[SAH]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAM]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAD]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAR]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[PRPP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[ATP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[Gln]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[DNA_damage]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[DNA_ADPR]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NADbound]" value="6.0221417900000077e+17" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[H3_ac]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[H3_deac]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[Glu]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NR]" value="6.0221417900000077e+17" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[Pi]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAR_copy]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAM_copy]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NaAD]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[1-methyl-NAM]" value="0" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[H2O]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[PPi]" value="7226570148000020" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[AMP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NMN]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NA]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NaMN]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[ADP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[SAM]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[SAH]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAM]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAD]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAR]" value="0" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[PRPP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[ATP]" value="6.0221417900000077e+17" type="Species" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[Nam_ex]" value="6.0221417900000013e+17" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[scaling]" value="0.001" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT]" value="2.8e-05" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA]" value="2.8e-05" type="ModelValue" simulationType="assignment"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter]" value="100" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT]" value="5.0000000000000004e-06" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Kcat NamPT]" value="0.0077000000000000002" type="ModelValue" simulationType="fixed"/>
-          <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all]" value="2.8e-05" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[scaling]" value="0.001" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[E_T NMNAT]" value="200" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[NADbiosynthesis]" value="100" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[cell division rate]" value="2.8e-05" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[celldivision_pathogen]" value="2.8e-05" type="ModelValue" simulationType="assignment"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[Nam transporter]" value="100" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT]" value="5.0000000000000004e-06" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[Kcat NamPRT]" value="0.0077000000000000002" type="ModelValue" simulationType="fixed"/>
+          <ModelParameter cn="CN=Root,Model=New Model,Vector=Values[cell devision all]" value="2.8e-05" type="ModelValue" simulationType="fixed"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Kinetic Parameters" type="Group">
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMN-efflux\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMN-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NMN-efflux\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMN-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="3.2999999999999998" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.00014999999999999999" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="3.2999999999999998" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.00014999999999999999" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_A" value="53.799999999999997" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.0223" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="129.09999999999999" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_B" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.502" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_A" value="53.799999999999997" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.0223" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="129.09999999999999" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_B" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.502" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_A" value="42.899999999999999" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="103.8" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.502" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_B" value="22.300000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_A" value="42.899999999999999" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="103.8" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.502" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_B" value="22.300000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="21" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.19" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="21" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.19" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="0.5" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="5" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="0.5" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="5" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[0\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="8.0999999999999996" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.40000000000000002" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.059999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="8.0999999999999996" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.40000000000000002" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.059999999999999998" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam-efflux\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[Nam-efflux\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[Nam-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="2.7999999999999998" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="3.5" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="2.7999999999999998" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="3.5" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.67000000000000004" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.029000000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.059999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.67000000000000004" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.029000000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.059999999999999998" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="1" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=Km" value="1" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="1" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],ParameterGroup=Parameters,Parameter=Km" value="1" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.68999999999999995" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.0089999999999999993" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.68999999999999995" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.0089999999999999993" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[0\]],ParameterGroup=Parameters,Parameter=k1" value="100" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[0\]],ParameterGroup=Parameters,Parameter=k1" value="100" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[0\]],ParameterGroup=Parameters,Parameter=k2" value="100" type="ReactionParameter" simulationType="assignment">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[0\]],ParameterGroup=Parameters,Parameter=k2" value="100" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=ET" value="100" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.0077000000000000002" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Kcat NamPT],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="5.0000000000000004e-06" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.0020999999999999999" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAR-efflux\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAR-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA-efflux\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=ET" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.0077000000000000002" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[Kcat NamPRT],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=Km" value="5.0000000000000004e-06" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=Ki" value="0.0020999999999999999" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAR-efflux\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAR-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-binding\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-binding\[0\]],ParameterGroup=Parameters,Parameter=k1" value="1" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-binding\[0\]],ParameterGroup=Parameters,Parameter=k2" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NR-efflux\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NR-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NA-efflux\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NA-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAD-binding\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-binding\[0\]],ParameterGroup=Parameters,Parameter=k1" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-binding\[0\]],ParameterGroup=Parameters,Parameter=k2" value="10" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMN-efflux\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMN-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[0\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NR-efflux\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NR-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="3.2999999999999998" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.00014999999999999999" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[0\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_A" value="53.799999999999997" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.0223" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="129.09999999999999" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_B" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.502" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_A" value="42.899999999999999" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="103.8" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.502" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_B" value="22.300000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="21" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.19" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="0.5" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="5" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam-efflux\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NMN-efflux\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMN-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[celldivision_pathogen],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="2.7999999999999998" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="3.5" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="3.2999999999999998" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAPRT\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.00014999999999999999" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.67000000000000004" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.029000000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=Ki" value="0.059999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_A" value="53.799999999999997" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.0223" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="129.09999999999999" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_B" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.502" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="1" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=Km" value="1" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_A" value="42.899999999999999" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_A" value="0.067699999999999996" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat_PA" value="103.8" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PA" value="0.502" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_B" value="22.300000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km_PB" value="0.058999999999999997" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET" value="100" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.68999999999999995" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.0089999999999999993" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=Ki" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="21" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADS\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.19" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[1\]],ParameterGroup=Parameters,Parameter=k1" value="100" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="0.5" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="5" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NR\[1\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[Nam-efflux\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[Nam-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[1\]],ParameterGroup=Parameters,Parameter=k2" value="100" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.0077000000000000002" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Kcat NamPT],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=Km" value="5.0000000000000004e-06" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue>
-              </InitialExpression>
-            </ModelParameter>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=Ki" value="0.0020999999999999999" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAR-efflux\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAR-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
-              <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[celldivision_pathogen],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA-efflux\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="2.7999999999999998" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NT5-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="3.5" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.67000000000000004" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.029000000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],ParameterGroup=Parameters,Parameter=Ki" value="0.059999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="1" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],ParameterGroup=Parameters,Parameter=Km" value="1" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.68999999999999995" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.0089999999999999993" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=Ki" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[1\]],ParameterGroup=Parameters,Parameter=k1" value="100" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[1\]],ParameterGroup=Parameters,Parameter=k2" value="100" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-binding\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-binding\[1\]],ParameterGroup=Parameters,Parameter=k1" value="1" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-binding\[1\]],ParameterGroup=Parameters,Parameter=k2" value="0.10000000000000001" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NR-efflux\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NR-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=ET" value="0" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=Kcat" value="0.0077000000000000002" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[Kcat NamPRT],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=Km" value="5.0000000000000004e-06" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=Ki" value="0.0020999999999999999" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAR-efflux\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAR-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[celldivision_pathogen],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
-          </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-efflux\[0\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NA-efflux\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NA-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[celldivision_pathogen],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-efflux\[1\]]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAD-binding\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-binding\[1\]],ParameterGroup=Parameters,Parameter=k1" value="100" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-binding\[1\]],ParameterGroup=Parameters,Parameter=k2" value="10" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NaMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=E_T" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=turnover" value="40" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[PNP-NAR\[1\]],ParameterGroup=Parameters,Parameter=Km" value="1.48" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NR-efflux\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NR-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
               <InitialExpression>
-                &lt;CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NADA],Reference=InitialValue>
+                &lt;CN=Root,Model=New Model,Vector=Values[celldivision_pathogen],Reference=InitialValue>
               </InitialExpression>
             </ModelParameter>
           </ModelParameterGroup>
-          <ModelParameterGroup cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam uptake]" type="Reaction">
-            <ModelParameter cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam uptake],ParameterGroup=Parameters,Parameter=v" value="1.0000000000000001e-05" type="ReactionParameter" simulationType="fixed"/>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=ET" value="10" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=scaling" value="0.001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=kcat" value="0.23000000000000001" type="ReactionParameter" simulationType="fixed"/>
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NRK1-NMN\[1\]],ParameterGroup=Parameters,Parameter=Km" value="0.0033999999999999998" type="ReactionParameter" simulationType="fixed"/>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAD-efflux\[0\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-efflux\[0\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[NAD-efflux\[1\]]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[NAD-efflux\[1\]],ParameterGroup=Parameters,Parameter=k1" value="2.8e-05" type="ReactionParameter" simulationType="assignment">
+              <InitialExpression>
+                &lt;CN=Root,Model=New Model,Vector=Values[celldivision_pathogen],Reference=InitialValue>
+              </InitialExpression>
+            </ModelParameter>
+          </ModelParameterGroup>
+          <ModelParameterGroup cn="CN=Root,Model=New Model,Vector=Reactions[Nam uptake]" type="Reaction">
+            <ModelParameter cn="CN=Root,Model=New Model,Vector=Reactions[Nam uptake],ParameterGroup=Parameters,Parameter=v" value="1.0000000000000001e-05" type="ReactionParameter" simulationType="fixed"/>
           </ModelParameterGroup>
         </ModelParameterGroup>
       </ModelParameterSet>
@@ -4021,6 +4307,22 @@ thus approx. 0.2 mikroM/s
       <StateTemplateVariable objectReference="Metabolite_57"/>
       <StateTemplateVariable objectReference="ModelValue_3"/>
       <StateTemplateVariable objectReference="ModelValue_4"/>
+      <StateTemplateVariable objectReference="Metabolite_7"/>
+      <StateTemplateVariable objectReference="Metabolite_8"/>
+      <StateTemplateVariable objectReference="Metabolite_9"/>
+      <StateTemplateVariable objectReference="Metabolite_10"/>
+      <StateTemplateVariable objectReference="Metabolite_11"/>
+      <StateTemplateVariable objectReference="Metabolite_12"/>
+      <StateTemplateVariable objectReference="Metabolite_13"/>
+      <StateTemplateVariable objectReference="Metabolite_14"/>
+      <StateTemplateVariable objectReference="Metabolite_15"/>
+      <StateTemplateVariable objectReference="Metabolite_16"/>
+      <StateTemplateVariable objectReference="Metabolite_17"/>
+      <StateTemplateVariable objectReference="Metabolite_18"/>
+      <StateTemplateVariable objectReference="Metabolite_19"/>
+      <StateTemplateVariable objectReference="Metabolite_20"/>
+      <StateTemplateVariable objectReference="Metabolite_21"/>
+      <StateTemplateVariable objectReference="Metabolite_22"/>
       <StateTemplateVariable objectReference="Metabolite_27"/>
       <StateTemplateVariable objectReference="Metabolite_28"/>
       <StateTemplateVariable objectReference="Metabolite_29"/>
@@ -4053,20 +4355,34 @@ thus approx. 0.2 mikroM/s
       <StateTemplateVariable objectReference="Metabolite_75"/>
       <StateTemplateVariable objectReference="Metabolite_79"/>
       <StateTemplateVariable objectReference="Metabolite_80"/>
+      <StateTemplateVariable objectReference="Metabolite_0"/>
+      <StateTemplateVariable objectReference="Metabolite_1"/>
+      <StateTemplateVariable objectReference="Metabolite_2"/>
+      <StateTemplateVariable objectReference="Metabolite_3"/>
+      <StateTemplateVariable objectReference="Metabolite_4"/>
+      <StateTemplateVariable objectReference="Metabolite_5"/>
+      <StateTemplateVariable objectReference="Metabolite_6"/>
+      <StateTemplateVariable objectReference="Metabolite_23"/>
+      <StateTemplateVariable objectReference="Metabolite_24"/>
+      <StateTemplateVariable objectReference="Metabolite_25"/>
+      <StateTemplateVariable objectReference="Metabolite_26"/>
       <StateTemplateVariable objectReference="Metabolite_36"/>
       <StateTemplateVariable objectReference="Metabolite_37"/>
       <StateTemplateVariable objectReference="Metabolite_63"/>
       <StateTemplateVariable objectReference="Metabolite_64"/>
+      <StateTemplateVariable objectReference="Compartment_0"/>
       <StateTemplateVariable objectReference="Compartment_1"/>
       <StateTemplateVariable objectReference="Compartment_2"/>
       <StateTemplateVariable objectReference="ModelValue_0"/>
+      <StateTemplateVariable objectReference="ModelValue_1"/>
+      <StateTemplateVariable objectReference="ModelValue_2"/>
       <StateTemplateVariable objectReference="ModelValue_5"/>
       <StateTemplateVariable objectReference="ModelValue_6"/>
       <StateTemplateVariable objectReference="ModelValue_7"/>
       <StateTemplateVariable objectReference="ModelValue_8"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN 2.8e-05 2.8e-05 NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN NaN 0.001 0.001 0.001 100 5.0000000000000004e-06 0.0077000000000000002 2.8e-05 
+      0 0 0 0 0 0 0 0 0 0 0 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000013e+17 0 0 0 0 6.0221417900000077e+17 6.0221417900000077e+17 2.8e-05 2.8e-05 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 7226570148000036 6.0221417900000077e+17 0 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 0 6.0221417900000077e+17 7226570148000037 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 0 6.0221417900000077e+17 7226570148000020 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 6.0221417900000077e+17 0 0 0 0 0 0 0 6.0221417900000077e+17 6.0221417900000077e+17 0 0 0 0 0 0 0.001 0.001 0.001 0.001 200 100 100 5.0000000000000004e-06 0.0077000000000000002 2.8e-05 
     </InitialState>
   </Model>
   <ListOfTasks>
@@ -4115,10 +4431,10 @@ thus approx. 0.2 mikroM/s
         <Parameter name="Subtask" type="unsignedInteger" value="0"/>
         <ParameterGroup name="ScanItems">
           <ParameterGroup name="ScanItem">
-            <Parameter name="Maximum" type="float" value="0.00027999999999999998"/>
-            <Parameter name="Minimum" type="float" value="2.7e-06"/>
+            <Parameter name="Maximum" type="float" value="0.001"/>
+            <Parameter name="Minimum" type="float" value="9.9999999999999995e-08"/>
             <Parameter name="Number of steps" type="unsignedInteger" value="100"/>
-            <Parameter name="Object" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue"/>
+            <Parameter name="Object" type="cn" value="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
             <Parameter name="Type" type="unsignedInteger" value="1"/>
             <Parameter name="log" type="bool" value="1"/>
           </ParameterGroup>
@@ -4149,37 +4465,37 @@ thus approx. 0.2 mikroM/s
         <ParameterGroup name="OptimizationItemList">
           <ParameterGroup name="OptimizationItem">
             <Parameter name="LowerBound" type="cn" value="1"/>
-            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=New Model,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
             <Parameter name="StartValue" type="float" value="1.8357099999999999e-06"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
           </ParameterGroup>
           <ParameterGroup name="OptimizationItem">
             <Parameter name="LowerBound" type="cn" value="1"/>
-            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMNAT1-NMN],ParameterGroup=Parameters,Parameter=E_T,Reference=Value"/>
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=New Model,Vector=Reactions[NMNAT1-NMN],ParameterGroup=Parameters,Parameter=E_T,Reference=Value"/>
             <Parameter name="StartValue" type="float" value="27.530805060848021"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
           </ParameterGroup>
           <ParameterGroup name="OptimizationItem">
             <Parameter name="LowerBound" type="cn" value="1"/>
-            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=New Model,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
             <Parameter name="StartValue" type="float" value="1.0899513512407681e-05"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
           </ParameterGroup>
           <ParameterGroup name="OptimizationItem">
             <Parameter name="LowerBound" type="cn" value="1"/>
-            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NT5-NMN],ParameterGroup=Parameters,Parameter=E_T,Reference=Value"/>
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=New Model,Vector=Reactions[NT5-NMN],ParameterGroup=Parameters,Parameter=E_T,Reference=Value"/>
             <Parameter name="StartValue" type="float" value="28.969941752788429"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
           </ParameterGroup>
           <ParameterGroup name="OptimizationItem">
             <Parameter name="LowerBound" type="cn" value="1"/>
-            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PNP-NMR],ParameterGroup=Parameters,Parameter=E_T,Reference=Value"/>
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=New Model,Vector=Reactions[PNP-NMR],ParameterGroup=Parameters,Parameter=E_T,Reference=Value"/>
             <Parameter name="StartValue" type="float" value="8.2905472020351816"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
           </ParameterGroup>
           <ParameterGroup name="OptimizationItem">
             <Parameter name="LowerBound" type="cn" value="1"/>
-            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+            <Parameter name="ObjectCN" type="cn" value="CN=Root,Model=New Model,Vector=Reactions[SIRT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
             <Parameter name="StartValue" type="float" value="21.53431184044117"/>
             <Parameter name="UpperBound" type="cn" value="1000"/>
           </ParameterGroup>
@@ -4468,100 +4784,100 @@ thus approx. 0.2 mikroM/s
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[a],Reference=InitialValue"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[a],Reference=InitialValue"/>
       </Table>
     </Report>
     <Report key="Report_20" name="Sirtscan" taskType="timeCourse" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],Reference=Flux"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],Reference=Flux"/>
       </Table>
     </Report>
     <Report key="Report_21" name="PARP-NA-MNA" taskType="timeCourse" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[a],Reference=InitialValue"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PARP],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[a],Reference=InitialValue"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[PARP],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
       </Table>
     </Report>
     <Report key="Report_22" name="NMMT scan" taskType="timeCourse" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
       </Table>
     </Report>
     <Report key="Report_23" name="PARP_NAM_scan" taskType="timeCourse" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PARP],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[PARP],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[1-methyl-NAM],Reference=Concentration"/>
       </Table>
     </Report>
     <Report key="Report_24" name="steadystatescan" taskType="steadyState" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=Km,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=Km,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],Reference=Flux"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NMN],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[scaling],Reference=InitialValue"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NADA],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=Km,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=Km,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],Reference=Flux"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NMN],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[scaling],Reference=InitialValue"/>
       </Table>
     </Report>
     <Report key="Report_25" name="MCAScan" taskType="metabolicControlAnalysis" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NNMT],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled concentration control coefficients[NAD,(NAMPT)]"/>
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled concentration control coefficients[NAD,(NNMT)]"/>
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(SIRT),(NAMPT)]"/>
         <Object cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(SIRT),(NNMT)]"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],Reference=Flux"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],Reference=Flux"/>
       </Table>
     </Report>
     <Report key="Report_26" name="competition scan" taskType="timeCourse" separator="&#x09;" precision="6">
       <Comment>
       </Comment>
       <Table printTitle="1">
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAD],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAD],Reference=Concentration"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam uptake],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Values[scaling],Reference=Value"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Reference=InitialVolume"/>
-        <Object cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Reference=InitialVolume"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[0\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NAMPT\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[NNMT\[0\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Reactions[Nam uptake],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Values[scaling],Reference=Value"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Reference=InitialVolume"/>
+        <Object cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Reference=InitialVolume"/>
       </Table>
     </Report>
     <Report key="Report_27" name="Moieties" taskType="moieties" separator="&#x09;" precision="6">
@@ -4591,7 +4907,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
             <ChannelSpec cn=""/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAM]|(PARP).ET" type="Curve2D">
@@ -4602,8 +4918,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[PARP],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[PARP],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -4620,8 +4936,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -4638,8 +4954,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAM]|Time" type="Curve2D">
@@ -4650,8 +4966,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -4668,8 +4984,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -4686,8 +5002,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAM]|(NAM import).Flux" type="Curve2D">
@@ -4698,8 +5014,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAR]|(NAM import).Flux" type="Curve2D">
@@ -4710,8 +5026,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAR],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAR],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NA]|(NAM import).Flux" type="Curve2D">
@@ -4722,8 +5038,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NA],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NA],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NMN]|(NAM import).Flux" type="Curve2D">
@@ -4734,8 +5050,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NMN],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NMN],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NMR]|(NAM import).Flux" type="Curve2D">
@@ -4746,8 +5062,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NMR],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NMR],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NaAD]|(NAM import).Flux" type="Curve2D">
@@ -4758,8 +5074,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NaAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NaMN]|(NAM import).Flux" type="Curve2D">
@@ -4770,8 +5086,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NaMN],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaMN],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -4788,7 +5104,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
             <ChannelSpec cn=""/>
           </ListOfChannels>
         </PlotItem>
@@ -4800,8 +5116,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[NAD degradation],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[NAD degradation],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="Values[Vf NMNAT1]" type="Curve2D">
@@ -4812,8 +5128,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Vf NMNAT1],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Vf NMNAT1],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="Values[Vr NMNAT]" type="Curve2D">
@@ -4824,8 +5140,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Vr NMNAT],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Vr NMNAT],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAD]" type="Curve2D">
@@ -4836,8 +5152,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAM]" type="Curve2D">
@@ -4848,8 +5164,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAM],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAR]" type="Curve2D">
@@ -4860,8 +5176,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAR],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAR],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NA]" type="Curve2D">
@@ -4872,8 +5188,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NA],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NA],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NMN]" type="Curve2D">
@@ -4884,8 +5200,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NMN],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NMN],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NMR]" type="Curve2D">
@@ -4896,8 +5212,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NMR],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NMR],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NaAD]" type="Curve2D">
@@ -4908,8 +5224,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NaAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NaMN]" type="Curve2D">
@@ -4920,8 +5236,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NaMN],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaMN],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NaM]" type="Curve2D">
@@ -4932,8 +5248,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NaM],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NaM],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[Pi]" type="Curve2D">
@@ -4944,8 +5260,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Reference=Time"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[Pi],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Reference=Time"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[Pi],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -4962,13 +5278,13 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Sirt over Km NamPRT" type="Plot2D" active="0" taskTypes="">
+    <PlotSpecification name="Sirt over Km NamPRT" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="1"/>
       <Parameter name="log Y" type="bool" value="1"/>
       <ListOfPlotItems>
@@ -4980,8 +5296,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(SIRT[1]).Flux|Values[Km NamPRT].InitialValue" type="Curve2D">
@@ -4992,8 +5308,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5010,13 +5326,13 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="Sirt over cell division rate" type="Plot2D" active="1" taskTypes="">
+    <PlotSpecification name="Sirt over cell division rate" type="Plot2D" active="0" taskTypes="">
       <Parameter name="log X" type="bool" value="1"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
@@ -5028,8 +5344,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(SIRT[1]).Flux|Values[cell devision all].InitialValue" type="Curve2D">
@@ -5040,13 +5356,13 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="NAD over cell division rate" type="Plot2D" active="1" taskTypes="">
+    <PlotSpecification name="NAD over cell division rate" type="Plot2D" active="0" taskTypes="">
       <Parameter name="log X" type="bool" value="1"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
@@ -5058,8 +5374,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAD{Pathogen}]|Values[cell devision all].InitialValue" type="Curve2D">
@@ -5070,8 +5386,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[cell devision all],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell devision all],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5088,8 +5404,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=Value"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5106,8 +5422,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[Cytosol],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5124,8 +5440,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NAD-efflux).Flux|(NA import).Flux" type="Curve2D">
@@ -5136,8 +5452,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAD-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NAR-efflux).Flux|(NA import).Flux" type="Curve2D">
@@ -5148,8 +5464,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAR-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAR-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NMN-efflux).Flux|(NA import).Flux" type="Curve2D">
@@ -5160,8 +5476,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMN-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NMN-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NR-efflux).Flux|(NA import).Flux" type="Curve2D">
@@ -5172,8 +5488,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NR-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NR-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(Nam-efflux).Flux|(NA import).Flux" type="Curve2D">
@@ -5184,8 +5500,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA import],Reference=Flux"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA import],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[Nam-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5202,7 +5518,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn=""/>
           </ListOfChannels>
         </PlotItem>
@@ -5214,7 +5530,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NA import)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5226,7 +5542,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NA-efflux)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5238,7 +5554,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAD-binding)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5250,7 +5566,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAD-consumption without Nam inhibition)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5262,7 +5578,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAD-efflux)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5274,7 +5590,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NADA)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5286,7 +5602,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NADS)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5298,7 +5614,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAM import)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5310,7 +5626,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAMPT)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5322,7 +5638,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAPRT)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5334,7 +5650,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NAR-efflux)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5346,7 +5662,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NMN-efflux)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5358,7 +5674,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NMNAT1-NMN)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5370,7 +5686,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NMNAT1-NaMN)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5382,7 +5698,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NNMT)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5394,7 +5710,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NR-efflux)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5406,7 +5722,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NRK1-NMN)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5418,7 +5734,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NRK1-NaMN)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5430,7 +5746,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NT5-NMN)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5442,7 +5758,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(NT5-NaMN)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5454,7 +5770,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(Nam-efflux)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5466,7 +5782,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(PNP-NAR)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5478,7 +5794,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(PNP-NR)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5490,7 +5806,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import],ParameterGroup=Parameters,Parameter=v,Reference=Value"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(NAD-efflux),(SIRT)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5508,8 +5824,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NA-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NA-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NAD-efflux).Flux|Values[cell division rate].InitialValue" type="Curve2D">
@@ -5520,8 +5836,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAD-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NAR-efflux).Flux|Values[cell division rate].InitialValue" type="Curve2D">
@@ -5532,8 +5848,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAR-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAR-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NMN-efflux).Flux|Values[cell division rate].InitialValue" type="Curve2D">
@@ -5544,8 +5860,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NMN-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NMN-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NR-efflux).Flux|Values[cell division rate].InitialValue" type="Curve2D">
@@ -5556,8 +5872,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NR-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NR-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(Nam-efflux).Flux|Values[cell division rate].InitialValue" type="Curve2D">
@@ -5568,8 +5884,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam-efflux],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[Nam-efflux],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5586,7 +5902,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled concentration control coefficients[NAD,(NAM import)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5598,7 +5914,7 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[celldivision_compartment_NamPT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[cell division rate],Reference=InitialValue"/>
             <ChannelSpec cn="CN=Root,Vector=TaskList[Metabolic Control Analysis],Method=MCA Method (Reder),Array=Scaled flux control coefficients[(SIRT),(NAM import)]"/>
           </ListOfChannels>
         </PlotItem>
@@ -5616,8 +5932,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAD{Pathogen}]|Values[Km NamPRT].InitialValue" type="Curve2D">
@@ -5628,8 +5944,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5646,8 +5962,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAD{Pathogen}]|(NADA[1]).ET" type="Curve2D">
@@ -5658,8 +5974,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NADA\[1\]],ParameterGroup=Parameters,Parameter=ET,Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5676,8 +5992,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[0\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NAD-consumption without Nam inhibition[1]).Flux|Values[Km NamPRT].InitialValue" type="Curve2D">
@@ -5688,8 +6004,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAD-consumption without Nam inhibition\[1\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5706,8 +6022,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[0\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[0\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(NAM import[1]).Flux|Values[Nam transporter].InitialValue" type="Curve2D">
@@ -5718,8 +6034,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[NAM import\[1\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[NAM import\[1\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(SIRT[0]).Flux|Values[Nam transporter].InitialValue" type="Curve2D">
@@ -5730,8 +6046,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[0\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="(SIRT[1]).Flux|Values[Nam transporter].InitialValue" type="Curve2D">
@@ -5742,13 +6058,13 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Nam transporter],Reference=InitialValue"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Nam transporter],Reference=InitialValue"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Reactions[SIRT\[1\]],Reference=Flux"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
     </PlotSpecification>
-    <PlotSpecification name="NAD over Km NamPRT" type="Plot2D" active="0" taskTypes="">
+    <PlotSpecification name="NAD over Km NamPRT" type="Plot2D" active="1" taskTypes="">
       <Parameter name="log X" type="bool" value="1"/>
       <Parameter name="log Y" type="bool" value="0"/>
       <ListOfPlotItems>
@@ -5760,8 +6076,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Copartment_NamPT],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NamPT_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
         <PlotItem name="[NAD{Pathogen}]|Values[Km NamPRT]" type="Curve2D">
@@ -5772,8 +6088,8 @@ thus approx. 0.2 mikroM/s
           <Parameter name="Color" type="string" value="auto"/>
           <Parameter name="Recording Activity" type="string" value="during"/>
           <ListOfChannels>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Values[Km NamPT],Reference=Value"/>
-            <ChannelSpec cn="CN=Root,Model=NAD Phylogeny,Vector=Compartments[Compartment_NADA],Vector=Metabolites[NAD],Reference=Concentration"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Values[Km NamPRT],Reference=Value"/>
+            <ChannelSpec cn="CN=Root,Model=New Model,Vector=Compartments[NADA_compartment],Vector=Metabolites[NAD],Reference=Concentration"/>
           </ListOfChannels>
         </PlotItem>
       </ListOfPlotItems>
@@ -5787,128 +6103,9 @@ thus approx. 0.2 mikroM/s
   </ListOfPlots>
   <GUI>
     <ListOfSliders>
-      <Slider key="Slider_0" associatedEntityKey="Task_10" objectCN="CN=Root,Model=NAD Phylogeny,Vector=Reactions[Nam uptake],ParameterGroup=Parameters,Parameter=v,Reference=Value" objectType="float" objectValue="1e-05" minValue="1e-07" maxValue="0.001" tickNumber="1000" tickFactor="100" scaling="linear"/>
+      <Slider key="Slider_0" associatedEntityKey="Task_10" objectCN="CN=Root,Model=New Model,Vector=Reactions[Nam uptake],ParameterGroup=Parameters,Parameter=v,Reference=Value" objectType="float" objectValue="1e-05" minValue="1e-07" maxValue="0.001" tickNumber="1000" tickFactor="100" scaling="linear"/>
     </ListOfSliders>
   </GUI>
-  <SBMLReference file="competition_model.xml">
-    <SBMLMap SBMLid="ADP_Compartment_NADA" COPASIkey="Metabolite_73"/>
-    <SBMLMap SBMLid="ADP_Copartment_NamPT" COPASIkey="Metabolite_46"/>
-    <SBMLMap SBMLid="AMP_Compartment_NADA" COPASIkey="Metabolite_69"/>
-    <SBMLMap SBMLid="AMP_Copartment_NamPT" COPASIkey="Metabolite_42"/>
-    <SBMLMap SBMLid="ATP_Compartment_NADA" COPASIkey="Metabolite_80"/>
-    <SBMLMap SBMLid="ATP_Copartment_NamPT" COPASIkey="Metabolite_53"/>
-    <SBMLMap SBMLid="Compartment_NADA" COPASIkey="Compartment_2"/>
-    <SBMLMap SBMLid="Competitie_inhibition_two_substrates_s2_const_scaling" COPASIkey="Function_42"/>
-    <SBMLMap SBMLid="Competitive_inhibition_scaling" COPASIkey="Function_45"/>
-    <SBMLMap SBMLid="Constant_flux__irreversible" COPASIkey="Function_6"/>
-    <SBMLMap SBMLid="Copartment_NamPT" COPASIkey="Compartment_1"/>
-    <SBMLMap SBMLid="DNA_ADPR_Compartment_NADA" COPASIkey="Metabolite_56"/>
-    <SBMLMap SBMLid="DNA_ADPR_Copartment_NamPT" COPASIkey="Metabolite_29"/>
-    <SBMLMap SBMLid="DNA_damage_Compartment_NADA" COPASIkey="Metabolite_55"/>
-    <SBMLMap SBMLid="DNA_damage_Copartment_NamPT" COPASIkey="Metabolite_28"/>
-    <SBMLMap SBMLid="Gln_Compartment_NADA" COPASIkey="Metabolite_54"/>
-    <SBMLMap SBMLid="Gln_Copartment_NamPT" COPASIkey="Metabolite_27"/>
-    <SBMLMap SBMLid="Glu_Compartment_NADA" COPASIkey="Metabolite_60"/>
-    <SBMLMap SBMLid="Glu_Copartment_NamPT" COPASIkey="Metabolite_33"/>
-    <SBMLMap SBMLid="H2O_Compartment_NADA" COPASIkey="Metabolite_67"/>
-    <SBMLMap SBMLid="H2O_Copartment_NamPT" COPASIkey="Metabolite_40"/>
-    <SBMLMap SBMLid="H3_ac_Compartment_NADA" COPASIkey="Metabolite_58"/>
-    <SBMLMap SBMLid="H3_ac_Copartment_NamPT" COPASIkey="Metabolite_31"/>
-    <SBMLMap SBMLid="H3_deac_Compartment_NADA" COPASIkey="Metabolite_59"/>
-    <SBMLMap SBMLid="H3_deac_Copartment_NamPT" COPASIkey="Metabolite_32"/>
-    <SBMLMap SBMLid="Kcat_NamPT" COPASIkey="ModelValue_7"/>
-    <SBMLMap SBMLid="Km_NamPT" COPASIkey="ModelValue_6"/>
-    <SBMLMap SBMLid="MM_with_ET_and_scaling" COPASIkey="Function_41"/>
-    <SBMLMap SBMLid="NADA_0" COPASIkey="Reaction_35"/>
-    <SBMLMap SBMLid="NADA_1" COPASIkey="Reaction_56"/>
-    <SBMLMap SBMLid="NADS_0" COPASIkey="Reaction_27"/>
-    <SBMLMap SBMLid="NADS_1" COPASIkey="Reaction_49"/>
-    <SBMLMap SBMLid="NAD_Compartment_NADA" COPASIkey="Metabolite_77"/>
-    <SBMLMap SBMLid="NAD_Copartment_NamPT" COPASIkey="Metabolite_50"/>
-    <SBMLMap SBMLid="NAD_binding_0" COPASIkey="Reaction_40"/>
-    <SBMLMap SBMLid="NAD_binding_1" COPASIkey="Reaction_61"/>
-    <SBMLMap SBMLid="NAD_consumption_without_Nam_inhibition_0" COPASIkey="Reaction_34"/>
-    <SBMLMap SBMLid="NAD_consumption_without_Nam_inhibition_1" COPASIkey="Reaction_55"/>
-    <SBMLMap SBMLid="NAD_efflux_0" COPASIkey="Reaction_66"/>
-    <SBMLMap SBMLid="NAD_efflux_1" COPASIkey="Reaction_67"/>
-    <SBMLMap SBMLid="NADbound_Compartment_NADA" COPASIkey="Metabolite_57"/>
-    <SBMLMap SBMLid="NADbound_Copartment_NamPT" COPASIkey="Metabolite_30"/>
-    <SBMLMap SBMLid="NAMPT_0" COPASIkey="Reaction_37"/>
-    <SBMLMap SBMLid="NAMPT_1" COPASIkey="Reaction_58"/>
-    <SBMLMap SBMLid="NAM_Compartment_NADA" COPASIkey="Metabolite_76"/>
-    <SBMLMap SBMLid="NAM_Copartment_NamPT" COPASIkey="Metabolite_49"/>
-    <SBMLMap SBMLid="NAM_copy_Compartment_NADA" COPASIkey="Metabolite_64"/>
-    <SBMLMap SBMLid="NAM_copy_Copartment_NamPT" COPASIkey="Metabolite_37"/>
-    <SBMLMap SBMLid="NAM_import_0" COPASIkey="Reaction_36"/>
-    <SBMLMap SBMLid="NAM_import_1" COPASIkey="Reaction_57"/>
-    <SBMLMap SBMLid="NAPRT_0" COPASIkey="Reaction_24"/>
-    <SBMLMap SBMLid="NAPRT_1" COPASIkey="Reaction_46"/>
-    <SBMLMap SBMLid="NAR_Compartment_NADA" COPASIkey="Metabolite_78"/>
-    <SBMLMap SBMLid="NAR_Copartment_NamPT" COPASIkey="Metabolite_51"/>
-    <SBMLMap SBMLid="NAR_copy_Compartment_NADA" COPASIkey="Metabolite_63"/>
-    <SBMLMap SBMLid="NAR_copy_Copartment_NamPT" COPASIkey="Metabolite_36"/>
-    <SBMLMap SBMLid="NAR_efflux_0" COPASIkey="Reaction_38"/>
-    <SBMLMap SBMLid="NAR_efflux_1" COPASIkey="Reaction_59"/>
-    <SBMLMap SBMLid="NA_Compartment_NADA" COPASIkey="Metabolite_71"/>
-    <SBMLMap SBMLid="NA_Copartment_NamPT" COPASIkey="Metabolite_44"/>
-    <SBMLMap SBMLid="NA_efflux_0" COPASIkey="Reaction_39"/>
-    <SBMLMap SBMLid="NA_efflux_1" COPASIkey="Reaction_60"/>
-    <SBMLMap SBMLid="NMNAT1_NMN_0" COPASIkey="Reaction_25"/>
-    <SBMLMap SBMLid="NMNAT1_NMN_1" COPASIkey="Reaction_47"/>
-    <SBMLMap SBMLid="NMNAT1_NaMN_0" COPASIkey="Reaction_26"/>
-    <SBMLMap SBMLid="NMNAT1_NaMN_1" COPASIkey="Reaction_48"/>
-    <SBMLMap SBMLid="NMN_Compartment_NADA" COPASIkey="Metabolite_70"/>
-    <SBMLMap SBMLid="NMN_Copartment_NamPT" COPASIkey="Metabolite_43"/>
-    <SBMLMap SBMLid="NMN_efflux_0" COPASIkey="Reaction_23"/>
-    <SBMLMap SBMLid="NMN_efflux_1" COPASIkey="Reaction_45"/>
-    <SBMLMap SBMLid="NNMT_0" COPASIkey="Reaction_30"/>
-    <SBMLMap SBMLid="NRK1_NMN_0" COPASIkey="Reaction_44"/>
-    <SBMLMap SBMLid="NRK1_NMN_1" COPASIkey="Reaction_65"/>
-    <SBMLMap SBMLid="NRK1_NaMN_0" COPASIkey="Reaction_41"/>
-    <SBMLMap SBMLid="NRK1_NaMN_1" COPASIkey="Reaction_62"/>
-    <SBMLMap SBMLid="NR_Compartment_NADA" COPASIkey="Metabolite_61"/>
-    <SBMLMap SBMLid="NR_Copartment_NamPT" COPASIkey="Metabolite_34"/>
-    <SBMLMap SBMLid="NR_efflux_0" COPASIkey="Reaction_43"/>
-    <SBMLMap SBMLid="NR_efflux_1" COPASIkey="Reaction_64"/>
-    <SBMLMap SBMLid="NT5_NMN_0" COPASIkey="Reaction_28"/>
-    <SBMLMap SBMLid="NT5_NMN_1" COPASIkey="Reaction_50"/>
-    <SBMLMap SBMLid="NT5_NaMN_0" COPASIkey="Reaction_32"/>
-    <SBMLMap SBMLid="NT5_NaMN_1" COPASIkey="Reaction_53"/>
-    <SBMLMap SBMLid="NaAD_Compartment_NADA" COPASIkey="Metabolite_65"/>
-    <SBMLMap SBMLid="NaAD_Copartment_NamPT" COPASIkey="Metabolite_38"/>
-    <SBMLMap SBMLid="NaMN_Compartment_NADA" COPASIkey="Metabolite_72"/>
-    <SBMLMap SBMLid="NaMN_Copartment_NamPT" COPASIkey="Metabolite_45"/>
-    <SBMLMap SBMLid="Nam_efflux_0" COPASIkey="Reaction_31"/>
-    <SBMLMap SBMLid="Nam_efflux_1" COPASIkey="Reaction_52"/>
-    <SBMLMap SBMLid="Nam_ex" COPASIkey="Metabolite_81"/>
-    <SBMLMap SBMLid="Nam_transporter" COPASIkey="ModelValue_5"/>
-    <SBMLMap SBMLid="Nam_uptake" COPASIkey="Reaction_68"/>
-    <SBMLMap SBMLid="PNP_NAR_0" COPASIkey="Reaction_42"/>
-    <SBMLMap SBMLid="PNP_NAR_1" COPASIkey="Reaction_63"/>
-    <SBMLMap SBMLid="PNP_NR_0" COPASIkey="Reaction_29"/>
-    <SBMLMap SBMLid="PNP_NR_1" COPASIkey="Reaction_51"/>
-    <SBMLMap SBMLid="PPi_Compartment_NADA" COPASIkey="Metabolite_68"/>
-    <SBMLMap SBMLid="PPi_Copartment_NamPT" COPASIkey="Metabolite_41"/>
-    <SBMLMap SBMLid="PRPP_Compartment_NADA" COPASIkey="Metabolite_79"/>
-    <SBMLMap SBMLid="PRPP_Copartment_NamPT" COPASIkey="Metabolite_52"/>
-    <SBMLMap SBMLid="Pi_Compartment_NADA" COPASIkey="Metabolite_62"/>
-    <SBMLMap SBMLid="Pi_Copartment_NamPT" COPASIkey="Metabolite_35"/>
-    <SBMLMap SBMLid="Product_inhibition_scaling" COPASIkey="Function_43"/>
-    <SBMLMap SBMLid="Product_inhibition_two_susbtrates_s2_const_scaling" COPASIkey="Function_44"/>
-    <SBMLMap SBMLid="SAH_Compartment_NADA" COPASIkey="Metabolite_75"/>
-    <SBMLMap SBMLid="SAH_Copartment_NamPT" COPASIkey="Metabolite_48"/>
-    <SBMLMap SBMLid="SAM_Compartment_NADA" COPASIkey="Metabolite_74"/>
-    <SBMLMap SBMLid="SAM_Copartment_NamPT" COPASIkey="Metabolite_47"/>
-    <SBMLMap SBMLid="SIRT_0" COPASIkey="Reaction_33"/>
-    <SBMLMap SBMLid="SIRT_1" COPASIkey="Reaction_54"/>
-    <SBMLMap SBMLid="TwosubstratesMMs2constant" COPASIkey="Function_40"/>
-    <SBMLMap SBMLid="_1_methyl_NAM_Compartment_NADA" COPASIkey="Metabolite_66"/>
-    <SBMLMap SBMLid="_1_methyl_NAM_Copartment_NamPT" COPASIkey="Metabolite_39"/>
-    <SBMLMap SBMLid="cell_devision_all" COPASIkey="ModelValue_8"/>
-    <SBMLMap SBMLid="celldivision_compartment_NADA" COPASIkey="ModelValue_4"/>
-    <SBMLMap SBMLid="celldivision_compartment_NamPT" COPASIkey="ModelValue_3"/>
-    <SBMLMap SBMLid="scaling" COPASIkey="ModelValue_0"/>
-  </SBMLReference>
   <ListOfUnitDefinitions>
     <UnitDefinition key="Unit_0" name="meter" symbol="m">
       <Expression>
